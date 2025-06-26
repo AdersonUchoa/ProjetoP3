@@ -1,0 +1,15 @@
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\bin\Debug\net8.0\ProjP3.Infra.Data.deps.json
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\bin\Debug\net8.0\ProjP3.Infra.Data.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\bin\Debug\net8.0\ProjP3.Infra.Data.pdb
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\bin\Debug\net8.0\ProjP3.Domain.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\bin\Debug\net8.0\ProjP3.Domain.pdb
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.AssemblyInfo.cs
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.I.6EF34F7C.Up2Date
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\refint\ProjP3.Infra.Data.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.pdb
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ref\ProjP3.Infra.Data.dll

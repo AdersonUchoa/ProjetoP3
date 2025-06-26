@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjP3.Application\ProjP3.Application.csproj" />
+    <ProjectReference Include="..\ProjP3.Domain\ProjP3.Domain.csproj" />
+    <ProjectReference Include="..\ProjP3.Infra.Data\ProjP3.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

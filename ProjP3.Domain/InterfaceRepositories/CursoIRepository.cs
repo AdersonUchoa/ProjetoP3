@@ -1,0 +1,20 @@
+﻿using ProjP3.Domain.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjP3.Domain.InterfaceRepositories
+{
+    internal interface CursoIRepository : IRepository
+    {
+        Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
+        Task<Curso> GetCursoByDescricaoAsync(string descricao);
+        Task<List<TipoCurso>> GetAllTiposCursoAsync();
+        Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso);
+        Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
+        Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
+        Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso);
+    }
+}

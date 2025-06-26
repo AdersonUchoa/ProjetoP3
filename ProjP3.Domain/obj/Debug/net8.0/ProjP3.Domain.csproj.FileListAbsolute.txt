@@ -1,0 +1,11 @@
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.deps.json
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.pdb
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.AssemblyInfoInputs.cache
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.AssemblyInfo.cs
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\refint\ProjP3.Domain.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.pdb
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ref\ProjP3.Domain.dll
