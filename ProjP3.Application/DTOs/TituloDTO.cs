@@ -9,5 +9,5 @@ public partial class TituloDTO
 
     public string TxDescricao { get; set; } = null!;
 
-    public virtual ICollection<Professor> Professors { get; set; } = new List<Professor>();
+    public virtual ICollection<ProfessorDTO> Professors { get; set; } = new List<ProfessorDTO>();
 }

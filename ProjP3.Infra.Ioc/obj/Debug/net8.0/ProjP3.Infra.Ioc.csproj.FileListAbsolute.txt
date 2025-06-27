@@ -17,3 +17,4 @@ C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Ioc\ob
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Ioc\obj\Debug\net8.0\refint\ProjP3.Infra.Ioc.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Ioc\obj\Debug\net8.0\ProjP3.Infra.Ioc.pdb
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Ioc\obj\Debug\net8.0\ref\ProjP3.Infra.Ioc.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Ioc\obj\Debug\net8.0\ProjP3.Infra.Ioc.sourcelink.json

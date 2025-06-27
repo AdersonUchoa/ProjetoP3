@@ -25,5 +25,5 @@ public partial class Disciplina
 
     public virtual TipoDisciplina IdTipoDisciplinaNavigation { get; set; } = null!;
 
-    public virtual ICollection<Professor> IdProfessors { get; set; } = new List<Professor>();
+    public virtual ICollection<Leciona> Lecionas { get; set; } = new List<Leciona>();
 }

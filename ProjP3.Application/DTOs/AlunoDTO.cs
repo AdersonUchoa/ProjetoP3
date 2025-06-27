@@ -13,5 +13,5 @@ public partial class AlunoDTO
 
     public DateOnly DtNascimento { get; set; }
 
-    public virtual ICollection<Cursa> Cursas { get; set; } = new List<Cursa>();
+    public virtual ICollection<CursaDTO> Cursas { get; set; } = new List<CursaDTO>();
 }

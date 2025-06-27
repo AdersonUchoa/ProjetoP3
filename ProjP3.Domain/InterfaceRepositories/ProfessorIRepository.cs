@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    internal interface ProfessorIRepository : IRepository
+    public interface ProfessorIRepository : IRepository<Professor>
     {
-        Task<Professor> GetProfessorByNomeAsync(string nome);
-        Task<Professor> GetDisciplinasByProfessorAsync(ulong idProfessor);
-        Task<List<Professor>> GetProfessoresByTituto(ulong idTitulo);
+        Task<Professor?> GetProfessorByNomeAsync(string nome);
+        Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor);
+        Task<List<Professor>> GetProfessoresByTitulo(ulong idTitulo);
     }
 }

@@ -21,5 +21,5 @@ public partial class ProfessorDTO
 
     public virtual TituloDTO IdTituloNavigation { get; set; } = null!;
 
-    public virtual ICollection<Disciplina> IdDisciplinas { get; set; } = new List<Disciplina>();
+    public virtual ICollection<DisciplinaDTO> IdDisciplinas { get; set; } = new List<DisciplinaDTO>();
 }

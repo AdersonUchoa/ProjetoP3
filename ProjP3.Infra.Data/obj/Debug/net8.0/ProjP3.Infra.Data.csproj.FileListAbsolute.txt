@@ -13,3 +13,4 @@ C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\o
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\refint\ProjP3.Infra.Data.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.pdb
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ref\ProjP3.Infra.Data.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Infra.Data\obj\Debug\net8.0\ProjP3.Infra.Data.sourcelink.json

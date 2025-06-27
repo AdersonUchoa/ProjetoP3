@@ -23,7 +23,7 @@ public partial class CursaDTO
 
     public bool BlAprovado { get; set; }
 
-    public virtual Aluno IdAlunoNavigation { get; set; } = null!;
+    public virtual AlunoDTO IdAlunoNavigation { get; set; } = null!;
 
     public virtual DisciplinaDTO IdDisciplinaNavigation { get; set; } = null!;
 }

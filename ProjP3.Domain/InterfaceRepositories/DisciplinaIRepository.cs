@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    internal interface DisciplinaIRepository : IRepository
+    public interface DisciplinaIRepository : IRepository<Disciplina>
     {
         Task<List<Disciplina>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina);
         Task<List<Disciplina>> GetDisciplinasByPeriodoAsync(int periodo);
@@ -16,10 +16,10 @@ namespace ProjP3.Domain.InterfaceRepositories
         Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao);
         Task<List<TipoDisciplina>> GetAllTiposDisciplinaAsync();
         Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina);
-        Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno);
-        Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno);
+        Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
+        Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
         Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina);
-        Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor);
-        Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor);
+        Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
+        Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
     }
 }

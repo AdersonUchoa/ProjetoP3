@@ -9,5 +9,5 @@ public partial class TipoDisciplinaDTO
 
     public string TxDescricao { get; set; } = null!;
 
-    public virtual ICollection<Disciplina> Disciplinas { get; set; } = new List<Disciplina>();
+    public virtual ICollection<DisciplinaDTO> Disciplinas { get; set; } = new List<DisciplinaDTO>();
 }

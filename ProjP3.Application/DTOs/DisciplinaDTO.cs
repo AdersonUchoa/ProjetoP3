@@ -19,9 +19,9 @@ public partial class DisciplinaDTO
 
     public int InPeriodo { get; set; }
 
-    public virtual ICollection<Cursa> Cursas { get; set; } = new List<Cursa>();
+    public virtual ICollection<CursaDTO> Cursas { get; set; } = new List<CursaDTO>();
 
-    public virtual Curso? IdCursoNavigation { get; set; }
+    public virtual CursoDTO? IdCursoNavigation { get; set; }
 
     public virtual TipoDisciplinaDTO IdTipoDisciplinaNavigation { get; set; } = null!;
 

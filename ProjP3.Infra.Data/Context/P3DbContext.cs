@@ -27,6 +27,8 @@ public partial class P3DbContext : DbContext
 
     public virtual DbSet<Instituicao> Instituicaos { get; set; }
 
+    public virtual DbSet<Leciona> Lecionas { get; set; }
+
     public virtual DbSet<Professor> Professors { get; set; }
 
     public virtual DbSet<TipoCurso> TipoCursos { get; set; }
@@ -172,6 +174,8 @@ public partial class P3DbContext : DbContext
 
             entity.HasIndex(e => e.IdInstituicao, "id_instituicao").IsUnique();
 
+            entity.HasIndex(e => e.TxDescricao, "uq_instituicao_descricao").IsUnique();
+
             entity.HasIndex(e => e.TxSigla, "uq_instituicao_sigla").IsUnique();
 
             entity.Property(e => e.IdInstituicao).HasColumnName("id_instituicao");
@@ -181,6 +185,29 @@ public partial class P3DbContext : DbContext
             entity.Property(e => e.TxSigla)
                 .HasMaxLength(15)
                 .HasColumnName("tx_sigla");
+        });
+
+        modelBuilder.Entity<Leciona>(entity =>
+        {
+            entity.HasKey(e => new { e.IdProfessor, e.IdDisciplina, e.InPeriodo })
+                .HasName("PRIMARY")
+                .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0, 0 });
+
+            entity.ToTable("leciona");
+
+            entity.HasIndex(e => e.IdDisciplina, "id_disciplina");
+
+            entity.Property(e => e.IdProfessor).HasColumnName("id_professor");
+            entity.Property(e => e.IdDisciplina).HasColumnName("id_disciplina");
+            entity.Property(e => e.InPeriodo).HasColumnName("in_periodo");
+
+            entity.HasOne(d => d.IdDisciplinaNavigation).WithMany(p => p.Lecionas)
+                .HasForeignKey(d => d.IdDisciplina)
+                .HasConstraintName("leciona_ibfk_2");
+
+            entity.HasOne(d => d.IdProfessorNavigation).WithMany(p => p.Lecionas)
+                .HasForeignKey(d => d.IdProfessor)
+                .HasConstraintName("leciona_ibfk_1");
         });
 
         modelBuilder.Entity<Professor>(entity =>
@@ -216,26 +243,6 @@ public partial class P3DbContext : DbContext
             entity.HasOne(d => d.IdTituloNavigation).WithMany(p => p.Professors)
                 .HasForeignKey(d => d.IdTitulo)
                 .HasConstraintName("professor_ibfk_1");
-
-            entity.HasMany(d => d.IdDisciplinas).WithMany(p => p.IdProfessors)
-                .UsingEntity<Dictionary<string, object>>(
-                    "Leciona",
-                    r => r.HasOne<Disciplina>().WithMany()
-                        .HasForeignKey("IdDisciplina")
-                        .HasConstraintName("leciona_ibfk_2"),
-                    l => l.HasOne<Professor>().WithMany()
-                        .HasForeignKey("IdProfessor")
-                        .HasConstraintName("leciona_ibfk_1"),
-                    j =>
-                    {
-                        j.HasKey("IdProfessor", "IdDisciplina")
-                            .HasName("PRIMARY")
-                            .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
-                        j.ToTable("leciona");
-                        j.HasIndex(new[] { "IdDisciplina" }, "id_disciplina");
-                        j.IndexerProperty<ulong>("IdProfessor").HasColumnName("id_professor");
-                        j.IndexerProperty<ulong>("IdDisciplina").HasColumnName("id_disciplina");
-                    });
         });
 
         modelBuilder.Entity<TipoCurso>(entity =>

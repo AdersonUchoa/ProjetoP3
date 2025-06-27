@@ -1,0 +1,192 @@
+﻿using Microsoft.EntityFrameworkCore;
+using ProjP3.Domain.InterfaceRepositories;
+using ProjP3.Domain.Models;
+using ProjP3.Infra.Data.Context;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProjP3.Infra.Data.Repositories
+{
+    public class DisciplinaRepository : Repository<Disciplina>, DisciplinaIRepository
+    {
+        private readonly AlunoIRepository _alunoRepository;
+        private readonly ProfessorIRepository _professorRepository;
+
+        public DisciplinaRepository(P3DbContext context, AlunoIRepository alunoIRepository, ProfessorIRepository professorIRepository) : base(context)
+        {
+            _alunoRepository = alunoIRepository;
+            _professorRepository = professorIRepository;
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.IdTipoDisciplina == idTipoDisciplina)
+                .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByPeriodoAsync(int periodo)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.InPeriodo == periodo)
+                .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByCargaHorariaAsync(int cargaHoraria)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.InCargaHoraria == cargaHoraria)
+                .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasBySiglaAsync(string sigla)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.TxSigla.Contains(sigla, StringComparison.OrdinalIgnoreCase))
+                .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
+                .ToListAsync();
+        }
+
+        public async Task<List<TipoDisciplina>> GetAllTiposDisciplinaAsync()
+        {
+            return await _context.Disciplinas
+                .Select(d => d.IdTipoDisciplinaNavigation)
+                .Distinct()
+                .ToListAsync();
+        }
+
+        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina)
+        {
+            return await _context.Cursas
+                .Where(c => c.IdDisciplina == idDisciplina)
+                .Select(c => c.IdAlunoNavigation)
+                .ToListAsync();
+        }
+
+        public async Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        {
+            var jaMatriculadoNoPeriodo = await _context.Cursas
+                   .AnyAsync(c => c.IdDisciplina == idDisciplina &&
+                   c.IdAluno == idAluno &&
+                   c.InSemestre == periodo);
+
+            if (jaMatriculadoNoPeriodo)
+            {
+                throw new InvalidOperationException($"O aluno já está matriculado nesta disciplina no período {periodo}.");
+            }
+
+            var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
+            if (disciplina == null)
+            {
+                throw new KeyNotFoundException("Disciplina não encontrada.");
+            }
+
+            var alunoExiste = await _alunoRepository.ExistsAsync(idAluno);
+            if (!alunoExiste)
+            {
+                throw new KeyNotFoundException("Aluno não encontrado.");
+            }
+
+            var cursa = new Cursa
+            {
+                IdDisciplina = idDisciplina,
+                IdAluno = idAluno,
+                InSemestre = periodo
+            };
+
+            _context.Cursas.Add(cursa);
+
+            return disciplina;
+        }
+
+        public async Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        {
+            var cursa = await _context.Cursas
+                .Include(c => c.IdDisciplinaNavigation)
+                .FirstOrDefaultAsync(c => c.IdDisciplina == idDisciplina &&
+                                          c.IdAluno == idAluno &&
+                                          c.InSemestre == periodo);
+
+            if (cursa == null)
+            {
+                throw new KeyNotFoundException($"Matrícula para o aluno na disciplina no período {periodo} não encontrada.");
+            }
+
+            _context.Cursas.Remove(cursa);
+
+            return cursa.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
+        }
+
+        public async Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina)
+        {
+            return await _context.Lecionas
+                .Where(l => l.IdDisciplina == idDisciplina)
+                .Select(l => l.IdProfessorNavigation)
+                .ToListAsync();
+        }
+
+        public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        {
+            
+            var jaExiste = await _context.Lecionas
+                .AnyAsync(l => l.IdDisciplina == idDisciplina &&
+                               l.IdProfessor == idProfessor &&
+                               l.InPeriodo == periodo);
+
+            if (jaExiste)
+            {
+                throw new InvalidOperationException($"O professor já está alocado para esta disciplina no período {periodo}.");
+            }
+
+            var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
+            if (disciplina == null)
+            {
+                throw new KeyNotFoundException("Disciplina não encontrada.");
+            }
+
+            var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
+            if (!professorExiste)
+            {
+                throw new KeyNotFoundException("Professor não encontrado.");
+            }
+
+            var leciona = new Leciona
+            {
+                IdDisciplina = idDisciplina,
+                IdProfessor = idProfessor,
+                InPeriodo = periodo
+            };
+
+            _context.Lecionas.Add(leciona);
+
+            return disciplina;
+        }
+
+        public async Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        {
+            var leciona = await _context.Lecionas
+                .FirstOrDefaultAsync(l => l.IdDisciplina == idDisciplina &&
+                                          l.IdProfessor == idProfessor &&
+                                          l.InPeriodo == periodo);
+
+            if (leciona == null)
+            {
+                throw new KeyNotFoundException($"O professor não está alocado para esta disciplina no período {periodo}.");
+            }
+
+            _context.Lecionas.Remove(leciona);
+
+            return leciona.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
+        }
+    }
+}
+

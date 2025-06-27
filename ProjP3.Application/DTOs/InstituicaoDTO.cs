@@ -10,5 +10,5 @@ public partial class InstituicaoDTO
 
     public string TxDescricao { get; set; } = null!;
 
-    public virtual ICollection<Curso> Cursos { get; set; } = new List<Curso>();
+    public virtual ICollection<CursoDTO> Cursos { get; set; } = new List<CursoDTO>();
 }

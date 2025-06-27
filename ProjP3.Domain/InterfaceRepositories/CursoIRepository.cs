@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    internal interface CursoIRepository : IRepository
+    public interface CursoIRepository : IRepository<Curso>
     {
         Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
-        Task<Curso> GetCursoByDescricaoAsync(string descricao);
+        Task<Curso?> GetCursoByDescricaoAsync(string descricao);
         Task<List<TipoCurso>> GetAllTiposCursoAsync();
         Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso);
         Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);

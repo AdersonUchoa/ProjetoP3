@@ -13,3 +13,4 @@ C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Application\
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Application\obj\Debug\net8.0\refint\ProjP3.Application.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Application\obj\Debug\net8.0\ProjP3.Application.pdb
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Application\obj\Debug\net8.0\ref\ProjP3.Application.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Application\obj\Debug\net8.0\ProjP3.Application.sourcelink.json
