@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0833FB41-964A-4368-84D1-9CECB7A090C3}|ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0833FB41-964A-4368-84D1-9CECB7A090C3}|ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj|solutionrelative:projp3.infra.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0833FB41-964A-4368-84D1-9CECB7A090C3}|ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.infra.ioc\\dependencyinjectionswagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0833FB41-964A-4368-84D1-9CECB7A090C3}|ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj|solutionrelative:projp3.infra.ioc\\dependencyinjectionswagger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.infra.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.infra.data\\repositories\\professorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\professorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.domain\\interfacerepositories\\professorirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\professorirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,6 +39,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Ioc\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\DependencyInjection.cs",
+              "RelativeToolTip": "ProjP3.Infra.Ioc\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T11:03:54.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjectionSwagger.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\DependencyInjectionSwagger.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Ioc\\DependencyInjectionSwagger.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\DependencyInjectionSwagger.cs",
+              "RelativeToolTip": "ProjP3.Infra.Ioc\\DependencyInjectionSwagger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T10:57:44.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T10:56:47.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfessorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T10:56:36.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProfessorIRepository.cs",
               "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\InterfaceRepositories\\ProfessorIRepository.cs",
               "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\ProfessorIRepository.cs",
