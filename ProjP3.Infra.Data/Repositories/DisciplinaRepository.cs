@@ -21,11 +21,33 @@ namespace ProjP3.Infra.Data.Repositories
             _professorRepository = professorIRepository;
         }
 
+        public async Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno)
+        {
+            return await _context.Disciplinas
+                .Where(disciplina => disciplina.Cursas.Any(cursa => cursa.IdAluno == idAluno))
+                .ToListAsync();
+        }
+
         public async Task<List<Disciplina>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina)
         {
             return await _context.Disciplinas
                 .Where(d => d.IdTipoDisciplina == idTipoDisciplina)
                 .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso)
+        {
+            return await _context.Disciplinas
+                .Where(disciplina => disciplina.IdCurso == idCurso)
+                .ToListAsync();
+        }
+
+        public async Task<TipoDisciplina?> GetTipoByDisciplinaAsync(ulong idDisciplina)
+        {
+            return await _context.Disciplinas
+                .Where(d => d.IdDisciplina == idDisciplina)
+                .Select(d => d.IdTipoDisciplinaNavigation)
+                .FirstOrDefaultAsync();
         }
 
         public async Task<List<Disciplina>> GetDisciplinasByPeriodoAsync(int periodo)
@@ -53,22 +75,6 @@ namespace ProjP3.Infra.Data.Repositories
         {
             return await _context.Disciplinas
                 .Where(d => d.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
-                .ToListAsync();
-        }
-
-        public async Task<List<TipoDisciplina>> GetAllTiposDisciplinaAsync()
-        {
-            return await _context.Disciplinas
-                .Select(d => d.IdTipoDisciplinaNavigation)
-                .Distinct()
-                .ToListAsync();
-        }
-
-        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina)
-        {
-            return await _context.Cursas
-                .Where(c => c.IdDisciplina == idDisciplina)
-                .Select(c => c.IdAlunoNavigation)
                 .ToListAsync();
         }
 
@@ -126,14 +132,6 @@ namespace ProjP3.Infra.Data.Repositories
             return cursa.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
         }
 
-        public async Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina)
-        {
-            return await _context.Lecionas
-                .Where(l => l.IdDisciplina == idDisciplina)
-                .Select(l => l.IdProfessorNavigation)
-                .ToListAsync();
-        }
-
         public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
         {
             
@@ -186,6 +184,13 @@ namespace ProjP3.Infra.Data.Repositories
             _context.Lecionas.Remove(leciona);
 
             return leciona.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor)
+        {
+            return await _context.Disciplinas
+                .Where(disciplina => disciplina.Lecionas.Any(le => le.IdProfessor == idProfessor))
+                .ToListAsync();
         }
     }
 }

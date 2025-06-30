@@ -26,17 +26,26 @@ namespace ProjP3.Infra.Data.Repositories
             return professor;
         }
 
-        public async Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor)
-        {
-            return await _context.Disciplinas
-                .Where(disciplina => disciplina.Lecionas.Any(le => le.IdProfessor == idProfessor))
-                .ToListAsync();
-        }
-
-        public async Task<List<Professor>> GetProfessoresByTitulo(ulong idTitulo)
+        public async Task<List<Professor>> GetProfessoresByTituloAsync(ulong idTitulo)
         {
             return await _context.Professors
                 .Where(p => p.IdTitulo == idTitulo)
+                .ToListAsync();
+        }
+
+        public async Task<Titulo?> GetTituloByProfessorAsync(ulong idProfessor)
+        {
+            return await _context.Professors
+            .Where(p => p.IdProfessor == idProfessor)
+            .Select(p => p.IdTituloNavigation)
+            .FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina)
+        {
+            return await _context.Lecionas
+                .Where(l => l.IdDisciplina == idDisciplina)
+                .Select(l => l.IdProfessorNavigation)
                 .ToListAsync();
         }
     }

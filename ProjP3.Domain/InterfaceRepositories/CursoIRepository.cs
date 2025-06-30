@@ -10,11 +10,10 @@ namespace ProjP3.Domain.InterfaceRepositories
     public interface CursoIRepository : IRepository<Curso>
     {
         Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
+        Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso);
         Task<Curso?> GetCursoByDescricaoAsync(string descricao);
-        Task<List<TipoCurso>> GetAllTiposCursoAsync();
-        Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso);
         Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
         Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
-        Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso);
+        Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idCurso);
     }
 }

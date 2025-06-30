@@ -14,27 +14,15 @@ namespace ProjP3.Infra.Ioc
         {
             services.AddSwaggerGen(c =>
             {
-                c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                 {
-                    Name = "Authorization",
-                    Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
-                    BearerFormat = "JWT",
-                    In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-                    Description = "JWT Authorization header using the Bearer scheme."
-                });
-
-                c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
-                {
+                    Title = "Projeto P3 API",
+                    Version = "v1",
+                    Description = "API para o projeto da disciplina de Programação 3.",
+                    Contact = new Microsoft.OpenApi.Models.OpenApiContact
                     {
-                        new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-                        {
-                            Reference = new Microsoft.OpenApi.Models.OpenApiReference
-                            {
-                                Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        new string[] { }
+                        Name = "Aderson Uchoa",
+                        Email = "aderson.filho027@academico.ifs.edu.br"
                     }
                 });
 

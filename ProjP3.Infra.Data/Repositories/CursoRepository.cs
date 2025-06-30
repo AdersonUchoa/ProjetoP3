@@ -23,25 +23,25 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
+        public async Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idInstituicao)
+        {
+            return await _context.Cursos
+                .Where(c => c.IdInstituicao == idInstituicao)
+                .ToListAsync();
+        }
+
+        public async Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso)
+        {
+            return await _context.Cursos
+                .Where(c => c.IdCurso == idCurso)
+                .Select(c => c.IdTipoCursoNavigation)
+                .FirstOrDefaultAsync();
+        }
+
         public async Task<Curso?> GetCursoByDescricaoAsync(string descricao)
         {
             return await _context.Cursos
                 .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
-        }
-
-        public async Task<List<TipoCurso>> GetAllTiposCursoAsync()
-        {
-            return await _context.Cursos
-                .Select(c => c.IdTipoCursoNavigation)
-                .Distinct()
-                .ToListAsync();
-        }
-
-        public async Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso)
-        {
-            return await _context.Disciplinas
-                .Where(disciplina => disciplina.IdCurso == idCurso)
-                .ToListAsync();
         }
 
         public async Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
@@ -84,13 +84,6 @@ namespace ProjP3.Infra.Data.Repositories
             curso.Disciplinas.Remove(disciplina);
 
             return curso;
-        }
-
-        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso)
-        {
-            return await _context.Instituicaos
-                .Where(i => i.Cursos.Any(c => c.IdCurso == idCurso))
-                .ToListAsync();
         }
     }
 }

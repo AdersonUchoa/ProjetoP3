@@ -30,13 +30,6 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
-        public async Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idInstituicao)
-        {
-            return await _context.Cursos
-                .Where(c => c.IdInstituicao == idInstituicao)
-                .ToListAsync();
-        }
-
         public async Task<Instituicao> AdicionarCursoAInstituicaoAsync(ulong idInstituicao, ulong idCurso)
         {
             var instituicao = await _context.Instituicaos.FindAsync(idInstituicao);
@@ -56,6 +49,13 @@ namespace ProjP3.Infra.Data.Repositories
             instituicao.Cursos.Add(curso);
             
             return instituicao;
+        }
+
+        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso)
+        {
+            return await _context.Instituicaos
+                .Where(i => i.Cursos.Any(c => c.IdCurso == idCurso))
+                .ToListAsync();
         }
 
         public async Task<Instituicao> RemoverCursoDeInstituicaoAsync(ulong idInstituicao, ulong idCurso)
