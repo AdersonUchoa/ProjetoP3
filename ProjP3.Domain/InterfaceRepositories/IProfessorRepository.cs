@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    public interface ProfessorIRepository : IRepository<Professor>
+    public interface IProfessorRepository : IRepository<Professor>
     {
         Task<Professor?> GetProfessorByNomeAsync(string nome);
         Task<List<Professor>> GetProfessoresByTituloAsync(ulong idTitulo);

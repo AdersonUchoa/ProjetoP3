@@ -14,8 +14,7 @@ namespace ProjP3.Application.InterfaceServices
         Task<Result<TipoCursoDTO>> GetByIdAsync(ulong id);
         Task<Result<TipoCursoDTO>> AddAsync(TipoCursoDTO tipoCursoDto);
         Task<Result<TipoCursoDTO>> UpdateAsync(TipoCursoDTO tipoCursoDto);
-        Task<Result<bool>> ExistsAsync(ulong id);
         Task<Result<bool>> DeleteAsync(ulong id);
-        Task<Result<List<TipoCursoDTO>>> GetTiposCursoByDescricaoAsync(string descricao);
+        Task<Result<List<TipoCursoDTO>>> GetTipoCursoByDescricaoAsync(string descricao);
     }
 }

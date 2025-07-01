@@ -9,6 +9,6 @@ namespace ProjP3.Domain.InterfaceRepositories
 {
     public interface ITituloRepository : IRepository<Titulo>
     {
-        Task<List<Titulo>> GetTitulosByDescricaoAsync(string descricao);
+        Task<Titulo?> GetTituloByDescricaoAsync(string descricao);
     }
 }

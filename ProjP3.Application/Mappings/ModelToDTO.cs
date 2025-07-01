@@ -20,6 +20,7 @@ namespace ProjP3.Application.Mappings
             CreateMap<ProjP3.Domain.Models.TipoCurso, ProjP3.Application.DTOs.TipoCursoDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.TipoDisciplina, ProjP3.Application.DTOs.TipoDisciplinaDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Titulo, ProjP3.Application.DTOs.TituloDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Leciona, ProjP3.Application.DTOs.LecionaDTO>().ReverseMap();
         }
     }
 }

@@ -10,7 +10,7 @@ using ProjP3.Infra.Data.Context;
 
 namespace ProjP3.Infra.Data.Repositories
 {
-    public class AlunoRepository : Repository<Aluno>, AlunoIRepository
+    public class AlunoRepository : Repository<Aluno>, IAlunoRepository
     {
         public AlunoRepository(P3DbContext context) : base(context)
         {

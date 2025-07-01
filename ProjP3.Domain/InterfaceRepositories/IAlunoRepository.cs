@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    public interface AlunoIRepository : IRepository<Aluno>
+    public interface IAlunoRepository : IRepository<Aluno>
     {
         Task<Aluno?> GetAlunoByNomeAsync(string nome);
         Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina);

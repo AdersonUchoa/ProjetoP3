@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    public interface CursoIRepository : IRepository<Curso>
+    public interface ICursoRepository : IRepository<Curso>
     {
         Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
         Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso);

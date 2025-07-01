@@ -16,11 +16,10 @@ namespace ProjP3.Infra.Data.Repositories
         {
         }
 
-        public async Task<List<TipoCurso>> GetTiposCursoByDescricaoAsync(string descricao)
+        public async Task<TipoCurso?> GetTipoCursoByDescricaoAsync(string descricao)
         {
             return await _context.TipoCursos
-                .Where(tc => tc.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
-                .ToListAsync();
+                .FirstOrDefaultAsync(tc => tc.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
         }
     }
 }

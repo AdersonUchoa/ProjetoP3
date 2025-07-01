@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Application.InterfaceServices
 {
-    public interface AlunoIService
+    public interface IAlunoService
     {
         Task<Result<List<AlunoDTO>>> GetAllAsync();
         Task<Result<AlunoDTO>> GetByIdAsync(ulong id);
         Task<Result<AlunoDTO>> AddAsync(AlunoDTO alunoDto);
         Task<Result<AlunoDTO>> UpdateAsync(AlunoDTO alunoDto);
-        Task<Result<bool>> ExistsAsync(ulong id);
         Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<AlunoDTO>> GetAlunoByNomeAsync(string nome);
         Task<Result<List<AlunoDTO>>> GetAlunosByDisciplinaAsync(ulong idDisciplina);

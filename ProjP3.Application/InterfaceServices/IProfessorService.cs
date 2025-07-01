@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Application.InterfaceServices
 {
-    public interface ProfessorIService
+    public interface IProfessorService
     {
         Task<Result<bool>> DeleteAsync(ulong id);
-        Task<Result<bool>> ExistsAsync(ulong id);
         Task<Result<List<ProfessorDTO>>> GetAllAsync();
         Task<Result<ProfessorDTO>> GetByIdAsync(ulong id);
         Task<Result<ProfessorDTO>> AddAsync(ProfessorDTO professor);

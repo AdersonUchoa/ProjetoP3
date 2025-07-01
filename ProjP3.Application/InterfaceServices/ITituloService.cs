@@ -14,9 +14,8 @@ namespace ProjP3.Application.InterfaceServices
         Task<Result<TituloDTO>> GetByIdAsync(ulong id);
         Task<Result<TituloDTO>> AddAsync(TituloDTO tituloDto);
         Task<Result<TituloDTO>> UpdateAsync(TituloDTO tituloDto);
-        Task<Result<bool>> ExistsAsync(ulong id);
         Task<Result<bool>> DeleteAsync(ulong id);
-        Task<Result<List<TituloDTO>>> GetTitulosByDescricaoAsync(string descricao);
+        Task<Result<List<TituloDTO>>> GetTituloByDescricaoAsync(string descricao);
 
     }
 }

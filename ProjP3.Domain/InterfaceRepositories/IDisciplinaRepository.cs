@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Domain.InterfaceRepositories
 {
-    public interface DisciplinaIRepository : IRepository<Disciplina>
+    public interface IDisciplinaRepository : IRepository<Disciplina>
     {
         Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno);
         Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor);
@@ -18,9 +18,16 @@ namespace ProjP3.Domain.InterfaceRepositories
         Task<List<Disciplina>> GetDisciplinasByCargaHorariaAsync(int cargaHoraria);
         Task<List<Disciplina>> GetDisciplinasBySiglaAsync(string sigla);
         Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao);
-        Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
+        // Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
         Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
         Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
         Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
+        Task<bool> JaExisteCursaAsync(ulong idAluno, ulong idDisciplina, int periodo);
+        Task<bool> JaExisteLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo);
+        // Em IDisciplinaRepository.cs
+        Task<Cursa?> GetCursaAsync(ulong idAluno, ulong idDisciplina, int periodo);
+        void RemoverCursa(Cursa cursa);
+        Task<Leciona?> GetLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo);
+        void RemoverLeciona(Leciona leciona);
     }
 }

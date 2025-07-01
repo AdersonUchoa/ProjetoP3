@@ -3,7 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using ProjP3.Application.InterfaceServices;
 using ProjP3.Application.Mappings;
+using ProjP3.Application.Services;
 using ProjP3.Domain.InterfaceRepositories;
 using ProjP3.Infra.Data.Context;
 using ProjP3.Infra.Data.Repositories;
@@ -23,17 +25,23 @@ namespace ProjP3.Infra.Ioc
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             });
 
-            services.AddScoped<AlunoIRepository, AlunoRepository>();
-            services.AddScoped<CursoIRepository, CursoRepository>();
-            services.AddScoped<DisciplinaIRepository, DisciplinaRepository>();
-            services.AddScoped<InstituicaoIRepository, InstituicaoRepository>();
-            services.AddScoped<ProfessorIRepository, ProfessorRepository>();
+            services.AddScoped<IAlunoRepository, AlunoRepository>();
+            services.AddScoped<ICursoRepository, CursoRepository>();
+            services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
+            services.AddScoped<IInstituicaoRepository, InstituicaoRepository>();
+            services.AddScoped<IProfessorRepository, ProfessorRepository>();
             services.AddScoped<ITipoCursoRepository, TipoCursoRepository>();
             services.AddScoped<ITipoDisciplinaRepository, TipoDisciplinaRepository>();
             services.AddScoped<ITituloRepository, TituloRepository>();
 
-            // A ser adicionado: services.AddScoped dos InterfacesServices e Services.
-            // services.AddScoped<AlunoIService, AlunoService>(); etc
+            services.AddScoped<IAlunoService, AlunoService>();
+            services.AddScoped<ICursoService, CursoService>();
+            services.AddScoped<IDisciplinaService, DisciplinaService>();
+            services.AddScoped<IInstituicaoService, InstituicaoService>();
+            services.AddScoped<IProfessorService, ProfessorService>();
+            services.AddScoped<ITipoCursoService, TipoCursoService>();
+            services.AddScoped<ITipoDisciplinaService, TipoDisciplinaService>();
+            services.AddScoped<ITituloService, TituloService>();
 
             services.AddAutoMapper(typeof(ModelToDTO));
 

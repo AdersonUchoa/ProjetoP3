@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Infra.Data.Repositories
 {
-    public class ProfessorRepository : Repository<Professor>, ProfessorIRepository
+    public class ProfessorRepository : Repository<Professor>, IProfessorRepository
     {
         public ProfessorRepository(P3DbContext context) : base(context)
         {

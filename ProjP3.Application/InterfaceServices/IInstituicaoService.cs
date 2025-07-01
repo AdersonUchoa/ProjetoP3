@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProjP3.Application.InterfaceServices
 {
-    public interface InstituicaoIService
+    public interface IInstituicaoService
     {
         Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<bool>> ExistsAsync(ulong id);
