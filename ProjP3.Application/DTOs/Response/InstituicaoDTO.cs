@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProjP3.Application.DTOs;
-public partial class InstituicaoDTO
+namespace ProjP3.Application.DTOs.Response;
+public class InstituicaoDTO
 {
     public ulong IdInstituicao { get; set; }
 

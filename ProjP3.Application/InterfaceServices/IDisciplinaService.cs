@@ -1,5 +1,6 @@
 ﻿using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace ProjP3.Application.InterfaceServices
 {
     public interface IDisciplinaService
     {
-        Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<List<DisciplinaDTO>>> GetAllAsync();
         Task<Result<DisciplinaDTO>> GetByIdAsync(ulong id);
-        Task<Result<DisciplinaDTO>> AddAsync(DisciplinaDTO disciplinaDTO);
-        Task<Result<DisciplinaDTO>> UpdateAsync(DisciplinaDTO disciplinaDTO);
+        Task<Result<DisciplinaDTO>> AddAsync(DisciplinaCreateDTO disciplinaDTO);
+        Task<Result<DisciplinaDTO>> UpdateAsync(DisciplinaUpdateDTO disciplinaDTO);
+        Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<List<DisciplinaDTO>>> GetDisciplinasByAlunoAsync(ulong idAluno);
         Task<Result<List<DisciplinaDTO>>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina);
         Task<Result<TipoDisciplinaDTO>> GetTipoByDisciplinaAsync(ulong idDisciplina);

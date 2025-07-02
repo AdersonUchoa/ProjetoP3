@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProjP3.Application.DTOs;
+namespace ProjP3.Application.DTOs.Response;
 
-public partial class LecionaDTO
+public class LecionaDTO
 {
     public ulong IdProfessor { get; set; }
 

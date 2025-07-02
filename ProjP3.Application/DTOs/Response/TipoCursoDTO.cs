@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ProjP3.Application.DTOs;
+namespace ProjP3.Application.DTOs.Response;
 
-public partial class TipoCursoDTO
+public class TipoCursoDTO
 {
     public ulong IdTipoCurso { get; set; }
 

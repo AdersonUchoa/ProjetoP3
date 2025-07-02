@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
 using ProjP3.Domain.InterfaceRepositories;
 using System;
@@ -44,7 +45,7 @@ namespace ProjP3.Application.Services
             return Result<CursoDTO>.Success(cursoDto);
         }
 
-        public async Task<Result<CursoDTO>> AddAsync(CursoDTO cursoDto)
+        public async Task<Result<CursoDTO>> AddAsync(CursoCreateDTO cursoDto)
         {
             var cursoExiste = await _repository.ExistsAsync(cursoDto.IdCurso);
             if (cursoExiste)
@@ -57,7 +58,7 @@ namespace ProjP3.Application.Services
             return Result<CursoDTO>.Success(_mapper.Map<CursoDTO>(addedCurso));
         }
 
-        public async Task<Result<CursoDTO>> UpdateAsync(CursoDTO cursoDto)
+        public async Task<Result<CursoDTO>> UpdateAsync(CursoUpdateDTO cursoDto)
         {
             var cursoOriginal = await _repository.GetByIdAsync(cursoDto.IdCurso);
             if (cursoOriginal == null)

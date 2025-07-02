@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
 using ProjP3.Domain.InterfaceRepositories;
 using System;
@@ -40,7 +41,7 @@ namespace ProjP3.Application.Services
             return Result<TipoDisciplinaDTO>.Success(tipoDisciplinaDto);
         }
 
-        public async Task<Result<TipoDisciplinaDTO>> AddAsync(TipoDisciplinaDTO tipoDisciplinaDto)
+        public async Task<Result<TipoDisciplinaDTO>> AddAsync(TipoDisciplinaCreateDTO tipoDisciplinaDto)
         {
             var tipoDisciplinaExiste = await _repository.ExistsAsync(tipoDisciplinaDto.IdTipoDisciplina);
             if (tipoDisciplinaExiste)
@@ -56,7 +57,7 @@ namespace ProjP3.Application.Services
             return Result<TipoDisciplinaDTO>.Success(_mapper.Map<TipoDisciplinaDTO>(addedTipoDisciplina));
         }
 
-        public async Task<Result<TipoDisciplinaDTO>> UpdateAsync(TipoDisciplinaDTO tipoDisciplinaDto)
+        public async Task<Result<TipoDisciplinaDTO>> UpdateAsync(TipoDisciplinaUpdateDTO tipoDisciplinaDto)
         {
             var tipoDisciplina = await _repository.GetByIdAsync(tipoDisciplinaDto.IdTipoDisciplina);
 

@@ -1,5 +1,6 @@
 ﻿using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace ProjP3.Application.InterfaceServices
     {
         Task<Result<List<TituloDTO>>> GetAllAsync();
         Task<Result<TituloDTO>> GetByIdAsync(ulong id);
-        Task<Result<TituloDTO>> AddAsync(TituloDTO tituloDto);
-        Task<Result<TituloDTO>> UpdateAsync(TituloDTO tituloDto);
+        Task<Result<TituloDTO>> AddAsync(TituloCreateDTO tituloDto);
+        Task<Result<TituloDTO>> UpdateAsync(TituloUpdateDTO tituloDto);
         Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<List<TituloDTO>>> GetTituloByDescricaoAsync(string descricao);
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjP3.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ec887d7ee571efa5a8d42f5bf2fa2bf755e074e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afb01fd93e82ca57f16f4f62ef3f8ca7592aefd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjP3.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjP3.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
 using ProjP3.Domain.InterfaceRepositories;
 using System;
@@ -42,7 +43,7 @@ namespace ProjP3.Application.Services
             return Result<AlunoDTO>.Success(alunoDto);
         }
 
-        public async Task<Result<AlunoDTO>> AddAsync(AlunoDTO alunoDto)
+        public async Task<Result<AlunoDTO>> AddAsync(AlunoCreateDTO alunoDto)
         {
             var alunoExiste = await _repository.ExistsAsync(alunoDto.IdAluno);
             if (alunoExiste)
@@ -55,7 +56,7 @@ namespace ProjP3.Application.Services
             return Result<AlunoDTO>.Success(_mapper.Map<AlunoDTO>(addedAluno));
         }
 
-        public async Task<Result<AlunoDTO>> UpdateAsync(AlunoDTO alunoDto)
+        public async Task<Result<AlunoDTO>> UpdateAsync(AlunoUpdateDTO alunoDto)
         {
             var alunoOriginal = await _repository.GetByIdAsync(alunoDto.IdAluno);
             if (alunoOriginal == null)

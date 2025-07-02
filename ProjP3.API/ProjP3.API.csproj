@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ProjP3.Infra.Ioc\ProjP3.Infra.Ioc.csproj" />
   </ItemGroup>
 

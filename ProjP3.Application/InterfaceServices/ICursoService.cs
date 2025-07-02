@@ -1,5 +1,6 @@
 ﻿using ProjP3.Application.Common;
-using ProjP3.Application.DTOs;
+using ProjP3.Application.DTOs.Request;
+using ProjP3.Application.DTOs.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace ProjP3.Application.InterfaceServices
     {
         Task<Result<List<CursoDTO>>> GetAllAsync();
         Task<Result<CursoDTO>> GetByIdAsync(ulong id);
-        Task<Result<CursoDTO>> AddAsync(CursoDTO cursoDto);
-        Task<Result<CursoDTO>> UpdateAsync(CursoDTO cursoDto);
+        Task<Result<CursoDTO>> AddAsync(CursoCreateDTO cursoDto);
+        Task<Result<CursoDTO>> UpdateAsync(CursoUpdateDTO cursoDto);
         Task<Result<bool>> DeleteAsync(ulong id);
         Task<Result<CursoDTO>> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
         Task<Result<CursoDTO>> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
