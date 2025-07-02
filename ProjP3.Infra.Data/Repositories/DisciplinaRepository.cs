@@ -114,77 +114,77 @@ namespace ProjP3.Infra.Data.Repositories
         //    return disciplina;
         //}
 
-        public async Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
-        {
-            var cursa = await _context.Cursas
-                .Include(c => c.IdDisciplinaNavigation)
-                .FirstOrDefaultAsync(c => c.IdDisciplina == idDisciplina &&
-                                          c.IdAluno == idAluno &&
-                                          c.InSemestre == periodo);
+        //public async Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        //{
+        //    var cursa = await _context.Cursas
+        //        .Include(c => c.IdDisciplinaNavigation)
+        //        .FirstOrDefaultAsync(c => c.IdDisciplina == idDisciplina &&
+        //                                  c.IdAluno == idAluno &&
+        //                                  c.InSemestre == periodo);
 
-            if (cursa == null)
-            {
-                throw new KeyNotFoundException($"Matrícula para o aluno na disciplina no período {periodo} não encontrada.");
-            }
+        //    if (cursa == null)
+        //    {
+        //        throw new KeyNotFoundException($"Matrícula para o aluno na disciplina no período {periodo} não encontrada.");
+        //    }
 
-            _context.Cursas.Remove(cursa);
+        //    _context.Cursas.Remove(cursa);
 
-            return cursa.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
-        }
+        //    return cursa.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
+        //}
 
-        public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
-        {
+        //public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        //{
             
-            var jaExiste = await _context.Lecionas
-                .AnyAsync(l => l.IdDisciplina == idDisciplina &&
-                               l.IdProfessor == idProfessor &&
-                               l.InPeriodo == periodo);
+        //    var jaExiste = await _context.Lecionas
+        //        .AnyAsync(l => l.IdDisciplina == idDisciplina &&
+        //                       l.IdProfessor == idProfessor &&
+        //                       l.InPeriodo == periodo);
 
-            if (jaExiste)
-            {
-                throw new InvalidOperationException($"O professor já está alocado para esta disciplina no período {periodo}.");
-            }
+        //    if (jaExiste)
+        //    {
+        //        throw new InvalidOperationException($"O professor já está alocado para esta disciplina no período {periodo}.");
+        //    }
 
-            var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
-            if (disciplina == null)
-            {
-                throw new KeyNotFoundException("Disciplina não encontrada.");
-            }
+        //    var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
+        //    if (disciplina == null)
+        //    {
+        //        throw new KeyNotFoundException("Disciplina não encontrada.");
+        //    }
 
-            var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
-            if (!professorExiste)
-            {
-                throw new KeyNotFoundException("Professor não encontrado.");
-            }
+        //    var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
+        //    if (!professorExiste)
+        //    {
+        //        throw new KeyNotFoundException("Professor não encontrado.");
+        //    }
 
-            var leciona = new Leciona
-            {
-                IdDisciplina = idDisciplina,
-                IdProfessor = idProfessor,
-                InPeriodo = periodo
-            };
+        //    var leciona = new Leciona
+        //    {
+        //        IdDisciplina = idDisciplina,
+        //        IdProfessor = idProfessor,
+        //        InPeriodo = periodo
+        //    };
 
-            _context.Lecionas.Add(leciona);
+        //    _context.Lecionas.Add(leciona);
 
-            return disciplina;
-        }
+        //    return disciplina;
+        //}
 
-        public async Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
-        {
-            var leciona = await _context.Lecionas
-                .FirstOrDefaultAsync(l => l.IdDisciplina == idDisciplina &&
-                                          l.IdProfessor == idProfessor &&
-                                          l.InPeriodo == periodo);
+        //public async Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        //{
+        //    var leciona = await _context.Lecionas
+        //        .FirstOrDefaultAsync(l => l.IdDisciplina == idDisciplina &&
+        //                                  l.IdProfessor == idProfessor &&
+        //                                  l.InPeriodo == periodo);
 
-            if (leciona == null)
-            {
-                throw new KeyNotFoundException($"O professor não está alocado para esta disciplina no período {periodo}.");
-            }
+        //    if (leciona == null)
+        //    {
+        //        throw new KeyNotFoundException($"O professor não está alocado para esta disciplina no período {periodo}.");
+        //    }
 
-            _context.Lecionas.Remove(leciona);
+        //    _context.Lecionas.Remove(leciona);
 
-            return leciona.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
-        }
+        //    return leciona.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
+        //}
 
         public async Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor)
         {
@@ -232,7 +232,7 @@ namespace ProjP3.Infra.Data.Repositories
 
         public void RemoverLeciona(Leciona leciona)
         {
-            _context.Cursas.Remove(leciona);
+            _context.Lecionas.Remove(leciona);
         }
     }
 }

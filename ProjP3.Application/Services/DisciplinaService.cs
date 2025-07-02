@@ -19,12 +19,16 @@ namespace ProjP3.Application.Services
         private readonly ICursoRepository _cursoRepository;
         private readonly IAlunoRepository _alunoRepository;
         private readonly IProfessorRepository _professorRepository;
-        private readonly ITipoDisciplinaRepository _tipoDisciplinaRepository
+        private readonly ITipoDisciplinaRepository _tipoDisciplinaRepository;
 
-        public DisciplinaService(IDisciplinaRepository repository, IMapper mapper)
+        public DisciplinaService(IDisciplinaRepository repository, IMapper mapper, ICursoRepository cursoRepository, IAlunoRepository alunoRepository, IProfessorRepository professorRepository, ITipoDisciplinaRepository tipoDisciplinaRepository)
         {
             _repository = repository;
             _mapper = mapper;
+            _cursoRepository = cursoRepository;
+            _alunoRepository = alunoRepository;
+            _professorRepository = professorRepository;
+            _tipoDisciplinaRepository = tipoDisciplinaRepository;
         }
 
         public async Task<Result<List<DisciplinaDTO>>> GetAllAsync()
@@ -193,6 +197,70 @@ namespace ProjP3.Application.Services
             }
 
             return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(matriculaParaRemover.IdDisciplinaNavigation));
+        }
+
+        public async Task<Result<DisciplinaDTO>> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        {
+            var disciplina = await _repository.GetByIdAsync(idDisciplina);
+            if (disciplina == null)
+            {
+                return Result<DisciplinaDTO>.Failure("Disciplina não encontrada.");
+            }
+            var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
+            if (!professorExiste)
+            {
+                return Result<DisciplinaDTO>.Failure("Professor não encontrado com este ID.");
+            }
+            var jaLecionaNoPeriodo = await _repository.JaExisteLecionaAsync(idProfessor, idDisciplina, periodo);
+            if (jaLecionaNoPeriodo)
+            {
+                return Result<DisciplinaDTO>.Failure($"O professor já leciona nesta disciplina no período {periodo}.");
+            }
+            var novaLeciona = new Leciona { IdProfessor = idProfessor, IdDisciplina = idDisciplina, InPeriodo = periodo };
+            disciplina.Lecionas.Add(novaLeciona);
+            await _repository.SaveAllAsync();
+            var disciplinaDto = _mapper.Map<DisciplinaDTO>(disciplina);
+            return Result<DisciplinaDTO>.Success(disciplinaDto);
+        }
+
+        public async Task<Result<DisciplinaDTO>> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        {
+            var lecionaParaRemover = await _repository.GetLecionaAsync(idProfessor, idDisciplina, periodo);
+            if (lecionaParaRemover == null)
+            {
+                return Result<DisciplinaDTO>.Failure($"Leciona para o professor na disciplina no período {periodo} não encontrada.");
+            }
+            _repository.RemoverLeciona(lecionaParaRemover);
+            var sucesso = await _repository.SaveAllAsync();
+            if (!sucesso)
+            {
+                return Result<DisciplinaDTO>.Failure("Ocorreu um erro ao remover a leciona.");
+            }
+            return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(lecionaParaRemover.IdDisciplinaNavigation));
+        }
+
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByProfessorAsync(ulong idProfessor)
+        {
+            var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
+            if (!professorExiste)
+            {
+                return Result<List<DisciplinaDTO>>.Failure("Professor não encontrado com este ID.");
+            }
+            var disciplinas = await _repository.GetDisciplinasByProfessorAsync(idProfessor);
+            var disciplinaDtos = _mapper.Map<List<DisciplinaDTO>>(disciplinas);
+            return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
+        }
+
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByCursoAsync(ulong idCurso)
+        {
+            var cursoExiste = await _cursoRepository.ExistsAsync(idCurso);
+            if (!cursoExiste)
+            {
+                return Result<List<DisciplinaDTO>>.Failure("Curso não encontrado com este ID.");
+            }
+            var disciplinas = await _repository.GetDisciplinasByCursoAsync(idCurso);
+            var disciplinaDtos = _mapper.Map<List<DisciplinaDTO>>(disciplinas);
+            return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
     }
 }

@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.application\\services\\disciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\disciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.application\\interfaceservices\\idisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\idisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.domain\\interfacerepositories\\idisciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\idisciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,63 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DisciplinaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAAwOoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:43:02.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IDisciplinaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
-              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
-              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAzwB0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:41:58.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DisciplinaService.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\Services\\DisciplinaService.cs",
-              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\DisciplinaService.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\Services\\DisciplinaService.cs",
-              "RelativeToolTip": "ProjP3.Application\\Services\\DisciplinaService.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAuwLYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:13:39.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IDisciplinaService.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wAwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T18:11:11.367Z",
-              "EditorCaption": ""
             }
           ]
         }

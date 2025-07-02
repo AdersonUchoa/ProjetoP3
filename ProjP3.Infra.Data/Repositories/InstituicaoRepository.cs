@@ -30,26 +30,12 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
-        public async Task<Instituicao> AdicionarCursoAInstituicaoAsync(ulong idInstituicao, ulong idCurso)
-        {
-            var instituicao = await _context.Instituicaos.FindAsync(idInstituicao);
-
-            if (instituicao == null)
-            {
-                throw new Exception("Instituição não encontrada.");
-            }
-
-            var curso = await _context.Cursos.FindAsync(idCurso);
-
-            if (curso == null)
-            {
-                throw new Exception("Curso não encontrado.");
-            }
-
-            instituicao.Cursos.Add(curso);
-            
-            return instituicao;
-        }
+        //public async Task<bool> JaExisteCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //{
+        //    return await _context.Instituicaos
+        //        .Where(i => i.IdInstituicao == idInstituicao)
+        //        .AnyAsync(i => i.Cursos.Any(c => c.IdCurso == idCurso));
+        //}
 
         public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso)
         {
@@ -58,25 +44,17 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
-        public async Task<Instituicao> RemoverCursoDeInstituicaoAsync(ulong idInstituicao, ulong idCurso)
-        {
-            var instituicao = await _context.Instituicaos.FindAsync(idInstituicao);
+        //public async Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //{
+        //    return await _context.Instituicaos
+        //        .Where(i => i.IdInstituicao == idInstituicao)
+        //        .SelectMany(i => i.Cursos)
+        //        .FirstOrDefaultAsync(c => c.IdCurso == idCurso);
+        //}
 
-            if (instituicao == null)
-            {
-                throw new Exception("Instituição não encontrada.");
-            }
-
-            var curso = await _context.Cursos.FindAsync(idCurso);
-
-            if (curso == null || !instituicao.Cursos.Contains(curso))
-            {
-                throw new Exception("Curso não encontrado.");
-            }
-
-            instituicao.Cursos.Remove(curso);
-          
-            return instituicao;
-        }
+        //public void RemoverCursoNaInstituicao(Curso curso)
+        //{
+        //    _context.Cursos.Remove(curso);
+        //}
     }
 }
