@@ -15,5 +15,6 @@ namespace ProjP3.Domain.InterfaceRepositories
         //Task<bool> JaExisteCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso);
         //Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso);
         //void RemoverCursoNaInstituicao(Curso curso);
+        Task<bool> ExistsByDescricaoAsync(string descricao);
     }
 }

@@ -44,6 +44,12 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
+        {
+            return await _context.Instituicaos
+                .AnyAsync(i => i.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+        }
+
         //public async Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
         //{
         //    return await _context.Instituicaos

@@ -36,6 +36,12 @@ namespace ProjP3.Infra.Data.Repositories
                 .Select(c => c.IdAlunoNavigation)
                 .ToListAsync();
         }
+
+        public async Task<bool> ExistsByNomeAsync(string nome)
+        {
+            return await _context.Alunos
+                .AnyAsync(a => a.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }
 

@@ -10,5 +10,6 @@ namespace ProjP3.Domain.InterfaceRepositories
     public interface ITipoCursoRepository : IRepository<TipoCurso>
     {
         Task<TipoCurso?> GetTipoCursoByDescricaoAsync(string descricao);
+        Task<bool> ExistsByDescricaoAsync(string descricao);
     }
 }

@@ -47,10 +47,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<ProfessorDTO>> AddAsync(ProfessorCreateDTO professorDto)
         {
-            var professorExiste = await _repository.ExistsAsync(professorDto.IdProfessor);
+            var professorExiste = await _repository.ExistsByNomeAsync(professorDto.TxNome);
             if (professorExiste)
             {
-                return Result<ProfessorDTO>.Failure("Professor já existe com este ID.");
+                return Result<ProfessorDTO>.Failure("Professor já existe com este mesmo nome.");
             }
             var professor = _mapper.Map<Domain.Models.Professor>(professorDto);
             var addedProfessor = await _repository.AddAsync(professor);
@@ -60,13 +60,13 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<ProfessorDTO>> UpdateAsync(ProfessorUpdateDTO professorDto)
         {
-            var professorOriginal = await _repository.GetByIdAsync(professorDto.IdProfessor);
-            if (professorOriginal == null)
+            var professorOriginal = await _repository.ExistsByNomeAsync(professorDto.TxNome);
+            if (!professorOriginal)
             {
-                return Result<ProfessorDTO>.Failure("Professor não encontrado com este ID.");
+                return Result<ProfessorDTO>.Failure("Professor não encontrado com este nome.");
             }
-            _mapper.Map(professorDto, professorOriginal);
-            var updatedProfessor = await _repository.UpdateAsync(professorOriginal);
+            var professor = _mapper.Map<Domain.Models.Professor>(professorDto);
+            var updatedProfessor = await _repository.UpdateAsync(professor);
             await _repository.SaveAllAsync();
             return Result<ProfessorDTO>.Success(_mapper.Map<ProfessorDTO>(updatedProfessor));
         }
@@ -83,15 +83,15 @@ namespace ProjP3.Application.Services
             return Result<bool>.Success(deleted);
         }
 
-        public async Task<Result<ProfessorDTO?>> GetProfessorByNomeAsync(string nome)
+        public async Task<Result<ProfessorDTO>> GetProfessoresByNomeAsync(string nome)
         {
-            var professor = await _repository.GetProfessorByNomeAsync(nome);
+            var professor = await _repository.GetProfessoresByNomeAsync(nome);
             if (professor == null)
             {
-                return Result<ProfessorDTO?>.Failure("Professor não encontrado com este nome.");
+                return Result<ProfessorDTO>.Failure("Professor não encontrado com este nome.");
             }
             var professorDto = _mapper.Map<ProfessorDTO>(professor);
-            return Result<ProfessorDTO?>.Success(professorDto);
+            return Result<ProfessorDTO>.Success(professorDto);
         }
 
         public async Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(ulong idTitulo)

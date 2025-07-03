@@ -43,10 +43,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TipoCursoDTO>> AddAsync(TipoCursoCreateDTO tipoCursoDto)
         {
-            var tipoCursoExiste = await _repository.ExistsAsync(tipoCursoDto.IdTipoCurso);
+            var tipoCursoExiste = await _repository.ExistsByDescricaoAsync(tipoCursoDto.TxDescricao);
             if (tipoCursoExiste)
             {
-                return Result<TipoCursoDTO>.Failure("Tipo de curso já existente.");
+                return Result<TipoCursoDTO>.Failure("Tipo de curso já existente com esta descrição.");
             }
             var tipoCurso = _mapper.Map<Domain.Models.TipoCurso>(tipoCursoDto);
             var addedTipoCurso = await _repository.AddAsync(tipoCurso);
@@ -56,15 +56,15 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TipoCursoDTO>> UpdateAsync(TipoCursoUpdateDTO tipoCursoDto)
         {
-            var tipoCurso = await _repository.GetByIdAsync(tipoCursoDto.IdTipoCurso);
-            if (tipoCurso == null)
+            var tipoCursoExiste = await _repository.ExistsByDescricaoAsync(tipoCursoDto.TxDescricao);
+            if (!tipoCursoExiste)
             {
-                return Result<TipoCursoDTO>.Failure("Tipo de curso não encontrado com este ID.");
+                return Result<TipoCursoDTO>.Failure("Tipo de curso não encontrado com esta descrição.");
             }
 
-            _mapper.Map(tipoCursoDto, tipoCurso);
+            var tipoCurso = _mapper.Map<Domain.Models.TipoCurso>(tipoCursoDto);
 
-            var updatedTipoCurso = _mapper.Map<Domain.Models.TipoCurso>(tipoCurso);
+            var updatedTipoCurso = await _repository.UpdateAsync(tipoCurso);
 
             await _repository.SaveAllAsync();
 

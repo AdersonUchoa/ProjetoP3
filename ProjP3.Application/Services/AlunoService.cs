@@ -45,10 +45,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<AlunoDTO>> AddAsync(AlunoCreateDTO alunoDto)
         {
-            var alunoExiste = await _repository.ExistsAsync(alunoDto.IdAluno);
+            var alunoExiste = await _repository.ExistsByNomeAsync(alunoDto.TxNome);
             if (alunoExiste)
             {
-                return Result<AlunoDTO>.Failure("Aluno já existe com este ID.");
+                return Result<AlunoDTO>.Failure("Aluno já existe com este exato nome.");
             }
             var aluno = _mapper.Map<Domain.Models.Aluno>(alunoDto);
             var addedAluno = await _repository.AddAsync(aluno);
@@ -58,13 +58,13 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<AlunoDTO>> UpdateAsync(AlunoUpdateDTO alunoDto)
         {
-            var alunoOriginal = await _repository.GetByIdAsync(alunoDto.IdAluno);
-            if (alunoOriginal == null)
+            var alunoOriginal = await _repository.ExistsByNomeAsync(alunoDto.TxNome);
+            if (!alunoOriginal)
             {
-                return Result<AlunoDTO>.Failure("Aluno não encontrado com este ID.");
+                return Result<AlunoDTO>.Failure("Aluno não encontrado com este nome.");
             }
-            _mapper.Map(alunoDto, alunoOriginal);
-            var updatedAluno = await _repository.UpdateAsync(alunoOriginal);
+            var aluno = _mapper.Map<Domain.Models.Aluno>(alunoDto);
+            var updatedAluno = await _repository.UpdateAsync(aluno);
             await _repository.SaveAllAsync();
             return Result<AlunoDTO>.Success(_mapper.Map<AlunoDTO>(updatedAluno));
         }

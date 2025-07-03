@@ -134,7 +134,7 @@ namespace ProjP3.Infra.Data.Repositories
 
         //public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
         //{
-            
+
         //    var jaExiste = await _context.Lecionas
         //        .AnyAsync(l => l.IdDisciplina == idDisciplina &&
         //                       l.IdProfessor == idProfessor &&
@@ -233,6 +233,12 @@ namespace ProjP3.Infra.Data.Repositories
         public void RemoverLeciona(Leciona leciona)
         {
             _context.Lecionas.Remove(leciona);
+        }
+
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
+        {
+            return await _context.Disciplinas
+                .AnyAsync(d => d.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
         }
     }
 }

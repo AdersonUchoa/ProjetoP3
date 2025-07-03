@@ -16,7 +16,7 @@ namespace ProjP3.Application.InterfaceServices
         Task<Result<ProfessorDTO>> AddAsync(ProfessorCreateDTO professor);
         Task<Result<ProfessorDTO>> UpdateAsync(ProfessorUpdateDTO professor);
         Task<Result<bool>> DeleteAsync(ulong id);
-        Task<Result<ProfessorDTO?>> GetProfessorByNomeAsync(string nome);
+        Task<Result<ProfessorDTO>> GetProfessoresByNomeAsync(string nome);
         Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(ulong idTitulo);
         Task<Result<TituloDTO>> GetTituloByProfessorAsync(ulong idProfessor);
         Task<Result<List<ProfessorDTO>>> GetProfessoresByDisciplinaAsync(ulong idDisciplina);

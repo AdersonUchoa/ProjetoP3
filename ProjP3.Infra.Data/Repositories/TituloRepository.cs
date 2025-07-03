@@ -21,5 +21,11 @@ namespace ProjP3.Infra.Data.Repositories
             return await _context.Titulos
                 .FirstOrDefaultAsync(t => t.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
         }
+
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
+        {
+            return await _context.Titulos
+                .AnyAsync(t => t.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }

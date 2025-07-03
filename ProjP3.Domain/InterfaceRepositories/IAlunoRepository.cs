@@ -10,6 +10,7 @@ namespace ProjP3.Domain.InterfaceRepositories
     public interface IAlunoRepository : IRepository<Aluno>
     {
         Task<Aluno?> GetAlunoByNomeAsync(string nome);
+        Task<bool> ExistsByNomeAsync(string nome);
         Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina);
     }
 }

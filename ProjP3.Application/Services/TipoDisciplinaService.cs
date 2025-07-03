@@ -43,10 +43,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TipoDisciplinaDTO>> AddAsync(TipoDisciplinaCreateDTO tipoDisciplinaDto)
         {
-            var tipoDisciplinaExiste = await _repository.ExistsAsync(tipoDisciplinaDto.IdTipoDisciplina);
+            var tipoDisciplinaExiste = await _repository.ExistsByDescricaoAsync(tipoDisciplinaDto.TxDescricao);
             if (tipoDisciplinaExiste)
             {
-                return Result<TipoDisciplinaDTO>.Failure("Tipo de disciplina já existente.");
+                return Result<TipoDisciplinaDTO>.Failure("Tipo de disciplina já existente com esta descrição.");
             }
 
             var tipoDisciplina = _mapper.Map<Domain.Models.TipoDisciplina>(tipoDisciplinaDto);
@@ -59,14 +59,14 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TipoDisciplinaDTO>> UpdateAsync(TipoDisciplinaUpdateDTO tipoDisciplinaDto)
         {
-            var tipoDisciplina = await _repository.GetByIdAsync(tipoDisciplinaDto.IdTipoDisciplina);
+            var tipoDisciplinaExiste = await _repository.ExistsByDescricaoAsync(tipoDisciplinaDto.TxDescricao);
 
-            if (tipoDisciplina == null)
+            if (!tipoDisciplinaExiste)
             {
-                return Result<TipoDisciplinaDTO>.Failure("Tipo de disciplina não encontrado para atualização.");
+                return Result<TipoDisciplinaDTO>.Failure("Tipo de disciplina não encontrado para atualização com esta descrição.");
             }
 
-            _mapper.Map(tipoDisciplinaDto, tipoDisciplina);
+            var tipoDisciplina = _mapper.Map<Domain.Models.TipoDisciplina>(tipoDisciplinaDto);
 
             var updatedTipoDisciplina = await _repository.UpdateAsync(tipoDisciplina);
 

@@ -12,8 +12,10 @@ namespace ProjP3.Domain.InterfaceRepositories
         Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
         Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso);
         Task<Curso?> GetCursoByDescricaoAsync(string descricao);
-        Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
-        Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
+        //Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
+        //Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
         Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idCurso);
+        Task<bool> ExistsByDescricaoAsync(string descricao);
+        Task<bool> JaExisteDisciplinaNoCurso(ulong idDisciplina, ulong idCurso);
     }
 }

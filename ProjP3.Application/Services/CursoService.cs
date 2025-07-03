@@ -18,13 +18,15 @@ namespace ProjP3.Application.Services
         private readonly IMapper _mapper;
         private readonly ITipoCursoRepository _tipoCursoRepository;
         private readonly IInstituicaoRepository _instituicaoRepository;
+        private readonly IDisciplinaRepository _disciplinaRepository;
 
-        public CursoService(ICursoRepository repository, IMapper mapper, ITipoCursoRepository tipoCursoRepository, IInstituicaoRepository instituicaoRepository)
+        public CursoService(ICursoRepository repository, IMapper mapper, ITipoCursoRepository tipoCursoRepository, IInstituicaoRepository instituicaoRepository, IDisciplinaRepository disciplinaRepository)
         {
             _repository = repository;
             _mapper = mapper;
             _tipoCursoRepository = tipoCursoRepository;
             _instituicaoRepository = instituicaoRepository;
+            _disciplinaRepository = disciplinaRepository;
         }
 
         public async Task<Result<List<CursoDTO>>> GetAllAsync()
@@ -47,10 +49,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<CursoDTO>> AddAsync(CursoCreateDTO cursoDto)
         {
-            var cursoExiste = await _repository.ExistsAsync(cursoDto.IdCurso);
+            var cursoExiste = await _repository.ExistsByDescricaoAsync(cursoDto.TxDescricao);
             if (cursoExiste)
             {
-                return Result<CursoDTO>.Failure("Curso já existe com este ID.");
+                return Result<CursoDTO>.Failure("Curso já existe com esta descrição.");
             }
             var curso = _mapper.Map<Domain.Models.Curso>(cursoDto);
             var addedCurso = await _repository.AddAsync(curso);
@@ -60,13 +62,13 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<CursoDTO>> UpdateAsync(CursoUpdateDTO cursoDto)
         {
-            var cursoOriginal = await _repository.GetByIdAsync(cursoDto.IdCurso);
-            if (cursoOriginal == null)
+            var cursoOriginal = await _repository.ExistsByDescricaoAsync(cursoDto.TxDescricao);
+            if (!cursoOriginal)
             {
-                return Result<CursoDTO>.Failure("Curso não encontrado com este ID.");
+                return Result<CursoDTO>.Failure("Curso não encontrado com esta descrição.");
             }
-            _mapper.Map(cursoDto, cursoOriginal);
-            var updatedCurso = _repository.UpdateAsync(cursoOriginal);
+            var curso = _mapper.Map<Domain.Models.Curso>(cursoDto);
+            var updatedCurso = _repository.UpdateAsync(curso);
             await _repository.SaveAllAsync();
             return Result<CursoDTO>.Success(_mapper.Map<CursoDTO>(updatedCurso));
         }
@@ -85,22 +87,51 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<CursoDTO>> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
         {
-            var curso = await _repository.AdicionarDisciplinaAoCursoAsync(idCurso, idDisciplina);
-            if (curso == null)
+            var curso = await _repository.GetByIdAsync(idCurso);
+            if(curso == null)
             {
-                return Result<CursoDTO>.Failure("Erro ao adicionar disciplina ao curso.");
+                return Result<CursoDTO>.Failure("Curso não encontrado com este ID.");
             }
-            return Result<CursoDTO>.Success(_mapper.Map<CursoDTO>(curso));
+            var disciplina = await _disciplinaRepository.GetByIdAsync(idDisciplina);
+            if(disciplina == null)
+            {
+                return Result<CursoDTO>.Failure("Disciplina não encontrada com este ID.");
+            }
+            var jaExisteDisciplina = await _repository.JaExisteDisciplinaNoCurso(idDisciplina, idCurso);
+            if(jaExisteDisciplina)
+            {
+                return Result<CursoDTO>.Failure("Disciplina já está associada a este curso.");
+            }
+            curso.Disciplinas.Add(disciplina);
+            await _repository.SaveAllAsync();
+            var cursoDto = _mapper.Map<CursoDTO>(curso);
+            return Result<CursoDTO>.Success(cursoDto);
         }
 
-        public async Task<Result<CursoDTO>> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina)
+        public async Task<Result<bool>> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina)
         {
-            var curso = await _repository.RemoverDisciplinaDoCursoAsync(idCurso, idDisciplina);
-            if (curso == null)
+            var disciplina = await _disciplinaRepository.GetByIdAsync(idDisciplina);
+            if (disciplina == null)
             {
-                return Result<CursoDTO>.Failure("Erro ao remover disciplina do curso.");
+                return Result<bool>.Failure("Disciplina não encontrada.");
             }
-            return Result<CursoDTO>.Success(_mapper.Map<CursoDTO>(curso));
+
+            if (disciplina.IdCurso != idCurso)
+            {
+                return Result<bool>.Failure("Esta disciplina não pertence ao curso informado.");
+            }
+
+            disciplina.IdCurso = null;
+
+            await _disciplinaRepository.UpdateAsync(disciplina);
+
+            var sucesso = await _repository.SaveAllAsync();
+            if (!sucesso)
+            {
+                return Result<bool>.Failure("Ocorreu um erro ao salvar a desassociação da disciplina.");
+            }
+
+            return Result<bool>.Success(true);
         }
 
         public async Task<Result<List<CursoDTO>>> GetCursosByTipoAsync(ulong idTipoCurso)

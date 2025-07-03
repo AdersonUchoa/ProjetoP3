@@ -21,5 +21,11 @@ namespace ProjP3.Infra.Data.Repositories
             return await _context.TipoCursos
                 .FirstOrDefaultAsync(tc => tc.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
         }
+
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
+        {
+            return await _context.TipoCursos
+                .AnyAsync(tc => tc.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }

@@ -22,5 +22,10 @@ namespace ProjP3.Infra.Data.Repositories
                 .FirstOrDefaultAsync(td => td.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
         }
 
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
+        {
+            return await _context.TipoDisciplinas
+                .AnyAsync(td => td.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+        }
     }
 }

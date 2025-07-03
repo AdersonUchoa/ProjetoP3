@@ -10,5 +10,6 @@ namespace ProjP3.Domain.InterfaceRepositories
     public interface ITipoDisciplinaRepository : IRepository<TipoDisciplina>
     {
         Task<TipoDisciplina?> GetTipoDisciplinaByDescricaoAsync(string descricao);
+        Task<bool> ExistsByDescricaoAsync(string descricao);
     }
 }

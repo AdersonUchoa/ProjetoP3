@@ -52,10 +52,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<DisciplinaDTO>> AddAsync(DisciplinaCreateDTO disciplinaDto)
         {
-            var disciplinaExiste = await _repository.ExistsAsync(disciplinaDto.IdDisciplina);
+            var disciplinaExiste = await _repository.ExistsByDescricaoAsync(disciplinaDto.TxDescricao);
             if (disciplinaExiste)
             {
-                return Result<DisciplinaDTO>.Failure("Disciplina já existe com este ID.");
+                return Result<DisciplinaDTO>.Failure("Disciplina já existe com esta descrição.");
             }
             var disciplina = _mapper.Map<Domain.Models.Disciplina>(disciplinaDto);
             var addedDisciplina = await _repository.AddAsync(disciplina);
@@ -65,13 +65,13 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<DisciplinaDTO>> UpdateAsync(DisciplinaUpdateDTO disciplinaDto)
         {
-            var disciplinaOriginal = await _repository.GetByIdAsync(disciplinaDto.IdDisciplina);
-            if (disciplinaOriginal == null)
+            var disciplinaOriginal = await _repository.ExistsByDescricaoAsync(disciplinaDto.TxDescricao);
+            if (!disciplinaOriginal)
             {
-                return Result<DisciplinaDTO>.Failure("Disciplina não encontrada com este ID.");
+                return Result<DisciplinaDTO>.Failure("Disciplina não encontrada com esta descrição.");
             }
-            _mapper.Map(disciplinaDto, disciplinaOriginal);
-            var updatedDisciplina = await _repository.UpdateAsync(disciplinaOriginal);
+            var disciplina = _mapper.Map<Domain.Models.Disciplina>(disciplinaDto);
+            var updatedDisciplina = await _repository.UpdateAsync(disciplina);
             await _repository.SaveAllAsync();
             return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(updatedDisciplina));
         }

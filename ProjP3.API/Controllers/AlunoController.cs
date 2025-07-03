@@ -9,7 +9,7 @@ namespace ProjP3.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AlunoController : Controller
+    public class AlunoController : ControllerBase
     {
         private readonly IAlunoService _service;
         public AlunoController(IAlunoService service)
@@ -71,7 +71,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Altera os dados de um aluno existente.</remarks>
         /// <returns>Aluno atualizado.</returns>
-        [HttpPut("{id}")]
+        [HttpPut]
         public async Task<IActionResult> Update(AlunoUpdateDTO alunoDto)
         {
             var result = await _service.UpdateAsync(alunoDto);

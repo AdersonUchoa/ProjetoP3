@@ -16,14 +16,11 @@ namespace ProjP3.Infra.Data.Repositories
         {
         }
 
-        public async Task<Professor?> GetProfessorByNomeAsync(string nome)
+        public async Task<Professor?> GetProfessoresByNomeAsync(string nome)
         {
-            var professor = await _context.Professors.FirstOrDefaultAsync(p => p.TxNome.Contains(nome, StringComparison.OrdinalIgnoreCase));
-            if (professor == null)
-            {
-                Console.WriteLine("Professor não encontrado.");
-            }
-            return professor;
+            return await _context.Professors
+                .Where(p => p.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase))
+                .FirstOrDefaultAsync();
         }
 
         public async Task<List<Professor>> GetProfessoresByTituloAsync(ulong idTitulo)
@@ -47,6 +44,11 @@ namespace ProjP3.Infra.Data.Repositories
                 .Where(l => l.IdDisciplina == idDisciplina)
                 .Select(l => l.IdProfessorNavigation)
                 .ToListAsync();
+        }
+
+        public async Task<bool> ExistsByNomeAsync(string nome)
+        {
+            return await _context.Professors.AnyAsync(p => p.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase));
         }
     }
 }

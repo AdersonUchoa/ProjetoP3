@@ -43,10 +43,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TituloDTO>> AddAsync(TituloCreateDTO tituloDto)
         {
-            var tituloExiste = await _repository.ExistsAsync(tituloDto.IdTitulo);
+            var tituloExiste = await _repository.ExistsByDescricaoAsync(tituloDto.TxDescricao);
             if (tituloExiste)
             {
-                return Result<TituloDTO>.Failure("Titulo já existe com este ID.");
+                return Result<TituloDTO>.Failure("Titulo já existe com esta descrição.");
             }
 
             var titulo = _mapper.Map<Domain.Models.Titulo>(tituloDto);
@@ -59,16 +59,16 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<TituloDTO>> UpdateAsync(TituloUpdateDTO tituloDto)
         {
-            var tituloOriginal = await _repository.GetByIdAsync(tituloDto.IdTitulo);
+            var tituloOriginal = await _repository.ExistsByDescricaoAsync(tituloDto.TxDescricao);
 
-            if (tituloOriginal == null)
+            if (!tituloOriginal)
             {
-                return Result<TituloDTO>.Failure("Titulo não encontrado.");
+                return Result<TituloDTO>.Failure("Titulo não encontrado com esta descrição.");
             }
 
-            _mapper.Map(tituloDto, tituloOriginal);
+            var titulo = _mapper.Map<Domain.Models.Titulo>(tituloDto);
 
-            var updatedTitulo = await _repository.UpdateAsync(tituloOriginal);
+            var updatedTitulo = await _repository.UpdateAsync(titulo);
 
             await _repository.SaveAllAsync();
 

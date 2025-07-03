@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.api\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.api\\controllers\\tipocursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\tipocursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.application\\interfaceservices\\itipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\itipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CursoController.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\CursoController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\CursoController.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\CursoController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\CursoController.cs",
+              "DocumentIndex": 1,
+              "Title": "ITipoCursoService.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T14:54:07.008Z",
+              "WhenOpened": "2025-07-03T18:50:48.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:51:53.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TipoCursoController.cs",
+              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwEgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:50:40.879Z",
               "EditorCaption": ""
             }
           ]

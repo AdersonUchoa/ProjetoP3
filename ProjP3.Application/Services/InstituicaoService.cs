@@ -45,10 +45,10 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<InstituicaoDTO>> AddAsync(InstituicaoCreateDTO instituicaoDto)
         {
-            var instituicaoExiste = await _repository.ExistsAsync(instituicaoDto.IdInstituicao);
+            var instituicaoExiste = await _repository.ExistsByDescricaoAsync(instituicaoDto.TxDescricao);
             if (instituicaoExiste)
             {
-                return Result<InstituicaoDTO>.Failure("Instituição já existe.");
+                return Result<InstituicaoDTO>.Failure("Instituição já existe com esta descrição.");
             }
             var instituicao = _mapper.Map<Domain.Models.Instituicao>(instituicaoDto);
             var addedInstituicao = await _repository.AddAsync(instituicao);
@@ -58,13 +58,13 @@ namespace ProjP3.Application.Services
 
         public async Task<Result<InstituicaoDTO>> UpdateAsync(InstituicaoUpdateDTO instituicaoDto)
         {
-            var instituicaoOriginal = await _repository.GetByIdAsync(instituicaoDto.IdInstituicao);
-            if (instituicaoOriginal == null)
+            var instituicaoOriginal = await _repository.ExistsByDescricaoAsync(instituicaoDto.TxDescricao);
+            if (!instituicaoOriginal)
             {
-                return Result<InstituicaoDTO>.Failure("Instituição não encontrada com este ID.");
+                return Result<InstituicaoDTO>.Failure("Instituição não encontrada com esta descrição.");
             }
-            _mapper.Map(instituicaoDto, instituicaoOriginal);
-            var updatedInstituicao = await _repository.UpdateAsync(instituicaoOriginal);
+            var instituicao = _mapper.Map<Domain.Models.Instituicao>(instituicaoDto);
+            var updatedInstituicao = await _repository.UpdateAsync(instituicao);
             await _repository.SaveAllAsync();
             return Result<InstituicaoDTO>.Success(_mapper.Map<InstituicaoDTO>(updatedInstituicao));
         }

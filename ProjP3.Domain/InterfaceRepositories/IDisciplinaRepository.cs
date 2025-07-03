@@ -28,5 +28,6 @@ namespace ProjP3.Domain.InterfaceRepositories
         void RemoverCursa(Cursa cursa);
         Task<Leciona?> GetLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo);
         void RemoverLeciona(Leciona leciona);
+        Task<bool> ExistsByDescricaoAsync(string descricao);
     }
 }

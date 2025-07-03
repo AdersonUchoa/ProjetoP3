@@ -44,46 +44,60 @@ namespace ProjP3.Infra.Data.Repositories
                 .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
         }
 
-        public async Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
+        //public async Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
+        //{
+        //    var curso = await _context.Cursos.FindAsync(idCurso);
+
+        //    if (curso == null)
+        //    {
+        //        throw new Exception("Curso não encontrado.");
+        //    }
+
+        //    var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
+
+        //    if (disciplina == null)
+        //    {
+        //        throw new Exception("Disciplina não encontrada.");
+        //    }
+
+        //    curso.Disciplinas.Add(disciplina);
+
+        //    return curso;
+        //}
+
+        //public async Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina)
+        //{
+        //    var curso = await _context.Cursos.FindAsync(idCurso);
+
+        //    if (curso == null)
+        //    {
+        //        throw new Exception("Curso não encontrado.");
+        //    }
+
+        //    var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
+
+        //    if (disciplina == null || !curso.Disciplinas.Contains(disciplina))
+        //    {
+        //        throw new Exception("Disciplina não encontrada.");
+        //    }
+
+        //    curso.Disciplinas.Remove(disciplina);
+
+        //    return curso;
+        //}
+
+        public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
-            var curso = await _context.Cursos.FindAsync(idCurso);
-
-            if (curso == null)
-            {
-                throw new Exception("Curso não encontrado.");
-            }
-
-            var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
-
-            if (disciplina == null)
-            {
-                throw new Exception("Disciplina não encontrada.");
-            }
-
-            curso.Disciplinas.Add(disciplina);
-            
-            return curso;
+            return await _context.Cursos
+                .AnyAsync(c => c.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
         }
 
-        public async Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina)
+        public async Task<bool> JaExisteDisciplinaNoCurso(ulong idDisciplina, ulong idCurso)
         {
-            var curso = await _context.Cursos.FindAsync(idCurso);
-
-            if (curso == null)
-            {
-                throw new Exception("Curso não encontrado.");
-            }
-
-            var disciplina = await _context.Disciplinas.FindAsync(idDisciplina);
-
-            if (disciplina == null || !curso.Disciplinas.Contains(disciplina))
-            {
-                throw new Exception("Disciplina não encontrada.");
-            }
-
-            curso.Disciplinas.Remove(disciplina);
-
-            return curso;
+            return await _context.Cursos
+                .Where(c => c.IdCurso == idCurso)
+                .SelectMany(c => c.Disciplinas)
+                .AnyAsync(d => d.IdDisciplina == idDisciplina);
         }
     }
 }
