@@ -6,6 +6,8 @@ using System.Net;
 
 namespace ProjP3.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class DisciplinaController : ControllerBase
     {
         private readonly IDisciplinaService _service;

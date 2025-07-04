@@ -6,6 +6,8 @@ using System.Net;
 
 namespace ProjP3.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class InstituicaoController : ControllerBase
     {
         private readonly IInstituicaoService _service;

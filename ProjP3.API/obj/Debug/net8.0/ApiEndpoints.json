@@ -1,0 +1,1140 @@
+[
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "GetAll",
+    "RelativePath": "Aluno",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "Add",
+    "RelativePath": "Aluno",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alunoDto",
+        "Type": "ProjP3.Application.DTOs.Request.AlunoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "Update",
+    "RelativePath": "Aluno",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alunoDto",
+        "Type": "ProjP3.Application.DTOs.Request.AlunoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "GetById",
+    "RelativePath": "Aluno/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "Delete",
+    "RelativePath": "Aluno/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "GetAlunosByDisciplina",
+    "RelativePath": "Aluno/disciplina/{idDisciplina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.AlunoController",
+    "Method": "GetAlunoByNome",
+    "RelativePath": "Aluno/nome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetAll",
+    "RelativePath": "Curso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "Add",
+    "RelativePath": "Curso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cursoDto",
+        "Type": "ProjP3.Application.DTOs.Request.CursoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "Update",
+    "RelativePath": "Curso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cursoDto",
+        "Type": "ProjP3.Application.DTOs.Request.CursoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetById",
+    "RelativePath": "Curso/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "Delete",
+    "RelativePath": "Curso/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "AdicionarDisciplinaAoCurso",
+    "RelativePath": "Curso/{idCurso}/disciplinas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "RemoverDisciplinaDoCurso",
+    "RelativePath": "Curso/{idCurso}/disciplinas/{idDisciplina}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetCursosByInstituicao",
+    "RelativePath": "Curso/instituicao/{idInstituicao}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idInstituicao",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetCursoByDescricao",
+    "RelativePath": "Curso/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetCursosByTipo",
+    "RelativePath": "Curso/tipo/{idTipoCurso}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTipoCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.CursoController",
+    "Method": "GetTipoByCurso",
+    "RelativePath": "Curso/tipo/curso/{idCurso}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetAll",
+    "RelativePath": "Disciplina",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "Add",
+    "RelativePath": "Disciplina",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disciplinaDto",
+        "Type": "ProjP3.Application.DTOs.Request.DisciplinaCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "Update",
+    "RelativePath": "Disciplina",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disciplinaDto",
+        "Type": "ProjP3.Application.DTOs.Request.DisciplinaUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetById",
+    "RelativePath": "Disciplina/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "Delete",
+    "RelativePath": "Disciplina/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "AdicionarAlunoADisciplina",
+    "RelativePath": "Disciplina/adicionar-aluno/{idDisciplina}/{idAluno}/{periodo}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idAluno",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "periodo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "AdicionarProfessorADisciplina",
+    "RelativePath": "Disciplina/adicionar-professor/{idDisciplina}/{idProfessor}/{periodo}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProfessor",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "periodo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByAluno",
+    "RelativePath": "Disciplina/aluno/{idAluno}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAluno",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByCargaHoraria",
+    "RelativePath": "Disciplina/carga-horaria/{cargaHoraria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cargaHoraria",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByCurso",
+    "RelativePath": "Disciplina/curso/{idCurso}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByDescricao",
+    "RelativePath": "Disciplina/descricao/{descricao}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByPeriodo",
+    "RelativePath": "Disciplina/periodo/{periodo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "periodo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByProfessor",
+    "RelativePath": "Disciplina/professor/{idProfessor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProfessor",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "RemoverAlunoDaDisciplina",
+    "RelativePath": "Disciplina/remover-aluno/{idDisciplina}/{idAluno}/{periodo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idAluno",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "periodo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "RemoverProfessorDaDisciplina",
+    "RelativePath": "Disciplina/remover-professor/{idDisciplina}/{idProfessor}/{periodo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProfessor",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      },
+      {
+        "Name": "periodo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasBySigla",
+    "RelativePath": "Disciplina/sigla/{sigla}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sigla",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetDisciplinasByTipo",
+    "RelativePath": "Disciplina/tipo/{idTipoDisciplina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTipoDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetTipoByDisciplina",
+    "RelativePath": "Disciplina/tipo/disciplinas/{idDisciplina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "GetAll",
+    "RelativePath": "Instituicao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "Add",
+    "RelativePath": "Instituicao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instituicao",
+        "Type": "ProjP3.Application.DTOs.Request.InstituicaoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "Update",
+    "RelativePath": "Instituicao",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "instituicao",
+        "Type": "ProjP3.Application.DTOs.Request.InstituicaoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "GetById",
+    "RelativePath": "Instituicao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "Delete",
+    "RelativePath": "Instituicao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "GetInstituicoesByCurso",
+    "RelativePath": "Instituicao/curso/{idCurso}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCurso",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "GetInstituicaoByDescricao",
+    "RelativePath": "Instituicao/descricao/{descricao}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
+    "Method": "GetInstituicaoBySigla",
+    "RelativePath": "Instituicao/sigla/{sigla}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sigla",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetAll",
+    "RelativePath": "Professor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "Add",
+    "RelativePath": "Professor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "professor",
+        "Type": "ProjP3.Application.DTOs.Request.ProfessorCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "Update",
+    "RelativePath": "Professor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "professor",
+        "Type": "ProjP3.Application.DTOs.Request.ProfessorUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "Delete",
+    "RelativePath": "Professor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetById",
+    "RelativePath": "Professor/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetProfessoresByDisciplina",
+    "RelativePath": "Professor/disciplina/{idDisciplina}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDisciplina",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetProfessoresByNome",
+    "RelativePath": "Professor/nome",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nome",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetProfessoresByTitulo",
+    "RelativePath": "Professor/titulo/{idTitulo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTitulo",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.ProfessorController",
+    "Method": "GetTituloByProfessor",
+    "RelativePath": "Professor/titulo/professor/{idProfessor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProfessor",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "GetAllAsync",
+    "RelativePath": "TipoCurso",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "Add",
+    "RelativePath": "TipoCurso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoCursoDto",
+        "Type": "ProjP3.Application.DTOs.Request.TipoCursoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "Update",
+    "RelativePath": "TipoCurso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoCursoDto",
+        "Type": "ProjP3.Application.DTOs.Request.TipoCursoUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "TipoCurso/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "Delete",
+    "RelativePath": "TipoCurso/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
+    "Method": "GetTipoCursoByDescricaoAsync",
+    "RelativePath": "TipoCurso/descricao/{descricao}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "GetAllAsync",
+    "RelativePath": "TipoDisciplina",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "Add",
+    "RelativePath": "TipoDisciplina",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoDisciplinaDto",
+        "Type": "ProjP3.Application.DTOs.Request.TipoDisciplinaCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "Update",
+    "RelativePath": "TipoDisciplina",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoDisciplinaDto",
+        "Type": "ProjP3.Application.DTOs.Request.TipoDisciplinaUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "TipoDisciplina/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "Delete",
+    "RelativePath": "TipoDisciplina/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
+    "Method": "GetTipoDisciplinaByDescricaoAsync",
+    "RelativePath": "TipoDisciplina/descricao/{descricao}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "GetAllAsync",
+    "RelativePath": "Titulo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "Add",
+    "RelativePath": "Titulo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tituloDto",
+        "Type": "ProjP3.Application.DTOs.Request.TituloCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "Update",
+    "RelativePath": "Titulo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tituloDto",
+        "Type": "ProjP3.Application.DTOs.Request.TituloUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "GetTituloByDescricaoAsync",
+    "RelativePath": "Titulo",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "GetByIdAsync",
+    "RelativePath": "Titulo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.TituloController",
+    "Method": "Delete",
+    "RelativePath": "Titulo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.UInt64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

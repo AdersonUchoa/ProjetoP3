@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjP3.API</name>
+    </assembly>
+    <members>
+        <member name="M:ProjP3.API.Controllers.AlunoController.GetAll">
+            <summary>
+            Rota para buscar todos os alunos.
+            </summary>
+            <remarks>Retorna todos os alunos cadastrados no sistema.</remarks>
+            <returns>Lista de alunos</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.GetById(System.UInt64)">
+            <summary>
+            Rota para buscar um aluno pelo ID.
+            </summary>
+            <remarks>Retorna um aluno específico com base no ID fornecido.</remarks>
+            <returns>Aluno obtido por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.Add(ProjP3.Application.DTOs.Request.AlunoCreateDTO)">
+            <summary>
+            Rota para adicionar um novo aluno.
+            </summary>
+            <remarks>Adiciona um novo aluno ao sistema.</remarks>
+            <returns>Novo aluno adicionado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.Update(ProjP3.Application.DTOs.Request.AlunoUpdateDTO)">
+            <summary>
+            Rota para alterar um aluno específico pelo ID.
+            </summary>
+            <remarks>Altera os dados de um aluno existente.</remarks>
+            <returns>Aluno atualizado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um aluno pelo ID.
+            </summary>
+            <remarks>Deleta os dados de um aluno existente.</remarks>
+            <returns>Confirmação de exclusão.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.GetAlunoByNome(System.String)">
+            <summary>
+            Rota para buscar um aluno pelo nome.
+            </summary>
+            <remarks>Retorna um aluno obtido pelo nome</remarks>
+            <returns>Aluno obtido por nome</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.AlunoController.GetAlunosByDisciplina(System.UInt64)">
+            <summary>
+            Rota para buscar alunos por disciplina.
+            </summary>
+            <remarks>Retorna uma lista de alunos que estão matriculados em uma disciplina específica.</remarks>
+            <returns>Lista de alunos matriculados na disciplina</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetAll">
+            <summary>
+            Rota para buscar todos os cursos.
+            </summary>
+            <remarks>Retorna todos os cursos cadastrados no sistema.</remarks>
+            <returns>Lista de cursos</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetById(System.UInt64)">
+            <summary>
+            Rota para buscar um curso pelo ID.
+            </summary>
+            <remarks>Retorna um curso específico com base no ID fornecido.</remarks>
+            <returns>Curso obtido por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.Add(ProjP3.Application.DTOs.Request.CursoCreateDTO)">
+            <summary>
+            Rota para adicionar um novo curso.
+            </summary>
+            <remarks>Adiciona um novo curso ao sistema.</remarks>
+            <returns>Novo curso adicionado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.Update(ProjP3.Application.DTOs.Request.CursoUpdateDTO)">
+            <summary>
+            Rota para atualizar um curso existente.
+            </summary>
+            <remarks>Atualiza as informações de um curso existente no sistema.</remarks>
+            <returns>Curso atualizado</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um curso pelo ID.
+            </summary>
+            <remarks>Deleta os dados de um curso</remarks>
+            <returns>Confirmação de exclusão</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.AdicionarDisciplinaAoCurso(System.UInt64,System.UInt64)">
+            <summary>
+            Rota para associar uma disciplina existente a um curso.
+            </summary>
+            <remarks>Associa uma disciplina a um curso</remarks>
+            <returns>Confirmação de associação</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.RemoverDisciplinaDoCurso(System.UInt64,System.UInt64)">
+            <summary>
+            Rota para remover uma disciplina de um curso.
+            </summary>
+            <remarks>Desassocia uma disciplina de um curso</remarks>
+            <returns>Confirmação de remoção</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetCursosByTipo(System.UInt64)">
+            <summary>
+            Rota para buscar todos os cursos de um tipo específico.
+            </summary>
+            <remarks>Retorna todos os cursos de um tipo específico.</remarks>
+            <returns>Lista de cursos de um tipo específico</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetTipoByCurso(System.UInt64)">
+            <summary>
+            Rota para buscar o tipo de curso associado a um curso específico.
+            </summary>
+            <remarks>Retorna o tipo de curso de um curso específico</remarks>
+            <returns>Tipo de curso associado</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetCursoByDescricao(System.String)">
+            <summary>
+            Rota para buscar um curso pela descrição.
+            </summary>
+            <remarks>Retorna um curso específico com base na descrição fornecida.</remarks>
+            <returns>Curso pela descrição</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.CursoController.GetCursosByInstituicao(System.UInt64)">
+            <summary>
+            Rota para buscar todos os cursos de uma instituição específica.
+            </summary>
+            <remarks>Retorna os cursos de uma instituição</remarks>
+            <returns>Cursos de uma instituição</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetAll">
+            <summary>
+            Rota para buscar todas as disciplinas.
+            </summary>
+            <remarks>Retorna todas as disciplinas cadastradas no sistema</remarks>
+            <returns>Lista de disciplinas</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetById(System.UInt64)">
+            <summary>
+            Rota para buscar uma disciplina pelo ID.
+            </summary>
+            <remarks>Retorna uma disciplina específica com base no ID fornecido</remarks>
+            <returns>Disciplina obtida por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.Add(ProjP3.Application.DTOs.Request.DisciplinaCreateDTO)">
+            <summary>
+            Rota para adicionar uma nova disciplina.
+            </summary>
+            <remarks>Adiciona uma nova disciplina ao sistema</remarks>
+            <returns>Nova disciplina adicionada</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.Update(ProjP3.Application.DTOs.Request.DisciplinaUpdateDTO)">
+            <summary>
+            Rota para atualizar uma disciplina existente.
+            </summary>
+            <remarks>Atualiza as informações de uma disciplina existente no sistema.</remarks>
+            <returns>Disciplina atualizado</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir uma disciplina pelo ID.
+            </summary>
+            <remarks>Deleta os dados de uma disciplina</remarks>
+            <returns>Confirmação de exclusão</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByAluno(System.UInt64)">
+            <summary>
+            Rota para buscar todas as disciplinas de um aluno específico.
+            </summary>
+            <remarks>Retorna as disciplinas de um aluno</remarks>
+            <returns>Lista de disciplinas de um aluno.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByTipo(System.UInt64)">
+            <summary>
+            Rota para buscar disciplinas por tipo.
+            </summary>
+            <remarks>Retorna as disciplinas de um tipo específico</remarks>
+            <returns>Lista de disciplinas filtradas por tipo.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetTipoByDisciplina(System.UInt64)">
+            <summary>
+            Rota para buscar um tipo de disciplina.
+            </summary>
+            <remarks>Retorna o tipo de uma disciplina específico</remarks>
+            <returns>Tipo de uma disciplina</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByPeriodo(System.Int32)">
+            <summary>
+            Rota para buscar disciplinas por período.
+            </summary>
+            <remarks>Retorna todas as disciplinas de um período específico.</remarks>
+            <returns>Lista de disciplinas de um período.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByCargaHoraria(System.Int32)">
+            <summary>
+            Rota para buscar disciplinas por carga horária.
+            </summary>
+            <remarks>Retorna todas as disciplinas com uma carga horária específica.</remarks>
+            <returns>Lista de disciplinas por carga horária.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasBySigla(System.String)">
+            <summary>
+            Rota para buscar disciplinas por sigla.
+            </summary>
+            <remarks>Retorna todas as disciplinas com uma sígla específica.</remarks>
+            <returns>Lista de disciplinas por sigla.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByDescricao(System.String)">
+            <summary>
+            Rota para buscar disciplinas por descrição.
+            </summary>
+            <remarks>Retorna todas as disciplinas com uma descrição específica.</remarks>
+            <returns>Lista de disciplinas por descrição.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.AdicionarAlunoADisciplina(System.UInt64,System.UInt64,System.Int32)">
+            <summary>
+            Rota para adicionar um aluno a uma disciplina.
+            </summary>
+            <remarks>Associa um aluno a uma disciplina.</remarks>
+            <returns>Confirmação de associação.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.RemoverAlunoDaDisciplina(System.UInt64,System.UInt64,System.Int32)">
+            <summary>
+            Rota para remover um aluno de uma disciplina.
+            </summary>
+            <remarks>Remove a associação de um aluno a uma disciplina.</remarks>
+            <returns>Confirmação de remoção.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.AdicionarProfessorADisciplina(System.UInt64,System.UInt64,System.Int32)">
+            <summary>
+            Rota para adicionar um professor a uma disciplina.
+            </summary>
+            <remarks>Associa um professor a uma disciplina.</remarks>
+            <returns>Confirmação de associação.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.RemoverProfessorDaDisciplina(System.UInt64,System.UInt64,System.Int32)">
+            <summary>
+            Rota para remover um professor de uma disciplina.
+            </summary>
+            <remarks>Remove a associação de um professor a uma disciplina.</remarks>
+            <returns>Confirmação de remoção.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByProfessor(System.UInt64)">
+            <summary>
+            Rota para buscar disciplinas de um professor específico.
+            </summary>
+            <remarks>Obtém as disciplinas que um professor leciona.</remarks>
+            <returns>Lista de disciplinas por professor.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetDisciplinasByCurso(System.UInt64)">
+            <summary>
+            Rota para buscar disciplinas de um curso específico.
+            </summary>
+            <remarks>Obtém todas as disciplinas pertencentes a um curso.</remarks>
+            <returns>Lista de disciplinas por curso.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.GetAll">
+            <summary>
+            Rota para obter todas as instituições.
+            </summary>
+            <remarks>Obtém todas as instituições cadastradas no sistema.</remarks>
+            <returns>Lista de instituições.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.GetById(System.UInt64)">
+            <summary>
+            Rota para obter uma instituição por ID.
+            </summary>
+            <remarks>Obtém uma instituição específica pelo ID.</remarks>
+            <returns>Instituição obtida por ID.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.Add(ProjP3.Application.DTOs.Request.InstituicaoCreateDTO)">
+            <summary>
+            Rota para adicionar uma nova instituição.
+            </summary>
+            <remarks>Adiciona uma nova instituição ao sistema.</remarks>
+            <returns>Instituição criada com sucesso.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.Update(ProjP3.Application.DTOs.Request.InstituicaoUpdateDTO)">
+            <summary>
+            Rota para atualizar uma instituição.
+            </summary>
+            <remarks>Atualiza uma instituição no sistema.</remarks>
+            <returns>Instituição atualizada com sucesso.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.Delete(System.UInt64)">
+            <summary>
+            Rota para deletar uma instituição.
+            </summary>
+            <remarks>Remove uma instituição do sistema.</remarks>
+            <returns>Confirmação de remoção.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.GetInstituicaoBySigla(System.String)">
+            <summary>
+            Rota para obter instituições por sigla.
+            </summary>
+            <remarks>Obtém a instituição que possui uma sigla específica.</remarks>
+            <returns>Instituição encontrada pela sigla.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.GetInstituicaoByDescricao(System.String)">
+            <summary>
+            Rota para obter instituições por descrição.
+            </summary>
+            <remarks>Obtém a instituição que possui uma sigla específica</remarks>
+            <returns>Instituição encontrada pela descrição</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.InstituicaoController.GetInstituicoesByCurso(System.UInt64)">
+            <summary>
+            Rota para obter instituições por curso.
+            </summary>
+            <remarks>Obtém a instituição possuídora de um curso específico</remarks>
+            <returns>Instituição obtida pelo curso</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetAll">
+            <summary>
+            Rota para obter todos os professores cadastrados.
+            </summary>
+            <remarks>Obtém todos os professores cadastrados no sistema.</remarks>
+            <returns>Lista de professores.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetById(System.UInt64)">
+            <summary>
+            Rota para obter um professor pelo ID.
+            </summary>
+            <remarks>Obtém um professor específico pelo ID.</remarks>
+            <returns>Professor obtido por ID.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.Add(ProjP3.Application.DTOs.Request.ProfessorCreateDTO)">
+            <summary>
+            Rota para adicionar um novo professor.
+            </summary>
+            <remarks>Adiciona um novo professor ao sistema.</remarks>
+            <returns>Professor adicionado com sucesso.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.Update(ProjP3.Application.DTOs.Request.ProfessorUpdateDTO)">
+            <summary>
+            Rota para alterar um professor.
+            </summary>
+            <remarks>Atualiza as informações de um professor cadastrado no sistema.</remarks>
+            <returns>Professor atualizado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um professor.
+            </summary>
+            <remarks>Exclui os dados de um professor do sistema.</remarks>
+            <returns>Confirmação de exclusão.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetProfessoresByNome(System.String)">
+            <summary>
+            Rota para obter um professor pelo nome.
+            </summary>
+            <remarks>Obtém um professor específico pelo nome.</remarks>
+            <returns>Professor obtido pelo nome.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetProfessoresByTitulo(System.UInt64)">
+            <summary>
+            Rota para obter os professores possuídores de determinado título.
+            </summary>
+            <remarks>Obtém os professores que possuem um título específico.</remarks>
+            <returns>Lista de professores pelo título.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetTituloByProfessor(System.UInt64)">
+            <summary>
+            Rota para obter o título de um professor específico.
+            </summary>
+            <remarks>Obtém o título de um determinado professor.</remarks>
+            <returns>Título obtido pelo professor.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.ProfessorController.GetProfessoresByDisciplina(System.UInt64)">
+            <summary>
+            Rota para obter os professores que lecionam uma disciplina específica.
+            </summary>
+            <remarks>Obtém os professores associados a uma disciplina específica.</remarks>
+            <returns>Lista de professores por disciplina.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.GetAllAsync">
+            <summary>
+            Rota para buscar todos os tipos de curso.
+            </summary>
+            <remarks>Obtém todos os tipos de curso cadastrados no sistema</remarks>
+            <returns>Lista de tipos de curso</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.GetByIdAsync(System.UInt64)">
+            <summary>
+            Rota para buscar um tipo de curso pelo ID.
+            </summary>
+            <remarks>Retorna um tipo de curso específico com base no ID fornecido.</remarks>
+            <returns>Tipo de curso obtido por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.Add(ProjP3.Application.DTOs.Request.TipoCursoCreateDTO)">
+            <summary>
+            Rota para adicionar um novo tipo de curso.
+            </summary>
+            <remarks>Adiciona um novo tipo de curso ao sistema.</remarks>
+            <returns>Novo tipo de curso adicionado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.Update(ProjP3.Application.DTOs.Request.TipoCursoUpdateDTO)">
+            <summary>
+            Rota para alterar um tipo de curso específico pelo ID.
+            </summary>
+            <remarks>Altera os dados de um tipo de curso existente.</remarks>
+            <returns>Tipo de curso atualizado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um tipo de curso pelo ID.
+            </summary>
+            <remarks>Deleta os dados de um tipo de curso existente.</remarks>
+            <returns>Confirmação de exclusão.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoCursoController.GetTipoCursoByDescricaoAsync(System.String)">
+            <summary>
+            Rota para buscar tipos de curso por descrição.
+            </summary>
+            <remarks>Retorna um tipo de curso que corresponde à descrição fornecida.</remarks>
+            <returns>Tipo de curso pela descrição</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.GetAllAsync">
+            <summary>
+            Rota para buscar todos os tipos de disciplina.
+            </summary>
+            <remarks>Obtém todos os tipos de disciplina cadastrados no sistema</remarks>
+            <returns>Lista de tipos de disciplina</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.GetByIdAsync(System.UInt64)">
+            <summary>
+            Rota para buscar um tipo de disciplina pelo ID.
+            </summary>
+            <remarks>Retorna um tipo de disciplina específico com base no ID fornecido.</remarks>
+            <returns>Tipo de disciplina obtido por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.Add(ProjP3.Application.DTOs.Request.TipoDisciplinaCreateDTO)">
+            <summary>
+            Rota para adicionar um novo tipo de disciplina.
+            </summary>
+            <remarks>Adiciona um novo tipo de disciplina ao sistema.</remarks>
+            <returns>Novo tipo de disciplina adicionado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.Update(ProjP3.Application.DTOs.Request.TipoDisciplinaUpdateDTO)">
+            <summary>
+            Rota para alterar um tipo de disciplina específico pelo ID.
+            </summary>
+            <remarks>Altera os dados de um tipo de disciplina existente.</remarks>
+            <returns>Tipo de disciplina atualizado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um tipo de disciplina pelo ID.
+            </summary>
+            <remarks>Deleta os dados de um tipo de disciplina existente.</remarks>
+            <returns>Confirmação de exclusão.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TipoDisciplinaController.GetTipoDisciplinaByDescricaoAsync(System.String)">
+            <summary>
+            Rota para buscar tipos de disciplina por descrição.
+            </summary>
+            <remarks>Retorna um tipo de disciplina que corresponde à descrição fornecida.</remarks>
+            <returns>Tipo de disciplina pela descrição.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.GetAllAsync">
+            <summary>
+            Rota para buscar todos os títulos.
+            </summary>
+            <remarks>Obtém todos os títulos cadastrados no sistema</remarks>
+            <returns>Lista de títulos</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.GetByIdAsync(System.UInt64)">
+            <summary>
+            Rota para buscar um título pelo ID.
+            </summary>
+            <remarks>Retorna um título específico com base no ID fornecido.</remarks>
+            <returns>Título obtido por ID</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.Add(ProjP3.Application.DTOs.Request.TituloCreateDTO)">
+            <summary>
+            Rota para adicionar um novo título.
+            </summary>
+            <remarks>Adiciona um novo título ao sistema.</remarks>
+            <returns>Novo título adicionado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.Update(ProjP3.Application.DTOs.Request.TituloUpdateDTO)">
+            <summary>
+            Rota para alterar um título específico pelo ID.
+            </summary>
+            <remarks>Altera os dados de um título existente.</remarks>
+            <returns>Título atualizado.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.Delete(System.UInt64)">
+            <summary>
+            Rota para excluir um título pelo ID.
+            </summary>
+            <remarks>Deleta os dados de um título existente.</remarks>
+            <returns>Confirmação de exclusão.</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.TituloController.GetTituloByDescricaoAsync(System.String)">
+            <summary>
+            Rota para buscar títulos por descrição.
+            </summary>
+            <remarks>Retorna um título que corresponde à descrição fornecida.</remarks>
+            <returns>Título pela descrição.</returns>
+        </member>
+    </members>
+</doc>

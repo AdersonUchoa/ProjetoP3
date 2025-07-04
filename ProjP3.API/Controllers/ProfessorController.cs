@@ -6,6 +6,8 @@ using System.Net;
 
 namespace ProjP3.API.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class ProfessorController : ControllerBase
     {
         private readonly IProfessorService _professorService;
@@ -112,7 +114,7 @@ namespace ProjP3.API.Controllers
                 var response = new ApiResponse<string>(false, HttpStatusCode.NotFound, "", result.Error!, "");
                 return NotFound(response);
             }
-            var successResponse = new ApiResponse<List<ProfessorDTO>>(true, HttpStatusCode.OK, result.Value!, "Professores encontrados com sucesso.", "");
+            var successResponse = new ApiResponse<ProfessorDTO>(true, HttpStatusCode.OK, result.Value!, "Professores encontrados com sucesso.", "");
             return Ok(successResponse);
         }
 

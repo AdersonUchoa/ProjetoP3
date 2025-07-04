@@ -123,3 +123,13 @@ C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debu
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\obj\Debug\net8.0\ProjP3.API.sourcelink.json
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\bin\Debug\net8.0\ProjP3.API.xml
+C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.API\obj\Debug\net8.0\ProjP3.API.xml

@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.application\\interfaceservices\\iprofessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\iprofessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.api\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\aderson.uchoa\\desktop\\aderson\\projeto\\projp3\\projp3\\projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,49 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfessorController.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\ProfessorController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\ProfessorController.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\ProfessorController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\ProfessorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:21:04.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DisciplinaController.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwBoAAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:05:17.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IProfessorService.cs",
-              "DocumentMoniker": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
-              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
-              "ToolTip": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
-              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:21:08.046Z",
-              "EditorCaption": ""
             }
           ]
         }
