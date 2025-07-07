@@ -106,7 +106,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém a instituição que possui uma sigla específica.</remarks>
         /// <returns>Instituição encontrada pela sigla.</returns>
-        [HttpGet("sigla/{sigla}")]
+        [HttpGet("siglas/{sigla}")]
         public async Task<IActionResult> GetInstituicaoBySigla(string sigla)
         {
             var result = await _service.GetInstituicaoBySiglaAsync(sigla);
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém a instituição que possui uma sigla específica</remarks>
         /// <returns>Instituição encontrada pela descrição</returns>
-        [HttpGet("descricao/{descricao}")]
+        [HttpGet("descricoes/{descricao}")]
         public async Task<IActionResult> GetInstituicaoByDescricao(string descricao)
         {
             var result = await _service.GetInstituicaoByDescricaoAsync(descricao);
@@ -142,7 +142,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém a instituição possuídora de um curso específico</remarks>
         /// <returns>Instituição obtida pelo curso</returns>
-        [HttpGet("curso/{idCurso}")]
+        [HttpGet("cursos/{idCurso}")]
         public async Task<IActionResult> GetInstituicoesByCurso(ulong idCurso)
         {
             var result = await _service.GetInstituicoesByCursoAsync(idCurso);

@@ -105,6 +105,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna um título que corresponde à descrição fornecida.</remarks>
         /// <returns>Título pela descrição.</returns>
+        [HttpGet("descricoes/{descricao}")]
         public async Task<IActionResult> GetTituloByDescricaoAsync(string descricao)
         {
             var result = await _tituloService.GetTituloByDescricaoAsync(descricao);

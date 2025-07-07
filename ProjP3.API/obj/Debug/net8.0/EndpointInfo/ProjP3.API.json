@@ -1,0 +1,2106 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Projeto P3 API",
+    "description": "API para o projeto da disciplina de Programação 3.",
+    "contact": {
+      "name": "Aderson Uchoa",
+      "email": "aderson.filho027@academico.ifs.edu.br"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/Aluno": {
+      "get": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para buscar todos os alunos.",
+        "description": "Retorna todos os alunos cadastrados no sistema.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para adicionar um novo aluno.",
+        "description": "Adiciona um novo aluno ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para alterar um aluno específico pelo ID.",
+        "description": "Altera os dados de um aluno existente.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlunoUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Aluno/{id}": {
+      "get": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para buscar um aluno pelo ID.",
+        "description": "Retorna um aluno específico com base no ID fornecido.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para excluir um aluno pelo ID.",
+        "description": "Deleta os dados de um aluno existente.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Aluno/nomes": {
+      "get": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para buscar um aluno pelo nome.",
+        "description": "Retorna um aluno obtido pelo nome",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Aluno/disciplinas/{idDisciplina}": {
+      "get": {
+        "tags": [
+          "Aluno"
+        ],
+        "summary": "Rota para buscar alunos por disciplina.",
+        "description": "Retorna uma lista de alunos que estão matriculados em uma disciplina específica.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar todos os cursos.",
+        "description": "Retorna todos os cursos cadastrados no sistema.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para adicionar um novo curso.",
+        "description": "Adiciona um novo curso ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para atualizar um curso existente.",
+        "description": "Atualiza as informações de um curso existente no sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CursoUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/{id}": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar um curso pelo ID.",
+        "description": "Retorna um curso específico com base no ID fornecido.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para excluir um curso pelo ID.",
+        "description": "Deleta os dados de um curso",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/{idCurso}/disciplinas": {
+      "post": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para associar uma disciplina existente a um curso.",
+        "description": "Associa uma disciplina a um curso",
+        "parameters": [
+          {
+            "name": "idCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idDisciplina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/{idCurso}/disciplinas/{idDisciplina}": {
+      "delete": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para remover uma disciplina de um curso.",
+        "description": "Desassocia uma disciplina de um curso",
+        "parameters": [
+          {
+            "name": "idCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/tipos/{idTipoCurso}": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar todos os cursos de um tipo específico.",
+        "description": "Retorna todos os cursos de um tipo específico.",
+        "parameters": [
+          {
+            "name": "idTipoCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/{idCurso}/tipos": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar o tipo de curso associado a um curso específico.",
+        "description": "Retorna o tipo de curso de um curso específico",
+        "parameters": [
+          {
+            "name": "idCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/search": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar um curso pela descrição.",
+        "description": "Retorna um curso específico com base na descrição fornecida.",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Curso/instituicoes/{idInstituicao}": {
+      "get": {
+        "tags": [
+          "Curso"
+        ],
+        "summary": "Rota para buscar todos os cursos de uma instituição específica.",
+        "description": "Retorna os cursos de uma instituição",
+        "parameters": [
+          {
+            "name": "idInstituicao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar todas as disciplinas.",
+        "description": "Retorna todas as disciplinas cadastradas no sistema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para adicionar uma nova disciplina.",
+        "description": "Adiciona uma nova disciplina ao sistema",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para atualizar uma disciplina existente.",
+        "description": "Atualiza as informações de uma disciplina existente no sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplinaUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/{id}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar uma disciplina pelo ID.",
+        "description": "Retorna uma disciplina específica com base no ID fornecido",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para excluir uma disciplina pelo ID.",
+        "description": "Deleta os dados de uma disciplina",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/alunos/{idAluno}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar todas as disciplinas de um aluno específico.",
+        "description": "Retorna as disciplinas de um aluno",
+        "parameters": [
+          {
+            "name": "idAluno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/tipos/{idTipoDisciplina}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas por tipo.",
+        "description": "Retorna as disciplinas de um tipo específico",
+        "parameters": [
+          {
+            "name": "idTipoDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/{idDisciplina}/tipos": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar um tipo de disciplina.",
+        "description": "Retorna o tipo de uma disciplina específico",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/periodos/{periodo}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas por período.",
+        "description": "Retorna todas as disciplinas de um período específico.",
+        "parameters": [
+          {
+            "name": "periodo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/cargas-horarias/{cargaHoraria}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas por carga horária.",
+        "description": "Retorna todas as disciplinas com uma carga horária específica.",
+        "parameters": [
+          {
+            "name": "cargaHoraria",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/siglas/{sigla}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas por sigla.",
+        "description": "Retorna todas as disciplinas com uma sígla específica.",
+        "parameters": [
+          {
+            "name": "sigla",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/descricoes/{descricao}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas por descrição.",
+        "description": "Retorna todas as disciplinas com uma descrição específica.",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}": {
+      "post": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para adicionar um aluno a uma disciplina.",
+        "description": "Associa um aluno a uma disciplina.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idAluno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "periodo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para remover um aluno de uma disciplina.",
+        "description": "Remove a associação de um aluno a uma disciplina.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idAluno",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "periodo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}": {
+      "post": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para adicionar um professor a uma disciplina.",
+        "description": "Associa um professor a uma disciplina.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idProfessor",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "periodo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para remover um professor de uma disciplina.",
+        "description": "Remove a associação de um professor a uma disciplina.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "idProfessor",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "periodo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/professores/{idProfessor}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas de um professor específico.",
+        "description": "Obtém as disciplinas que um professor leciona.",
+        "parameters": [
+          {
+            "name": "idProfessor",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Disciplina/cursos/{idCurso}": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas de um curso específico.",
+        "description": "Obtém todas as disciplinas pertencentes a um curso.",
+        "parameters": [
+          {
+            "name": "idCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Instituicao": {
+      "get": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para obter todas as instituições.",
+        "description": "Obtém todas as instituições cadastradas no sistema.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para adicionar uma nova instituição.",
+        "description": "Adiciona uma nova instituição ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para atualizar uma instituição.",
+        "description": "Atualiza uma instituição no sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/InstituicaoUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Instituicao/{id}": {
+      "get": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para obter uma instituição por ID.",
+        "description": "Obtém uma instituição específica pelo ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para deletar uma instituição.",
+        "description": "Remove uma instituição do sistema.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Instituicao/siglas/{sigla}": {
+      "get": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para obter instituições por sigla.",
+        "description": "Obtém a instituição que possui uma sigla específica.",
+        "parameters": [
+          {
+            "name": "sigla",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Instituicao/descricoes/{descricao}": {
+      "get": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para obter instituições por descrição.",
+        "description": "Obtém a instituição que possui uma sigla específica",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Instituicao/cursos/{idCurso}": {
+      "get": {
+        "tags": [
+          "Instituicao"
+        ],
+        "summary": "Rota para obter instituições por curso.",
+        "description": "Obtém a instituição possuídora de um curso específico",
+        "parameters": [
+          {
+            "name": "idCurso",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter todos os professores cadastrados.",
+        "description": "Obtém todos os professores cadastrados no sistema.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para adicionar um novo professor.",
+        "description": "Adiciona um novo professor ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para alterar um professor.",
+        "description": "Atualiza as informações de um professor cadastrado no sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfessorUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para excluir um professor.",
+        "description": "Exclui os dados de um professor do sistema.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor/{id}": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter um professor pelo ID.",
+        "description": "Obtém um professor específico pelo ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor/nomes/{nome}": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter um professor pelo nome.",
+        "description": "Obtém um professor específico pelo nome.",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor/titulos/{idTitulo}": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter os professores possuídores de determinado título.",
+        "description": "Obtém os professores que possuem um título específico.",
+        "parameters": [
+          {
+            "name": "idTitulo",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor/{idProfessor}/titulos": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter o título de um professor específico.",
+        "description": "Obtém o título de um determinado professor.",
+        "parameters": [
+          {
+            "name": "idProfessor",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Professor/disciplinas/{idDisciplina}": {
+      "get": {
+        "tags": [
+          "Professor"
+        ],
+        "summary": "Rota para obter os professores que lecionam uma disciplina específica.",
+        "description": "Obtém os professores associados a uma disciplina específica.",
+        "parameters": [
+          {
+            "name": "idDisciplina",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoCurso": {
+      "get": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para buscar todos os tipos de curso.",
+        "description": "Obtém todos os tipos de curso cadastrados no sistema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para adicionar um novo tipo de curso.",
+        "description": "Adiciona um novo tipo de curso ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para alterar um tipo de curso específico pelo ID.",
+        "description": "Altera os dados de um tipo de curso existente.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoCursoUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoCurso/{id}": {
+      "get": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para buscar um tipo de curso pelo ID.",
+        "description": "Retorna um tipo de curso específico com base no ID fornecido.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para excluir um tipo de curso pelo ID.",
+        "description": "Deleta os dados de um tipo de curso existente.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoCurso/descricoes/{descricao}": {
+      "get": {
+        "tags": [
+          "TipoCurso"
+        ],
+        "summary": "Rota para buscar tipos de curso por descrição.",
+        "description": "Retorna um tipo de curso que corresponde à descrição fornecida.",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoDisciplina": {
+      "get": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para buscar todos os tipos de disciplina.",
+        "description": "Obtém todos os tipos de disciplina cadastrados no sistema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para adicionar um novo tipo de disciplina.",
+        "description": "Adiciona um novo tipo de disciplina ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para alterar um tipo de disciplina específico pelo ID.",
+        "description": "Altera os dados de um tipo de disciplina existente.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TipoDisciplinaUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoDisciplina/{id}": {
+      "get": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para buscar um tipo de disciplina pelo ID.",
+        "description": "Retorna um tipo de disciplina específico com base no ID fornecido.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para excluir um tipo de disciplina pelo ID.",
+        "description": "Deleta os dados de um tipo de disciplina existente.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/TipoDisciplina/descricoes/{descricao}": {
+      "get": {
+        "tags": [
+          "TipoDisciplina"
+        ],
+        "summary": "Rota para buscar tipos de disciplina por descrição.",
+        "description": "Retorna um tipo de disciplina que corresponde à descrição fornecida.",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Titulo": {
+      "get": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para buscar todos os títulos.",
+        "description": "Obtém todos os títulos cadastrados no sistema",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para adicionar um novo título.",
+        "description": "Adiciona um novo título ao sistema.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para alterar um título específico pelo ID.",
+        "description": "Altera os dados de um título existente.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TituloUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Titulo/{id}": {
+      "get": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para buscar um título pelo ID.",
+        "description": "Retorna um título específico com base no ID fornecido.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para excluir um título pelo ID.",
+        "description": "Deleta os dados de um título existente.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Titulo/descricoes/{descricao}": {
+      "get": {
+        "tags": [
+          "Titulo"
+        ],
+        "summary": "Rota para buscar títulos por descrição.",
+        "description": "Retorna um título que corresponde à descrição fornecida.",
+        "parameters": [
+          {
+            "name": "descricao",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AlunoCreateDTO": {
+        "type": "object",
+        "properties": {
+          "txNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "txSexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "dtNascimento": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlunoUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txNome": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CursoCreateDTO": {
+        "type": "object",
+        "properties": {
+          "idInstituicao": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "idTipoCurso": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CursoUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DisciplinaCreateDTO": {
+        "type": "object",
+        "properties": {
+          "idCurso": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "idTipoDisciplina": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "txSigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "inCargaHoraria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inPeriodo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DisciplinaUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txSigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "inCargaHoraria": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "inPeriodo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InstituicaoCreateDTO": {
+        "type": "object",
+        "properties": {
+          "txSigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "InstituicaoUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txSigla": {
+            "type": "string",
+            "nullable": true
+          },
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfessorCreateDTO": {
+        "type": "object",
+        "properties": {
+          "idTitulo": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "txNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "txSexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "txEstadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "dtNascimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "txTelefone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProfessorUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "idTitulo": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "txNome": {
+            "type": "string",
+            "nullable": true
+          },
+          "txEstadoCivil": {
+            "type": "string",
+            "nullable": true
+          },
+          "txTelefone": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoCursoCreateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoCursoUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoDisciplinaCreateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoDisciplinaUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TituloCreateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TituloUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "txDescricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

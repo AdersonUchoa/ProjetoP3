@@ -105,7 +105,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna um tipo de curso que corresponde à descrição fornecida.</remarks>
         /// <returns>Tipo de curso pela descrição</returns>
-        [HttpGet("descricao/{descricao}")]
+        [HttpGet("descricoes/{descricao}")]
         public async Task<IActionResult> GetTipoCursoByDescricaoAsync(string descricao)
         {
             var result = await _tipoCursoService.GetTipoCursoByDescricaoAsync(descricao);

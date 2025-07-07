@@ -106,7 +106,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna as disciplinas de um aluno</remarks>
         /// <returns>Lista de disciplinas de um aluno.</returns>
-        [HttpGet("aluno/{idAluno}")]
+        [HttpGet("alunos/{idAluno}")]
         public async Task<IActionResult> GetDisciplinasByAluno(ulong idAluno)
         {
             var result = await _service.GetDisciplinasByAlunoAsync(idAluno);
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna as disciplinas de um tipo específico</remarks>
         /// <returns>Lista de disciplinas filtradas por tipo.</returns>
-        [HttpGet("tipo/{idTipoDisciplina}")]
+        [HttpGet("tipos/{idTipoDisciplina}")]
         public async Task<IActionResult> GetDisciplinasByTipo(ulong idTipoDisciplina)
         {
             var result = await _service.GetDisciplinasByTipoAsync(idTipoDisciplina);
@@ -142,7 +142,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna o tipo de uma disciplina específico</remarks>
         /// <returns>Tipo de uma disciplina</returns>
-        [HttpGet("tipo/disciplinas/{idDisciplina}")]
+        [HttpGet("{idDisciplina}/tipos")]
         public async Task<IActionResult> GetTipoByDisciplina(ulong idDisciplina)
         {
             var result = await _service.GetTipoByDisciplinaAsync(idDisciplina);
@@ -160,7 +160,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna todas as disciplinas de um período específico.</remarks>
         /// <returns>Lista de disciplinas de um período.</returns>
-        [HttpGet("periodo/{periodo}")]
+        [HttpGet("periodos/{periodo}")]
         public async Task<IActionResult> GetDisciplinasByPeriodo(int periodo)
         {
             var result = await _service.GetDisciplinasByPeriodoAsync(periodo);
@@ -178,7 +178,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna todas as disciplinas com uma carga horária específica.</remarks>
         /// <returns>Lista de disciplinas por carga horária.</returns>
-        [HttpGet("carga-horaria/{cargaHoraria}")]
+        [HttpGet("cargas-horarias/{cargaHoraria}")]
         public async Task<IActionResult> GetDisciplinasByCargaHoraria(int cargaHoraria)
         {
             var result = await _service.GetDisciplinasByCargaHorariaAsync(cargaHoraria);
@@ -196,7 +196,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna todas as disciplinas com uma sígla específica.</remarks>
         /// <returns>Lista de disciplinas por sigla.</returns>
-        [HttpGet("sigla/{sigla}")]
+        [HttpGet("siglas/{sigla}")]
         public async Task<IActionResult> GetDisciplinasBySigla(string sigla)
         {
             var result = await _service.GetDisciplinasBySiglaAsync(sigla);
@@ -214,7 +214,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna todas as disciplinas com uma descrição específica.</remarks>
         /// <returns>Lista de disciplinas por descrição.</returns>
-        [HttpGet("descricao/{descricao}")]
+        [HttpGet("descricoes/{descricao}")]
         public async Task<IActionResult> GetDisciplinasByDescricao(string descricao)
         {
             var result = await _service.GetDisciplinasByDescricaoAsync(descricao);
@@ -232,7 +232,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Associa um aluno a uma disciplina.</remarks>
         /// <returns>Confirmação de associação.</returns>
-        [HttpPost("adicionar-aluno/{idDisciplina}/{idAluno}/{periodo}")]
+        [HttpPost("alunos/{idDisciplina}/{idAluno}/{periodo}")]
         public async Task<IActionResult> AdicionarAlunoADisciplina(ulong idDisciplina, ulong idAluno, int periodo)
         {
             var result = await _service.AdicionarAlunoADisciplinaAsync(idDisciplina, idAluno, periodo);
@@ -250,7 +250,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Remove a associação de um aluno a uma disciplina.</remarks>
         /// <returns>Confirmação de remoção.</returns>
-        [HttpDelete("remover-aluno/{idDisciplina}/{idAluno}/{periodo}")]
+        [HttpDelete("alunos/{idDisciplina}/{idAluno}/{periodo}")]
         public async Task<IActionResult> RemoverAlunoDaDisciplina(ulong idDisciplina, ulong idAluno, int periodo)
         {
             var result = await _service.RemoverAlunoDaDisciplinaAsync(idDisciplina, idAluno, periodo);
@@ -267,7 +267,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Associa um professor a uma disciplina.</remarks>
         /// <returns>Confirmação de associação.</returns>
-        [HttpPost("adicionar-professor/{idDisciplina}/{idProfessor}/{periodo}")]
+        [HttpPost("professores/{idDisciplina}/{idProfessor}/{periodo}")]
         public async Task<IActionResult> AdicionarProfessorADisciplina(ulong idDisciplina, ulong idProfessor, int periodo)
         {
             var result = await _service.AdicionarProfessorADisciplinaAsync(idDisciplina, idProfessor, periodo);
@@ -285,7 +285,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Remove a associação de um professor a uma disciplina.</remarks>
         /// <returns>Confirmação de remoção.</returns>
-        [HttpDelete("remover-professor/{idDisciplina}/{idProfessor}/{periodo}")]
+        [HttpDelete("professores/{idDisciplina}/{idProfessor}/{periodo}")]
         public async Task<IActionResult> RemoverProfessorDaDisciplina(ulong idDisciplina, ulong idProfessor, int periodo)
         {
             var result = await _service.RemoverProfessorDaDisciplinaAsync(idDisciplina, idProfessor, periodo);
@@ -302,7 +302,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém as disciplinas que um professor leciona.</remarks>
         /// <returns>Lista de disciplinas por professor.</returns>
-        [HttpGet("professor/{idProfessor}")]
+        [HttpGet("professores/{idProfessor}")]
         public async Task<IActionResult> GetDisciplinasByProfessor(ulong idProfessor)
         {
             var result = await _service.GetDisciplinasByProfessorAsync(idProfessor);
@@ -320,7 +320,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém todas as disciplinas pertencentes a um curso.</remarks>
         /// <returns>Lista de disciplinas por curso.</returns>
-        [HttpGet("curso/{idCurso}")]
+        [HttpGet("cursos/{idCurso}")]
         public async Task<IActionResult> GetDisciplinasByCurso(ulong idCurso)
         {
             var result = await _service.GetDisciplinasByCursoAsync(idCurso);

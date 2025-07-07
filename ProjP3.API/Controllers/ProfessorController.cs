@@ -105,7 +105,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém um professor específico pelo nome.</remarks>
         /// <returns>Professor obtido pelo nome.</returns>
-        [HttpGet("nome")]
+        [HttpGet("nomes/{nome}")]
         public async Task<IActionResult> GetProfessoresByNome(string nome)
         {
             var result = await _professorService.GetProfessoresByNomeAsync(nome);
@@ -123,7 +123,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém os professores que possuem um título específico.</remarks>
         /// <returns>Lista de professores pelo título.</returns>
-        [HttpGet("titulo/{idTitulo}")]
+        [HttpGet("titulos/{idTitulo}")]
         public async Task<IActionResult> GetProfessoresByTitulo(ulong idTitulo)
         {
             var result = await _professorService.GetProfessoresByTitulo(idTitulo);
@@ -141,7 +141,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém o título de um determinado professor.</remarks>
         /// <returns>Título obtido pelo professor.</returns>
-        [HttpGet("titulo/professor/{idProfessor}")]
+        [HttpGet("{idProfessor}/titulos")]
         public async Task<IActionResult> GetTituloByProfessor(ulong idProfessor)
         {
             var result = await _professorService.GetTituloByProfessorAsync(idProfessor);
@@ -159,7 +159,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Obtém os professores associados a uma disciplina específica.</remarks>
         /// <returns>Lista de professores por disciplina.</returns>
-        [HttpGet("disciplina/{idDisciplina}")]
+        [HttpGet("disciplinas/{idDisciplina}")]
         public async Task<IActionResult> GetProfessoresByDisciplina(ulong idDisciplina)
         {
             var result = await _professorService.GetProfessoresByDisciplinaAsync(idDisciplina);

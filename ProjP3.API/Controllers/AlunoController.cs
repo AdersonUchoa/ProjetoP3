@@ -106,7 +106,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna um aluno obtido pelo nome</remarks>
         /// <returns>Aluno obtido por nome</returns>
-        [HttpGet("nome")]
+        [HttpGet("nomes/{nome}")]
         public async Task<IActionResult> GetAlunoByNome(string nome)
         {
             var result = await _service.GetAlunoByNomeAsync(nome);
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna uma lista de alunos que estão matriculados em uma disciplina específica.</remarks>
         /// <returns>Lista de alunos matriculados na disciplina</returns>
-        [HttpGet("disciplina/{idDisciplina}")]
+        [HttpGet("disciplinas/{idDisciplina}")]
         public async Task<IActionResult> GetAlunosByDisciplina(ulong idDisciplina)
         {
             var result = await _service.GetAlunosByDisciplinaAsync(idDisciplina);

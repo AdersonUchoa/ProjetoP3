@@ -140,7 +140,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna todos os cursos de um tipo específico.</remarks>
         /// <returns>Lista de cursos de um tipo específico</returns>
-        [HttpGet("tipo/{idTipoCurso}")]
+        [HttpGet("tipos/{idTipoCurso}")]
         public async Task<IActionResult> GetCursosByTipo(ulong idTipoCurso)
         {
             var result = await _service.GetCursosByTipoAsync(idTipoCurso);
@@ -158,7 +158,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna o tipo de curso de um curso específico</remarks>
         /// <returns>Tipo de curso associado</returns>
-        [HttpGet("tipo/curso/{idCurso}")]
+        [HttpGet("{idCurso}/tipos")]
         public async Task<IActionResult> GetTipoByCurso(ulong idCurso)
         {
             var result = await _service.GetTipoByCursoAsync(idCurso);
@@ -194,7 +194,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna os cursos de uma instituição</remarks>
         /// <returns>Cursos de uma instituição</returns>
-        [HttpGet("instituicao/{idInstituicao}")]
+        [HttpGet("instituicoes/{idInstituicao}")]
         public async Task<IActionResult> GetCursosByInstituicao(ulong idInstituicao)
         {
             var result = await _service.GetCursosByInstituicaoAsync(idInstituicao);

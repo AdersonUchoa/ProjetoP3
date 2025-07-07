@@ -105,7 +105,7 @@ namespace ProjP3.API.Controllers
         /// </summary>
         /// <remarks>Retorna um tipo de disciplina que corresponde à descrição fornecida.</remarks>
         /// <returns>Tipo de disciplina pela descrição.</returns>
-        [HttpGet("descricao/{descricao}")]
+        [HttpGet("descricoes/{descricao}")]
         public async Task<IActionResult> GetTipoDisciplinaByDescricaoAsync(string descricao)
         {
             var result = await _tipoDisciplinaService.GetTipoDisciplinaByDescricaoAsync(descricao);
