@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class InstituicaoController : ControllerBase
     {
         private readonly IInstituicaoService _service;
@@ -63,7 +63,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<InstituicaoDTO>(true, HttpStatusCode.Created, result.Value!, "Instituição criada com sucesso.", "");
-            return CreatedAtAction(nameof(GetById), new { id = result.Value!.IdInstituicao }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>

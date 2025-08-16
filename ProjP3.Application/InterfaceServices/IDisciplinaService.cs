@@ -11,6 +11,7 @@ namespace ProjP3.Application.InterfaceServices
 {
     public interface IDisciplinaService
     {
+        Task<List<DisciplinaDataDTO>> GetQuantidadeDisciplinasPorCursoAsync();
         Task<Result<List<DisciplinaDTO>>> GetAllAsync();
         Task<Result<DisciplinaDTO>> GetByIdAsync(ulong id);
         Task<Result<DisciplinaDTO>> AddAsync(DisciplinaCreateDTO disciplinaDTO);

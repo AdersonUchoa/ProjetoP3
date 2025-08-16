@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class CursoController : ControllerBase
     {
         private readonly ICursoService _service;
@@ -62,7 +62,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<CursoDTO>(true, HttpStatusCode.Created, result.Value!, "Curso adicionado com sucesso.", "");
-            return CreatedAtAction(nameof(GetById), new { id = result.Value!.IdCurso }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>

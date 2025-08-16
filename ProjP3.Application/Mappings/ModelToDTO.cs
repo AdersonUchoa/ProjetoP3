@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ProjP3.Application.DTOs.Request;
 using ProjP3.Application.DTOs.Response;
+using ProjP3.Domain.ReadModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,8 @@ namespace ProjP3.Application.Mappings
             CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaCreateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaUpdateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaDataDTO>().ReverseMap();
+            CreateMap<DisciplinaQuantidadePorCurso, DisciplinaDataDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoCreateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoUpdateDTO>().ReverseMap();

@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProfessorController : ControllerBase
     {
         private readonly IProfessorService _professorService;

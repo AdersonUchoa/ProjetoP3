@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class TituloController : ControllerBase
     {
         private readonly ITituloService _tituloService;
@@ -62,7 +62,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<TituloDTO>(true, HttpStatusCode.Created, result.Value!, "Titulo adicionado com sucesso.", "");
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = result.Value!.IdTitulo }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>

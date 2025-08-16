@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjP3.Domain.InterfaceRepositories;
 using ProjP3.Domain.Models;
+using ProjP3.Domain.ReadModels;
 using ProjP3.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,20 @@ namespace ProjP3.Infra.Data.Repositories
         {
             _alunoRepository = alunoIRepository;
             _professorRepository = professorIRepository;
+        }
+
+        public async Task<List<DisciplinaQuantidadePorCurso>> GetQuantidadeDisciplinasPorCursoAsync()
+        {
+            return await _context.Disciplinas
+                .AsNoTracking()
+                .GroupBy(d => d.IdCursoNavigation.TxDescricao)
+                .Select(g => new DisciplinaQuantidadePorCurso
+                {
+                    Curso = g.Key,
+                    QuantidadeDisciplinas = g.Count()
+                })
+                .OrderBy(x => x.Curso)
+                .ToListAsync();
         }
 
         public async Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno)

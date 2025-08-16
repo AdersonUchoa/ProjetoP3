@@ -1,4 +1,5 @@
 ﻿using ProjP3.Domain.Models;
+using ProjP3.Domain.ReadModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace ProjP3.Domain.InterfaceRepositories
 {
     public interface IDisciplinaRepository : IRepository<Disciplina>
     {
+        Task<List<DisciplinaQuantidadePorCurso>> GetQuantidadeDisciplinasPorCursoAsync();
         Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno);
         Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor);
         Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso);

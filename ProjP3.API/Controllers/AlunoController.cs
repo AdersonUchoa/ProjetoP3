@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProjP3.Application.Common;
 using ProjP3.Application.DTOs.Request;
 using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
@@ -8,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class AlunoController : ControllerBase
     {
         private readonly IAlunoService _service;
@@ -36,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um aluno específico com base no ID fornecido.</remarks>
         /// <returns>Aluno obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ulong id)
+        public async Task<IActionResult> GetByIdAsync(ulong id)
         {
             var result = await _service.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -63,7 +62,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<AlunoDTO>(true, HttpStatusCode.Created, result.Value!, "Aluno adicionado com sucesso.", "");
-            return CreatedAtAction(nameof(GetById), new { id = result.Value!.IdAluno }, successResponse);
+            return CreatedAtAction(nameof(GetByIdAsync), new { id = result.Value!.IdAluno }, successResponse);
         }
 
         /// <summary>

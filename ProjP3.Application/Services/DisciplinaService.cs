@@ -32,6 +32,12 @@ namespace ProjP3.Application.Services
             _tipoDisciplinaRepository = tipoDisciplinaRepository;
         }
 
+        public async Task<List<DisciplinaDataDTO>> GetQuantidadeDisciplinasPorCursoAsync()
+        {
+            var rows = await _repository.GetQuantidadeDisciplinasPorCursoAsync();
+            return _mapper.Map<List<DisciplinaDataDTO>>(rows);
+        }
+
         public async Task<Result<List<DisciplinaDTO>>> GetAllAsync()
         {
             var disciplinas = await _repository.GetAllAsync();

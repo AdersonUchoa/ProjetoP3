@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProjP3.Application.DTOs.Request;
 using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
@@ -7,7 +8,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class DisciplinaController : ControllerBase
     {
         private readonly IDisciplinaService _service;
@@ -15,6 +16,18 @@ namespace ProjP3.API.Controllers
         public DisciplinaController(IDisciplinaService service)
         {
             _service = service;
+        }
+
+        /// <summary>
+        /// Rota para buscar disciplinas e quantidade por curso.
+        /// </summary>
+        /// <remarks>Retorna todas as disciplinas e sua quantidade no curso</remarks>
+        /// <returns>Lista de disciplinas</returns>
+        [HttpGet("quantidades")]
+        public async Task<ActionResult<IEnumerable<DisciplinaDataDTO>>> GetQuantidades()
+        {
+            var data = await _service.GetQuantidadeDisciplinasPorCursoAsync();
+            return Ok(data);
         }
 
         /// <summary>
@@ -63,7 +76,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<DisciplinaDTO>(true, HttpStatusCode.Created, result.Value!, "Disciplina adicionada com sucesso.", "");
-            return CreatedAtAction(nameof(GetById), new { id = result.Value!.IdDisciplina }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>

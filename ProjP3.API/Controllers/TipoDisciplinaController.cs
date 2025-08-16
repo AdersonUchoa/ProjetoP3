@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class TipoDisciplinaController : ControllerBase
     {
         private readonly ITipoDisciplinaService _tipoDisciplinaService;
@@ -62,7 +62,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<TipoDisciplinaDTO>(true, HttpStatusCode.Created, result.Value!, "Tipo de disciplina adicionado com sucesso.", "");
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = result.Value!.IdTipoDisciplina }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>
