@@ -14,30 +14,30 @@ namespace ProjP3.Application.Mappings
         public ModelToDTO()
         {
             CreateMap<ProjP3.Domain.Models.Aluno, AlunoDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Aluno, AlunoCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Aluno, AlunoUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Aluno, AlunoCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Aluno, AlunoUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Cursa, CursaDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Curso, CursoDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Curso, CursoCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Curso, CursoUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Curso, CursoCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Curso, CursoUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Disciplina, DisciplinaUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Instituicao, InstituicaoUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Professor, ProfessorDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Professor, ProfessorCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Professor, ProfessorUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Professor, ProfessorCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Professor, ProfessorUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.TipoCurso, TipoCursoDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.TipoCurso, TipoCursoCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.TipoCurso, TipoCursoUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.TipoCurso, TipoCursoCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.TipoCurso, TipoCursoUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.TipoDisciplina, TipoDisciplinaDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.TipoDisciplina, TipoDisciplinaCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.TipoDisciplina, TipoDisciplinaUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.TipoDisciplina, TipoDisciplinaCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.TipoDisciplina, TipoDisciplinaUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Titulo, TituloDTO>().ReverseMap();
-            CreateMap<ProjP3.Domain.Models.Titulo, TituloCreateDTO>();
-            CreateMap<ProjP3.Domain.Models.Titulo, TituloUpdateDTO>();
+            CreateMap<ProjP3.Domain.Models.Titulo, TituloCreateDTO>().ReverseMap();
+            CreateMap<ProjP3.Domain.Models.Titulo, TituloUpdateDTO>().ReverseMap();
             CreateMap<ProjP3.Domain.Models.Leciona, LecionaDTO>().ReverseMap();
         }
     }

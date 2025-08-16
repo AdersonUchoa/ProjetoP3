@@ -41,7 +41,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<Curso?> GetCursoByDescricaoAsync(string descricao)
         {
             return await _context.Cursos
-                .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao.ToLower()));
         }
 
         //public async Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
@@ -89,7 +89,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Cursos
-                .AnyAsync(c => c.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(c => c.TxDescricao.Equals(descricao.ToLower()));
         }
 
         public async Task<bool> JaExisteDisciplinaNoCurso(ulong idDisciplina, ulong idCurso)

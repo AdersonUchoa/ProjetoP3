@@ -4047,25 +4047,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aderson.uchoa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\iamuc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\ProjP3.API.csproj",
+      "projectUniqueName": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.API\\ProjP3.API.csproj",
       "projectName": "ProjP3.API",
-      "projectPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\ProjP3.API.csproj",
-      "packagesPath": "C:\\Users\\aderson.uchoa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.API\\obj\\",
+      "projectPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.API\\ProjP3.API.csproj",
+      "packagesPath": "C:\\Users\\iamuc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aderson.uchoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iamuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4081,8 +4079,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj": {
-              "projectPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj"
+            "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj": {
+              "projectPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Ioc\\ProjP3.Infra.Ioc.csproj"
             }
           }
         }

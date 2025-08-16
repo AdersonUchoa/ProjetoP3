@@ -92,7 +92,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "GetAlunoByNome",
-    "RelativePath": "Aluno/nomes",
+    "RelativePath": "Aluno/nomes/{nome}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -100,7 +100,7 @@
       {
         "Name": "nome",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

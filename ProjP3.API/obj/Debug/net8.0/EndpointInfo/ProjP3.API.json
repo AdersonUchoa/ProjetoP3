@@ -134,7 +134,7 @@
         }
       }
     },
-    "/Aluno/nomes": {
+    "/Aluno/nomes/{nome}": {
       "get": {
         "tags": [
           "Aluno"
@@ -144,7 +144,8 @@
         "parameters": [
           {
             "name": "nome",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }

@@ -19,7 +19,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<Professor?> GetProfessoresByNomeAsync(string nome)
         {
             return await _context.Professors
-                .Where(p => p.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase))
+                .Where(p => p.TxNome.Equals(nome.ToLower()))
                 .FirstOrDefaultAsync();
         }
 
@@ -48,7 +48,7 @@ namespace ProjP3.Infra.Data.Repositories
 
         public async Task<bool> ExistsByNomeAsync(string nome)
         {
-            return await _context.Professors.AnyAsync(p => p.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase));
+            return await _context.Professors.AnyAsync(p => p.TxNome.Equals(nome.ToLower()));
         }
     }
 }

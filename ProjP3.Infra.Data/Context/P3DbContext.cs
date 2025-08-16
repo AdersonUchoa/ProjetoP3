@@ -38,7 +38,7 @@ public partial class P3DbContext : DbContext
     public virtual DbSet<Titulo> Titulos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql("server=localhost;user=root;password=admin1234;database=projeto_p3", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.42-mysql"));
+        => optionsBuilder.UseMySql("server=localhost;user=root;password=root;database=projeto_p3", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.43-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

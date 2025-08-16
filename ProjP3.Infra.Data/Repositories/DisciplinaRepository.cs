@@ -67,14 +67,14 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<List<Disciplina>> GetDisciplinasBySiglaAsync(string sigla)
         {
             return await _context.Disciplinas
-                .Where(d => d.TxSigla.Contains(sigla, StringComparison.OrdinalIgnoreCase))
+                .Where(d => d.TxSigla.Contains(sigla.ToLower()))
                 .ToListAsync();
         }
 
         public async Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao)
         {
             return await _context.Disciplinas
-                .Where(d => d.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
+                .Where(d => d.TxDescricao.Contains(descricao.ToLower()))
                 .ToListAsync();
         }
 
@@ -238,7 +238,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Disciplinas
-                .AnyAsync(d => d.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(d => d.TxDescricao.Equals(descricao.ToLower()));
         }
     }
 }
