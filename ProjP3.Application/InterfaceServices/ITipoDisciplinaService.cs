@@ -12,10 +12,10 @@ namespace ProjP3.Application.InterfaceServices
     public interface ITipoDisciplinaService
     {
         Task<Result<List<TipoDisciplinaDTO>>> GetAllAsync();
-        Task<Result<TipoDisciplinaDTO>> GetByIdAsync(ulong id);
+        Task<Result<TipoDisciplinaDTO>> GetByIdAsync(int id);
         Task<Result<TipoDisciplinaDTO>> AddAsync(TipoDisciplinaCreateDTO tipoDisciplinaDto);
         Task<Result<TipoDisciplinaDTO>> UpdateAsync(TipoDisciplinaUpdateDTO tipoDisciplinaDto);
-        Task<Result<bool>> DeleteAsync(ulong id);
+        Task<Result<bool>> DeleteAsync(int id);
         Task<Result<TipoDisciplinaDTO>> GetTipoDisciplinaByDescricaoAsync(string descricao);
     }
 }

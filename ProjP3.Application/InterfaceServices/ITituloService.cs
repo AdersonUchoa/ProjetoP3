@@ -12,10 +12,10 @@ namespace ProjP3.Application.InterfaceServices
     public interface ITituloService
     {
         Task<Result<List<TituloDTO>>> GetAllAsync();
-        Task<Result<TituloDTO>> GetByIdAsync(ulong id);
+        Task<Result<TituloDTO>> GetByIdAsync(int id);
         Task<Result<TituloDTO>> AddAsync(TituloCreateDTO tituloDto);
         Task<Result<TituloDTO>> UpdateAsync(TituloUpdateDTO tituloDto);
-        Task<Result<bool>> DeleteAsync(ulong id);
+        Task<Result<bool>> DeleteAsync(int id);
         Task<Result<List<TituloDTO>>> GetTituloByDescricaoAsync(string descricao);
 
     }

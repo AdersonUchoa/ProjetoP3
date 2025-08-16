@@ -9,13 +9,13 @@ namespace ProjP3.Domain.InterfaceRepositories
 {
     public interface ICursoRepository : IRepository<Curso>
     {
-        Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso);
-        Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso);
+        Task<List<Curso>> GetCursosByTipoAsync(int idTipoCurso);
+        Task<TipoCurso?> GetTipoByCursoAsync(int idCurso);
         Task<Curso?> GetCursoByDescricaoAsync(string descricao);
-        //Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
-        //Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
-        Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idCurso);
+        //Task<Curso> AdicionarDisciplinaAoCursoAsync(int idCurso, int idDisciplina);
+        //Task<Curso> RemoverDisciplinaDoCursoAsync(int idCurso, int idDisciplina);
+        Task<List<Curso>> GetCursosByInstituicaoAsync(int idCurso);
         Task<bool> ExistsByDescricaoAsync(string descricao);
-        Task<bool> JaExisteDisciplinaNoCurso(ulong idDisciplina, ulong idCurso);
+        Task<bool> JaExisteDisciplinaNoCurso(int idDisciplina, int idCurso);
     }
 }

@@ -11,7 +11,7 @@
             <remarks>Retorna todos os alunos cadastrados no sistema.</remarks>
             <returns>Lista de alunos</returns>
         </member>
-        <member name="M:ProjP3.API.Controllers.AlunoController.GetById(System.UInt64)">
+        <member name="M:ProjP3.API.Controllers.AlunoController.GetByIdAsync(System.UInt64)">
             <summary>
             Rota para buscar um aluno pelo ID.
             </summary>
@@ -129,6 +129,13 @@
             </summary>
             <remarks>Retorna os cursos de uma instituição</remarks>
             <returns>Cursos de uma instituição</returns>
+        </member>
+        <member name="M:ProjP3.API.Controllers.DisciplinaController.GetQuantidades">
+            <summary>
+            Rota para buscar disciplinas e quantidade por curso.
+            </summary>
+            <remarks>Retorna todas as disciplinas e sua quantidade no curso</remarks>
+            <returns>Lista de disciplinas</returns>
         </member>
         <member name="M:ProjP3.API.Controllers.DisciplinaController.GetAll">
             <summary>

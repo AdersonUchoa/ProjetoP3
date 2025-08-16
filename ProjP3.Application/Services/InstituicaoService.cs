@@ -32,7 +32,7 @@ namespace ProjP3.Application.Services
             return Result<List<InstituicaoDTO>>.Success(instituicoesDto);
         }
 
-        public async Task<Result<InstituicaoDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<InstituicaoDTO>> GetByIdAsync(int id)
         {
             var instituicao = await _repository.GetByIdAsync(id);
             if (instituicao == null)
@@ -69,7 +69,7 @@ namespace ProjP3.Application.Services
             return Result<InstituicaoDTO>.Success(_mapper.Map<InstituicaoDTO>(updatedInstituicao));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var instituicaoExiste = await _repository.ExistsAsync(id);
             if (!instituicaoExiste)
@@ -95,7 +95,7 @@ namespace ProjP3.Application.Services
             return Result<List<InstituicaoDTO>>.Success(instituicoesDto);
         }
 
-        public async Task<Result<List<InstituicaoDTO>>> GetInstituicoesByCursoAsync(ulong idCurso)
+        public async Task<Result<List<InstituicaoDTO>>> GetInstituicoesByCursoAsync(int idCurso)
         {
             var cursoExiste = await _cursoRepository.ExistsAsync(idCurso);
             if(!cursoExiste)
@@ -107,7 +107,7 @@ namespace ProjP3.Application.Services
             return Result<List<InstituicaoDTO>>.Success(instituicoesDto);
         }
 
-        //public async Task<Result<InstituicaoDTO>> AdicionarCursoAInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<Result<InstituicaoDTO>> AdicionarCursoAInstituicaoAsync(int idInstituicao, int idCurso)
         //{
         //    var instituicao = await _repository.GetByIdAsync(idInstituicao);
         //    if (instituicao == null)
@@ -132,7 +132,7 @@ namespace ProjP3.Application.Services
         //    return Result<InstituicaoDTO>.Success(instituicaoDto);
         //}
 
-        //public async Task<Result<InstituicaoDTO>> RemoverCursoDeInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<Result<InstituicaoDTO>> RemoverCursoDeInstituicaoAsync(int idInstituicao, int idCurso)
         //{
             
         //}

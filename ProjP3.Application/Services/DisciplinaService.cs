@@ -32,6 +32,12 @@ namespace ProjP3.Application.Services
             _tipoDisciplinaRepository = tipoDisciplinaRepository;
         }
 
+        public async Task<List<DisciplinaDataDTO>> GetQuantidadeDisciplinasPorCursoAsync()
+        {
+            var rows = await _repository.GetQuantidadeDisciplinasPorCursoAsync();
+            return _mapper.Map<List<DisciplinaDataDTO>>(rows);
+        }
+
         public async Task<Result<List<DisciplinaDTO>>> GetAllAsync()
         {
             var disciplinas = await _repository.GetAllAsync();
@@ -39,7 +45,7 @@ namespace ProjP3.Application.Services
             return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
 
-        public async Task<Result<DisciplinaDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<DisciplinaDTO>> GetByIdAsync(int id)
         {
             var disciplina = await _repository.GetByIdAsync(id);
             if (disciplina == null)
@@ -76,7 +82,7 @@ namespace ProjP3.Application.Services
             return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(updatedDisciplina));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var disciplinaExiste = await _repository.ExistsAsync(id);
             if (!disciplinaExiste)
@@ -88,7 +94,7 @@ namespace ProjP3.Application.Services
             return Result<bool>.Success(deleted);
         }
 
-        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByAlunoAsync(ulong idAluno)
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByAlunoAsync(int idAluno)
         {
             var alunoExiste = await _alunoRepository.ExistsAsync(idAluno);
             if (!alunoExiste)
@@ -100,7 +106,7 @@ namespace ProjP3.Application.Services
             return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
 
-        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina)
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByTipoAsync(int idTipoDisciplina)
         {
             var tipoDisciplinaExiste = await _tipoDisciplinaRepository.ExistsAsync(idTipoDisciplina);
             if (!tipoDisciplinaExiste)
@@ -112,7 +118,7 @@ namespace ProjP3.Application.Services
             return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
 
-        public async Task<Result<TipoDisciplinaDTO>> GetTipoByDisciplinaAsync(ulong idDisciplina)
+        public async Task<Result<TipoDisciplinaDTO>> GetTipoByDisciplinaAsync(int idDisciplina)
         {
             var tipoDisciplina = await _repository.GetTipoByDisciplinaAsync(idDisciplina);
             if (tipoDisciplina == null)
@@ -151,7 +157,7 @@ namespace ProjP3.Application.Services
             return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
 
-        public async Task<Result<DisciplinaDTO>> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        public async Task<Result<DisciplinaDTO>> AdicionarAlunoADisciplinaAsync(int idDisciplina, int idAluno, int periodo)
         {
             var disciplina = await _repository.GetByIdAsync(idDisciplina);
             if (disciplina == null)
@@ -180,7 +186,7 @@ namespace ProjP3.Application.Services
             return Result<DisciplinaDTO>.Success(disciplinaDto);
         }
 
-        public async Task<Result<DisciplinaDTO>> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        public async Task<Result<DisciplinaDTO>> RemoverAlunoDaDisciplinaAsync(int idDisciplina, int idAluno, int periodo)
         {
             var matriculaParaRemover = await _repository.GetCursaAsync(idAluno, idDisciplina, periodo);
 
@@ -200,7 +206,7 @@ namespace ProjP3.Application.Services
             return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(matriculaParaRemover.IdDisciplinaNavigation));
         }
 
-        public async Task<Result<DisciplinaDTO>> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        public async Task<Result<DisciplinaDTO>> AdicionarProfessorADisciplinaAsync(int idDisciplina, int idProfessor, int periodo)
         {
             var disciplina = await _repository.GetByIdAsync(idDisciplina);
             if (disciplina == null)
@@ -224,7 +230,7 @@ namespace ProjP3.Application.Services
             return Result<DisciplinaDTO>.Success(disciplinaDto);
         }
 
-        public async Task<Result<DisciplinaDTO>> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        public async Task<Result<DisciplinaDTO>> RemoverProfessorDaDisciplinaAsync(int idDisciplina, int idProfessor, int periodo)
         {
             var lecionaParaRemover = await _repository.GetLecionaAsync(idProfessor, idDisciplina, periodo);
             if (lecionaParaRemover == null)
@@ -240,7 +246,7 @@ namespace ProjP3.Application.Services
             return Result<DisciplinaDTO>.Success(_mapper.Map<DisciplinaDTO>(lecionaParaRemover.IdDisciplinaNavigation));
         }
 
-        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByProfessorAsync(ulong idProfessor)
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByProfessorAsync(int idProfessor)
         {
             var professorExiste = await _professorRepository.ExistsAsync(idProfessor);
             if (!professorExiste)
@@ -252,7 +258,7 @@ namespace ProjP3.Application.Services
             return Result<List<DisciplinaDTO>>.Success(disciplinaDtos);
         }
 
-        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByCursoAsync(ulong idCurso)
+        public async Task<Result<List<DisciplinaDTO>>> GetDisciplinasByCursoAsync(int idCurso)
         {
             var cursoExiste = await _cursoRepository.ExistsAsync(idCurso);
             if (!cursoExiste)

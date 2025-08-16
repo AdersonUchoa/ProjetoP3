@@ -12,13 +12,13 @@ namespace ProjP3.Application.InterfaceServices
     public interface IProfessorService
     {
         Task<Result<List<ProfessorDTO>>> GetAllAsync();
-        Task<Result<ProfessorDTO>> GetByIdAsync(ulong id);
+        Task<Result<ProfessorDTO>> GetByIdAsync(int id);
         Task<Result<ProfessorDTO>> AddAsync(ProfessorCreateDTO professor);
         Task<Result<ProfessorDTO>> UpdateAsync(ProfessorUpdateDTO professor);
-        Task<Result<bool>> DeleteAsync(ulong id);
+        Task<Result<bool>> DeleteAsync(int id);
         Task<Result<ProfessorDTO>> GetProfessoresByNomeAsync(string nome);
-        Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(ulong idTitulo);
-        Task<Result<TituloDTO>> GetTituloByProfessorAsync(ulong idProfessor);
-        Task<Result<List<ProfessorDTO>>> GetProfessoresByDisciplinaAsync(ulong idDisciplina);
+        Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(int idTitulo);
+        Task<Result<TituloDTO>> GetTituloByProfessorAsync(int idProfessor);
+        Task<Result<List<ProfessorDTO>>> GetProfessoresByDisciplinaAsync(int idDisciplina);
     }
 }

@@ -2,7 +2,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "GetAll",
-    "RelativePath": "Aluno",
+    "RelativePath": "api/Aluno",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "Add",
-    "RelativePath": "Aluno",
+    "RelativePath": "api/Aluno",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "Update",
-    "RelativePath": "Aluno",
+    "RelativePath": "api/Aluno",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -43,8 +43,8 @@
   },
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
-    "Method": "GetById",
-    "RelativePath": "Aluno/{id}",
+    "Method": "GetByIdAsync",
+    "RelativePath": "api/Aluno/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -60,7 +60,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "Delete",
-    "RelativePath": "Aluno/{id}",
+    "RelativePath": "api/Aluno/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -76,7 +76,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "GetAlunosByDisciplina",
-    "RelativePath": "Aluno/disciplinas/{idDisciplina}",
+    "RelativePath": "api/Aluno/disciplinas/{idDisciplina}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -92,7 +92,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.AlunoController",
     "Method": "GetAlunoByNome",
-    "RelativePath": "Aluno/nomes",
+    "RelativePath": "api/Aluno/nomes/{nome}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -100,7 +100,7 @@
       {
         "Name": "nome",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -108,7 +108,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetAll",
-    "RelativePath": "Curso",
+    "RelativePath": "api/Curso",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -118,7 +118,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "Add",
-    "RelativePath": "Curso",
+    "RelativePath": "api/Curso",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -134,7 +134,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "Update",
-    "RelativePath": "Curso",
+    "RelativePath": "api/Curso",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -150,7 +150,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetById",
-    "RelativePath": "Curso/{id}",
+    "RelativePath": "api/Curso/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -166,7 +166,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "Delete",
-    "RelativePath": "Curso/{id}",
+    "RelativePath": "api/Curso/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -182,7 +182,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "AdicionarDisciplinaAoCurso",
-    "RelativePath": "Curso/{idCurso}/disciplinas",
+    "RelativePath": "api/Curso/{idCurso}/disciplinas",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -203,7 +203,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "RemoverDisciplinaDoCurso",
-    "RelativePath": "Curso/{idCurso}/disciplinas/{idDisciplina}",
+    "RelativePath": "api/Curso/{idCurso}/disciplinas/{idDisciplina}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -224,7 +224,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetTipoByCurso",
-    "RelativePath": "Curso/{idCurso}/tipos",
+    "RelativePath": "api/Curso/{idCurso}/tipos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -240,7 +240,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetCursosByInstituicao",
-    "RelativePath": "Curso/instituicoes/{idInstituicao}",
+    "RelativePath": "api/Curso/instituicoes/{idInstituicao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -256,7 +256,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetCursoByDescricao",
-    "RelativePath": "Curso/search",
+    "RelativePath": "api/Curso/search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -272,7 +272,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.CursoController",
     "Method": "GetCursosByTipo",
-    "RelativePath": "Curso/tipos/{idTipoCurso}",
+    "RelativePath": "api/Curso/tipos/{idTipoCurso}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -288,7 +288,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetAll",
-    "RelativePath": "Disciplina",
+    "RelativePath": "api/Disciplina",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -298,7 +298,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "Add",
-    "RelativePath": "Disciplina",
+    "RelativePath": "api/Disciplina",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -314,7 +314,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "Update",
-    "RelativePath": "Disciplina",
+    "RelativePath": "api/Disciplina",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -330,7 +330,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetById",
-    "RelativePath": "Disciplina/{id}",
+    "RelativePath": "api/Disciplina/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -346,7 +346,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "Delete",
-    "RelativePath": "Disciplina/{id}",
+    "RelativePath": "api/Disciplina/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -362,7 +362,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetTipoByDisciplina",
-    "RelativePath": "Disciplina/{idDisciplina}/tipos",
+    "RelativePath": "api/Disciplina/{idDisciplina}/tipos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -378,7 +378,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByAluno",
-    "RelativePath": "Disciplina/alunos/{idAluno}",
+    "RelativePath": "api/Disciplina/alunos/{idAluno}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -394,7 +394,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "AdicionarAlunoADisciplina",
-    "RelativePath": "Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}",
+    "RelativePath": "api/Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -420,7 +420,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "RemoverAlunoDaDisciplina",
-    "RelativePath": "Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}",
+    "RelativePath": "api/Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -446,7 +446,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByCargaHoraria",
-    "RelativePath": "Disciplina/cargas-horarias/{cargaHoraria}",
+    "RelativePath": "api/Disciplina/cargas-horarias/{cargaHoraria}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -462,7 +462,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByCurso",
-    "RelativePath": "Disciplina/cursos/{idCurso}",
+    "RelativePath": "api/Disciplina/cursos/{idCurso}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -478,7 +478,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByDescricao",
-    "RelativePath": "Disciplina/descricoes/{descricao}",
+    "RelativePath": "api/Disciplina/descricoes/{descricao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -494,7 +494,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByPeriodo",
-    "RelativePath": "Disciplina/periodos/{periodo}",
+    "RelativePath": "api/Disciplina/periodos/{periodo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -510,7 +510,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "AdicionarProfessorADisciplina",
-    "RelativePath": "Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}",
+    "RelativePath": "api/Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -536,7 +536,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "RemoverProfessorDaDisciplina",
-    "RelativePath": "Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}",
+    "RelativePath": "api/Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -562,7 +562,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByProfessor",
-    "RelativePath": "Disciplina/professores/{idProfessor}",
+    "RelativePath": "api/Disciplina/professores/{idProfessor}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -577,8 +577,28 @@
   },
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
+    "Method": "GetQuantidades",
+    "RelativePath": "api/Disciplina/quantidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProjP3.Application.DTOs.Response.DisciplinaDataDTO, ProjP3.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasBySigla",
-    "RelativePath": "Disciplina/siglas/{sigla}",
+    "RelativePath": "api/Disciplina/siglas/{sigla}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -594,7 +614,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.DisciplinaController",
     "Method": "GetDisciplinasByTipo",
-    "RelativePath": "Disciplina/tipos/{idTipoDisciplina}",
+    "RelativePath": "api/Disciplina/tipos/{idTipoDisciplina}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -610,7 +630,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "GetAll",
-    "RelativePath": "Instituicao",
+    "RelativePath": "api/Instituicao",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -620,7 +640,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "Add",
-    "RelativePath": "Instituicao",
+    "RelativePath": "api/Instituicao",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -636,7 +656,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "Update",
-    "RelativePath": "Instituicao",
+    "RelativePath": "api/Instituicao",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -652,7 +672,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "GetById",
-    "RelativePath": "Instituicao/{id}",
+    "RelativePath": "api/Instituicao/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -668,7 +688,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "Delete",
-    "RelativePath": "Instituicao/{id}",
+    "RelativePath": "api/Instituicao/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -684,7 +704,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "GetInstituicoesByCurso",
-    "RelativePath": "Instituicao/cursos/{idCurso}",
+    "RelativePath": "api/Instituicao/cursos/{idCurso}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -700,7 +720,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "GetInstituicaoByDescricao",
-    "RelativePath": "Instituicao/descricoes/{descricao}",
+    "RelativePath": "api/Instituicao/descricoes/{descricao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -716,7 +736,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.InstituicaoController",
     "Method": "GetInstituicaoBySigla",
-    "RelativePath": "Instituicao/siglas/{sigla}",
+    "RelativePath": "api/Instituicao/siglas/{sigla}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -732,7 +752,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetAll",
-    "RelativePath": "Professor",
+    "RelativePath": "api/Professor",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -742,7 +762,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "Add",
-    "RelativePath": "Professor",
+    "RelativePath": "api/Professor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -758,7 +778,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "Update",
-    "RelativePath": "Professor",
+    "RelativePath": "api/Professor",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -774,7 +794,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "Delete",
-    "RelativePath": "Professor",
+    "RelativePath": "api/Professor",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -790,7 +810,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetById",
-    "RelativePath": "Professor/{id}",
+    "RelativePath": "api/Professor/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -806,7 +826,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetTituloByProfessor",
-    "RelativePath": "Professor/{idProfessor}/titulos",
+    "RelativePath": "api/Professor/{idProfessor}/titulos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -822,7 +842,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetProfessoresByDisciplina",
-    "RelativePath": "Professor/disciplinas/{idDisciplina}",
+    "RelativePath": "api/Professor/disciplinas/{idDisciplina}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -838,7 +858,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetProfessoresByNome",
-    "RelativePath": "Professor/nomes/{nome}",
+    "RelativePath": "api/Professor/nomes/{nome}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -854,7 +874,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.ProfessorController",
     "Method": "GetProfessoresByTitulo",
-    "RelativePath": "Professor/titulos/{idTitulo}",
+    "RelativePath": "api/Professor/titulos/{idTitulo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -870,7 +890,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "GetAllAsync",
-    "RelativePath": "TipoCurso",
+    "RelativePath": "api/TipoCurso",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -880,7 +900,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "Add",
-    "RelativePath": "TipoCurso",
+    "RelativePath": "api/TipoCurso",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -896,7 +916,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "Update",
-    "RelativePath": "TipoCurso",
+    "RelativePath": "api/TipoCurso",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -912,7 +932,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "GetByIdAsync",
-    "RelativePath": "TipoCurso/{id}",
+    "RelativePath": "api/TipoCurso/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -928,7 +948,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "Delete",
-    "RelativePath": "TipoCurso/{id}",
+    "RelativePath": "api/TipoCurso/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -944,7 +964,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoCursoController",
     "Method": "GetTipoCursoByDescricaoAsync",
-    "RelativePath": "TipoCurso/descricoes/{descricao}",
+    "RelativePath": "api/TipoCurso/descricoes/{descricao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -960,7 +980,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "GetAllAsync",
-    "RelativePath": "TipoDisciplina",
+    "RelativePath": "api/TipoDisciplina",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -970,7 +990,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "Add",
-    "RelativePath": "TipoDisciplina",
+    "RelativePath": "api/TipoDisciplina",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -986,7 +1006,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "Update",
-    "RelativePath": "TipoDisciplina",
+    "RelativePath": "api/TipoDisciplina",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1002,7 +1022,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "GetByIdAsync",
-    "RelativePath": "TipoDisciplina/{id}",
+    "RelativePath": "api/TipoDisciplina/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1018,7 +1038,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "Delete",
-    "RelativePath": "TipoDisciplina/{id}",
+    "RelativePath": "api/TipoDisciplina/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1034,7 +1054,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TipoDisciplinaController",
     "Method": "GetTipoDisciplinaByDescricaoAsync",
-    "RelativePath": "TipoDisciplina/descricoes/{descricao}",
+    "RelativePath": "api/TipoDisciplina/descricoes/{descricao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1050,7 +1070,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "GetAllAsync",
-    "RelativePath": "Titulo",
+    "RelativePath": "api/Titulo",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1060,7 +1080,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "Add",
-    "RelativePath": "Titulo",
+    "RelativePath": "api/Titulo",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1076,7 +1096,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "Update",
-    "RelativePath": "Titulo",
+    "RelativePath": "api/Titulo",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1092,7 +1112,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "GetByIdAsync",
-    "RelativePath": "Titulo/{id}",
+    "RelativePath": "api/Titulo/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1108,7 +1128,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "Delete",
-    "RelativePath": "Titulo/{id}",
+    "RelativePath": "api/Titulo/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1124,7 +1144,7 @@
   {
     "ContainingType": "ProjP3.API.Controllers.TituloController",
     "Method": "GetTituloByDescricaoAsync",
-    "RelativePath": "Titulo/descricoes/{descricao}",
+    "RelativePath": "api/Titulo/descricoes/{descricao}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

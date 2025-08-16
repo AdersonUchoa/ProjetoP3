@@ -1,4 +1,5 @@
 ﻿using ProjP3.Domain.Models;
+using ProjP3.Domain.ReadModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,24 +10,25 @@ namespace ProjP3.Domain.InterfaceRepositories
 {
     public interface IDisciplinaRepository : IRepository<Disciplina>
     {
-        Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno);
-        Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor);
-        Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso);
-        Task<List<Disciplina>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina);
-        Task<TipoDisciplina?> GetTipoByDisciplinaAsync(ulong idDisciplina);
+        Task<List<DisciplinaQuantidadePorCurso>> GetQuantidadeDisciplinasPorCursoAsync();
+        Task<List<Disciplina>> GetDisciplinasByAlunoAsync(int idAluno);
+        Task<List<Disciplina>> GetDisciplinasByProfessorAsync(int idProfessor);
+        Task<List<Disciplina>> GetDisciplinasByCursoAsync(int idCurso);
+        Task<List<Disciplina>> GetDisciplinasByTipoAsync(int idTipoDisciplina);
+        Task<TipoDisciplina?> GetTipoByDisciplinaAsync(int idDisciplina);
         Task<List<Disciplina>> GetDisciplinasByPeriodoAsync(int periodo);
         Task<List<Disciplina>> GetDisciplinasByCargaHorariaAsync(int cargaHoraria);
         Task<List<Disciplina>> GetDisciplinasBySiglaAsync(string sigla);
         Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao);
-        //Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
-        //Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo);
-        //Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
-        //Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo);
-        Task<bool> JaExisteCursaAsync(ulong idAluno, ulong idDisciplina, int periodo);
-        Task<bool> JaExisteLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo);
-        Task<Cursa?> GetCursaAsync(ulong idAluno, ulong idDisciplina, int periodo);
+        //Task<Disciplina> AdicionarAlunoADisciplinaAsync(int idDisciplina, int idAluno, int periodo);
+        //Task<Disciplina> RemoverAlunoDaDisciplinaAsync(int idDisciplina, int idAluno, int periodo);
+        //Task<Disciplina> AdicionarProfessorADisciplinaAsync(int idDisciplina, int idProfessor, int periodo);
+        //Task<Disciplina> RemoverProfessorDaDisciplinaAsync(int idDisciplina, int idProfessor, int periodo);
+        Task<bool> JaExisteCursaAsync(int idAluno, int idDisciplina, int periodo);
+        Task<bool> JaExisteLecionaAsync(int idProfessor, int idDisciplina, int periodo);
+        Task<Cursa?> GetCursaAsync(int idAluno, int idDisciplina, int periodo);
         void RemoverCursa(Cursa cursa);
-        Task<Leciona?> GetLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo);
+        Task<Leciona?> GetLecionaAsync(int idProfessor, int idDisciplina, int periodo);
         void RemoverLeciona(Leciona leciona);
         Task<bool> ExistsByDescricaoAsync(string descricao);
     }

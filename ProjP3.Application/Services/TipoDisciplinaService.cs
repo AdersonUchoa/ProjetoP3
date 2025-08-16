@@ -30,7 +30,7 @@ namespace ProjP3.Application.Services
             return Result<List<TipoDisciplinaDTO>>.Success(tipoDisciplinaDtos);
         }
 
-        public async Task<Result<TipoDisciplinaDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<TipoDisciplinaDTO>> GetByIdAsync(int id)
         {
             var tipoDisciplina = await _repository.GetByIdAsync(id);
             if (tipoDisciplina == null)
@@ -75,7 +75,7 @@ namespace ProjP3.Application.Services
             return Result<TipoDisciplinaDTO>.Success(_mapper.Map<TipoDisciplinaDTO>(updatedTipoDisciplina));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var tipoDisciplinaExiste = await _repository.ExistsAsync(id);
             if (!tipoDisciplinaExiste)

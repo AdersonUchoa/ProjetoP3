@@ -11,6 +11,6 @@ namespace ProjP3.Domain.InterfaceRepositories
     {
         Task<Aluno?> GetAlunoByNomeAsync(string nome);
         Task<bool> ExistsByNomeAsync(string nome);
-        Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina);
+        Task<List<Aluno>> GetAlunosByDisciplinaAsync(int idDisciplina);
     }
 }

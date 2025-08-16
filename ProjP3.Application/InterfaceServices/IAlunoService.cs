@@ -12,11 +12,11 @@ namespace ProjP3.Application.InterfaceServices
     public interface IAlunoService
     {
         Task<Result<List<AlunoDTO>>> GetAllAsync();
-        Task<Result<AlunoDTO>> GetByIdAsync(ulong id);
+        Task<Result<AlunoDTO>> GetByIdAsync(int id);
         Task<Result<AlunoDTO>> AddAsync(AlunoCreateDTO alunoDto);
         Task<Result<AlunoDTO>> UpdateAsync(AlunoUpdateDTO alunoDto);
-        Task<Result<bool>> DeleteAsync(ulong id);
+        Task<Result<bool>> DeleteAsync(int id);
         Task<Result<AlunoDTO>> GetAlunoByNomeAsync(string nome);
-        Task<Result<List<AlunoDTO>>> GetAlunosByDisciplinaAsync(ulong idDisciplina);
+        Task<Result<List<AlunoDTO>>> GetAlunosByDisciplinaAsync(int idDisciplina);
     }
 }

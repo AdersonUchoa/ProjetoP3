@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace ProjP3.Application.DTOs.Response;
 public class InstituicaoDTO
 {
-    public ulong IdInstituicao { get; set; }
+    public int IdInstituicao { get; set; }
 
     public string TxSigla { get; set; } = null!;
 

@@ -30,7 +30,7 @@ namespace ProjP3.Application.Services
             return Result<List<TituloDTO>>.Success(tituloDtos);
         }
 
-        public async Task<Result<TituloDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<TituloDTO>> GetByIdAsync(int id)
         {
             var titulo = await _repository.GetByIdAsync(id);
             if (titulo == null)
@@ -75,7 +75,7 @@ namespace ProjP3.Application.Services
             return Result<TituloDTO>.Success(_mapper.Map<TituloDTO>(updatedTitulo));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var tituloExiste = await _repository.ExistsAsync(id);
             if (!tituloExiste)

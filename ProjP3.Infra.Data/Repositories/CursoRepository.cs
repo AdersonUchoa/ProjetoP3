@@ -16,21 +16,21 @@ namespace ProjP3.Infra.Data.Repositories
         {
         }
 
-        public async Task<List<Curso>> GetCursosByTipoAsync(ulong idTipoCurso)
+        public async Task<List<Curso>> GetCursosByTipoAsync(int idTipoCurso)
         {
             return await _context.Cursos
                 .Where(c => c.IdTipoCurso == idTipoCurso)
                 .ToListAsync();
         }
 
-        public async Task<List<Curso>> GetCursosByInstituicaoAsync(ulong idInstituicao)
+        public async Task<List<Curso>> GetCursosByInstituicaoAsync(int idInstituicao)
         {
             return await _context.Cursos
                 .Where(c => c.IdInstituicao == idInstituicao)
                 .ToListAsync();
         }
 
-        public async Task<TipoCurso?> GetTipoByCursoAsync(ulong idCurso)
+        public async Task<TipoCurso?> GetTipoByCursoAsync(int idCurso)
         {
             return await _context.Cursos
                 .Where(c => c.IdCurso == idCurso)
@@ -41,10 +41,10 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<Curso?> GetCursoByDescricaoAsync(string descricao)
         {
             return await _context.Cursos
-                .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefaultAsync(c => c.TxDescricao.Contains(descricao.ToLower()));
         }
 
-        //public async Task<Curso> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina)
+        //public async Task<Curso> AdicionarDisciplinaAoCursoAsync(int idCurso, int idDisciplina)
         //{
         //    var curso = await _context.Cursos.FindAsync(idCurso);
 
@@ -65,7 +65,7 @@ namespace ProjP3.Infra.Data.Repositories
         //    return curso;
         //}
 
-        //public async Task<Curso> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina)
+        //public async Task<Curso> RemoverDisciplinaDoCursoAsync(int idCurso, int idDisciplina)
         //{
         //    var curso = await _context.Cursos.FindAsync(idCurso);
 
@@ -89,10 +89,10 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Cursos
-                .AnyAsync(c => c.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(c => c.TxDescricao.Equals(descricao.ToLower()));
         }
 
-        public async Task<bool> JaExisteDisciplinaNoCurso(ulong idDisciplina, ulong idCurso)
+        public async Task<bool> JaExisteDisciplinaNoCurso(int idDisciplina, int idCurso)
         {
             return await _context.Cursos
                 .Where(c => c.IdCurso == idCurso)

@@ -32,7 +32,7 @@ namespace ProjP3.Application.Services
             return Result<List<AlunoDTO>>.Success(alunoDtos);
         }
 
-        public async Task<Result<AlunoDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<AlunoDTO>> GetByIdAsync(int id)
         {
             var aluno = await _repository.GetByIdAsync(id);
             if (aluno == null)
@@ -69,7 +69,7 @@ namespace ProjP3.Application.Services
             return Result<AlunoDTO>.Success(_mapper.Map<AlunoDTO>(updatedAluno));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var alunoExiste = await _repository.ExistsAsync(id);
             if (!alunoExiste)
@@ -92,7 +92,7 @@ namespace ProjP3.Application.Services
             return Result<AlunoDTO>.Success(alunoDto);
         }
 
-        public async Task<Result<List<AlunoDTO>>> GetAlunosByDisciplinaAsync(ulong idDisciplina)
+        public async Task<Result<List<AlunoDTO>>> GetAlunosByDisciplinaAsync(int idDisciplina)
         {
             var disciplinaExiste = await _disciplinaRepository.ExistsAsync(idDisciplina);
             if (!disciplinaExiste)

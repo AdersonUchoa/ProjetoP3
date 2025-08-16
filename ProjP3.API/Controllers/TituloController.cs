@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class TituloController : ControllerBase
     {
         private readonly ITituloService _tituloService;
@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um título específico com base no ID fornecido.</remarks>
         /// <returns>Título obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByIdAsync(ulong id)
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result = await _tituloService.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -62,7 +62,7 @@ namespace ProjP3.API.Controllers
                 return BadRequest(response);
             }
             var successResponse = new ApiResponse<TituloDTO>(true, HttpStatusCode.Created, result.Value!, "Titulo adicionado com sucesso.", "");
-            return CreatedAtAction(nameof(GetByIdAsync), new { id = result.Value!.IdTitulo }, successResponse);
+            return Ok(successResponse);
         }
 
         /// <summary>
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de um título existente.</remarks>
         /// <returns>Confirmação de exclusão.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _tituloService.DeleteAsync(id);
             if (!result.IsSuccess)

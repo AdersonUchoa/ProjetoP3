@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj": {}
+    "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\ProjP3.Domain.csproj": {
+    "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\ProjP3.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\ProjP3.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\ProjP3.Domain.csproj",
         "projectName": "ProjP3.Domain",
-        "projectPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\ProjP3.Domain.csproj",
-        "packagesPath": "C:\\Users\\aderson.uchoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\obj\\",
+        "projectPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\ProjP3.Domain.csproj",
+        "packagesPath": "C:\\Users\\iamuc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aderson.uchoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iamuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -71,21 +70,20 @@
         }
       }
     },
-    "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj": {
+    "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj",
         "projectName": "ProjP3.Infra.Data",
-        "projectPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\aderson.uchoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\iamuc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\aderson.uchoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iamuc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +99,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\ProjP3.Domain.csproj": {
-                "projectPath": "C:\\Users\\aderson.uchoa\\Desktop\\Aderson\\projeto\\projp3\\ProjP3\\ProjP3.Domain\\ProjP3.Domain.csproj"
+              "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\ProjP3.Domain.csproj": {
+                "projectPath": "C:\\Users\\iamuc\\OneDrive\\Área de Trabalho\\Faculdade\\2025.1\\Programação III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\ProjP3.Domain.csproj"
               }
             }
           }

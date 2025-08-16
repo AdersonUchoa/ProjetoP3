@@ -5,7 +5,7 @@ namespace ProjP3.Domain.Models;
 
 public partial class TipoDisciplina
 {
-    public ulong IdTipoDisciplina { get; set; }
+    public int IdTipoDisciplina { get; set; }
     
     public string TxDescricao { get; set; } = null!;
 

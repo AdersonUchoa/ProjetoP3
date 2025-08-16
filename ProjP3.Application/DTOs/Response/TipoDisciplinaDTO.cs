@@ -5,7 +5,7 @@ namespace ProjP3.Application.DTOs.Response;
 
 public class TipoDisciplinaDTO
 {
-    public ulong IdTipoDisciplina { get; set; }
+    public int IdTipoDisciplina { get; set; }
 
     public string TxDescricao { get; set; } = null!;
 

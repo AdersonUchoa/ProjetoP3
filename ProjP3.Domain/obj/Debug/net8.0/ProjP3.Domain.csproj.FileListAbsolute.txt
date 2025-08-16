@@ -10,3 +10,15 @@ C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\D
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.pdb
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ref\ProjP3.Domain.dll
 C:\Users\aderson.uchoa\Desktop\Aderson\projeto\projp3\ProjP3\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.sourcelink.json
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.deps.json
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.dll
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\bin\Debug\net8.0\ProjP3.Domain.pdb
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.AssemblyInfoInputs.cache
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.AssemblyInfo.cs
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.csproj.CoreCompileInputs.cache
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.sourcelink.json
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.dll
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\refint\ProjP3.Domain.dll
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ProjP3.Domain.pdb
+C:\Users\iamuc\OneDrive\Área de Trabalho\Faculdade\2025.1\Programação III\prova-segunda-unidade\backend\ProjP3.Domain\obj\Debug\net8.0\ref\ProjP3.Domain.dll

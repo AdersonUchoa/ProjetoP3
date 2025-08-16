@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjP3.Domain.InterfaceRepositories;
 using ProjP3.Domain.Models;
+using ProjP3.Domain.ReadModels;
 using ProjP3.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
@@ -21,28 +22,42 @@ namespace ProjP3.Infra.Data.Repositories
             _professorRepository = professorIRepository;
         }
 
-        public async Task<List<Disciplina>> GetDisciplinasByAlunoAsync(ulong idAluno)
+        public async Task<List<DisciplinaQuantidadePorCurso>> GetQuantidadeDisciplinasPorCursoAsync()
+        {
+            return await _context.Disciplinas
+                .AsNoTracking()
+                .GroupBy(d => d.IdCursoNavigation.TxDescricao)
+                .Select(g => new DisciplinaQuantidadePorCurso
+                {
+                    Curso = g.Key,
+                    QuantidadeDisciplinas = g.Count()
+                })
+                .OrderBy(x => x.Curso)
+                .ToListAsync();
+        }
+
+        public async Task<List<Disciplina>> GetDisciplinasByAlunoAsync(int idAluno)
         {
             return await _context.Disciplinas
                 .Where(disciplina => disciplina.Cursas.Any(cursa => cursa.IdAluno == idAluno))
                 .ToListAsync();
         }
 
-        public async Task<List<Disciplina>> GetDisciplinasByTipoAsync(ulong idTipoDisciplina)
+        public async Task<List<Disciplina>> GetDisciplinasByTipoAsync(int idTipoDisciplina)
         {
             return await _context.Disciplinas
                 .Where(d => d.IdTipoDisciplina == idTipoDisciplina)
                 .ToListAsync();
         }
 
-        public async Task<List<Disciplina>> GetDisciplinasByCursoAsync(ulong idCurso)
+        public async Task<List<Disciplina>> GetDisciplinasByCursoAsync(int idCurso)
         {
             return await _context.Disciplinas
                 .Where(disciplina => disciplina.IdCurso == idCurso)
                 .ToListAsync();
         }
 
-        public async Task<TipoDisciplina?> GetTipoByDisciplinaAsync(ulong idDisciplina)
+        public async Task<TipoDisciplina?> GetTipoByDisciplinaAsync(int idDisciplina)
         {
             return await _context.Disciplinas
                 .Where(d => d.IdDisciplina == idDisciplina)
@@ -67,18 +82,18 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<List<Disciplina>> GetDisciplinasBySiglaAsync(string sigla)
         {
             return await _context.Disciplinas
-                .Where(d => d.TxSigla.Contains(sigla, StringComparison.OrdinalIgnoreCase))
+                .Where(d => d.TxSigla.Contains(sigla.ToLower()))
                 .ToListAsync();
         }
 
         public async Task<List<Disciplina>> GetDisciplinasByDescricaoAsync(string descricao)
         {
             return await _context.Disciplinas
-                .Where(d => d.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
+                .Where(d => d.TxDescricao.Contains(descricao.ToLower()))
                 .ToListAsync();
         }
 
-        //public async Task<Disciplina> AdicionarAlunoADisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        //public async Task<Disciplina> AdicionarAlunoADisciplinaAsync(int idDisciplina, int idAluno, int periodo)
         //{
         //    var jaMatriculadoNoPeriodo = await _context.Cursas
         //           .AnyAsync(c => c.IdDisciplina == idDisciplina &&
@@ -114,7 +129,7 @@ namespace ProjP3.Infra.Data.Repositories
         //    return disciplina;
         //}
 
-        //public async Task<Disciplina> RemoverAlunoDaDisciplinaAsync(ulong idDisciplina, ulong idAluno, int periodo)
+        //public async Task<Disciplina> RemoverAlunoDaDisciplinaAsync(int idDisciplina, int idAluno, int periodo)
         //{
         //    var cursa = await _context.Cursas
         //        .Include(c => c.IdDisciplinaNavigation)
@@ -132,7 +147,7 @@ namespace ProjP3.Infra.Data.Repositories
         //    return cursa.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
         //}
 
-        //public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        //public async Task<Disciplina> AdicionarProfessorADisciplinaAsync(int idDisciplina, int idProfessor, int periodo)
         //{
 
         //    var jaExiste = await _context.Lecionas
@@ -169,7 +184,7 @@ namespace ProjP3.Infra.Data.Repositories
         //    return disciplina;
         //}
 
-        //public async Task<Disciplina> RemoverProfessorDaDisciplinaAsync(ulong idDisciplina, ulong idProfessor, int periodo)
+        //public async Task<Disciplina> RemoverProfessorDaDisciplinaAsync(int idDisciplina, int idProfessor, int periodo)
         //{
         //    var leciona = await _context.Lecionas
         //        .FirstOrDefaultAsync(l => l.IdDisciplina == idDisciplina &&
@@ -186,14 +201,14 @@ namespace ProjP3.Infra.Data.Repositories
         //    return leciona.IdDisciplinaNavigation ?? throw new Exception("Não foi possível carregar a disciplina associada.");
         //}
 
-        public async Task<List<Disciplina>> GetDisciplinasByProfessorAsync(ulong idProfessor)
+        public async Task<List<Disciplina>> GetDisciplinasByProfessorAsync(int idProfessor)
         {
             return await _context.Disciplinas
                 .Where(disciplina => disciplina.Lecionas.Any(le => le.IdProfessor == idProfessor))
                 .ToListAsync();
         }
 
-        public async Task<bool> JaExisteCursaAsync(ulong idAluno, ulong idDisciplina, int periodo)
+        public async Task<bool> JaExisteCursaAsync(int idAluno, int idDisciplina, int periodo)
         {
             return await _context.Cursas
                 .AnyAsync(c => c.IdAluno == idAluno &&
@@ -201,7 +216,7 @@ namespace ProjP3.Infra.Data.Repositories
                                c.InSemestre == periodo);
         }
 
-        public async Task<bool> JaExisteLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo)
+        public async Task<bool> JaExisteLecionaAsync(int idProfessor, int idDisciplina, int periodo)
         {
             return await _context.Lecionas
                 .AnyAsync(l => l.IdProfessor == idProfessor &&
@@ -209,7 +224,7 @@ namespace ProjP3.Infra.Data.Repositories
                                l.InPeriodo == periodo);
         }
 
-        public async Task<Cursa?> GetCursaAsync(ulong idAluno, ulong idDisciplina, int periodo)
+        public async Task<Cursa?> GetCursaAsync(int idAluno, int idDisciplina, int periodo)
         {
             return await _context.Cursas
                 .FirstOrDefaultAsync(c => c.IdAluno == idAluno &&
@@ -222,7 +237,7 @@ namespace ProjP3.Infra.Data.Repositories
             _context.Cursas.Remove(cursa);
         }
 
-        public async Task<Leciona?> GetLecionaAsync(ulong idProfessor, ulong idDisciplina, int periodo)
+        public async Task<Leciona?> GetLecionaAsync(int idProfessor, int idDisciplina, int periodo)
         {
             return await _context.Lecionas
                 .FirstOrDefaultAsync(c => c.IdProfessor == idProfessor &&
@@ -238,7 +253,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Disciplinas
-                .AnyAsync(d => d.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(d => d.TxDescricao.Equals(descricao.ToLower()));
         }
     }
 }

@@ -19,7 +19,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<Aluno?> GetAlunoByNomeAsync(string nome)
         {
             var aluno = await _context.Alunos
-                .FirstOrDefaultAsync(a => a.TxNome.Contains(nome, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefaultAsync(a => a.TxNome.Contains(nome.ToLower()));
 
             if (aluno == null)
             {
@@ -29,7 +29,7 @@ namespace ProjP3.Infra.Data.Repositories
             return aluno;
         }
 
-        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina)
+        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(int idDisciplina)
         {
             return await _context.Cursas
                 .Where(c => c.IdDisciplina == idDisciplina)
@@ -40,7 +40,7 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByNomeAsync(string nome)
         {
             return await _context.Alunos
-                .AnyAsync(a => a.TxNome.Equals(nome, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(a => a.TxNome.Equals(nome.ToLower()));
         }
     }
 }

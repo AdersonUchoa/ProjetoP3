@@ -7,7 +7,7 @@ using System.Net;
 namespace ProjP3.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ProfessorController : ControllerBase
     {
         private readonly IProfessorService _professorService;
@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém um professor específico pelo ID.</remarks>
         /// <returns>Professor obtido por ID.</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ulong id)
+        public async Task<IActionResult> GetById(int id)
         {
             var result = await _professorService.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Exclui os dados de um professor do sistema.</remarks>
         /// <returns>Confirmação de exclusão.</returns>
         [HttpDelete]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _professorService.DeleteAsync(id);
             if (!result.IsSuccess)
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém os professores que possuem um título específico.</remarks>
         /// <returns>Lista de professores pelo título.</returns>
         [HttpGet("titulos/{idTitulo}")]
-        public async Task<IActionResult> GetProfessoresByTitulo(ulong idTitulo)
+        public async Task<IActionResult> GetProfessoresByTitulo(int idTitulo)
         {
             var result = await _professorService.GetProfessoresByTitulo(idTitulo);
             if (!result.IsSuccess)
@@ -142,7 +142,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém o título de um determinado professor.</remarks>
         /// <returns>Título obtido pelo professor.</returns>
         [HttpGet("{idProfessor}/titulos")]
-        public async Task<IActionResult> GetTituloByProfessor(ulong idProfessor)
+        public async Task<IActionResult> GetTituloByProfessor(int idProfessor)
         {
             var result = await _professorService.GetTituloByProfessorAsync(idProfessor);
             if (!result.IsSuccess)
@@ -160,7 +160,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém os professores associados a uma disciplina específica.</remarks>
         /// <returns>Lista de professores por disciplina.</returns>
         [HttpGet("disciplinas/{idDisciplina}")]
-        public async Task<IActionResult> GetProfessoresByDisciplina(ulong idDisciplina)
+        public async Task<IActionResult> GetProfessoresByDisciplina(int idDisciplina)
         {
             var result = await _professorService.GetProfessoresByDisciplinaAsync(idDisciplina);
             if (!result.IsSuccess)

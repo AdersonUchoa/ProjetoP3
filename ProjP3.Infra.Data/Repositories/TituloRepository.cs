@@ -19,13 +19,13 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<Titulo?> GetTituloByDescricaoAsync(string descricao)
         {
             return await _context.Titulos
-                .FirstOrDefaultAsync(t => t.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefaultAsync(t => t.TxDescricao.Contains(descricao.ToLower()));
         }
 
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Titulos
-                .AnyAsync(t => t.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(t => t.TxDescricao.Equals(descricao.ToLower()));
         }
     }
 }

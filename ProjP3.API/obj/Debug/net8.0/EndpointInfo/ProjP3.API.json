@@ -10,7 +10,7 @@
     "version": "v1"
   },
   "paths": {
-    "/Aluno": {
+    "/api/Aluno": {
       "get": {
         "tags": [
           "Aluno"
@@ -86,7 +86,7 @@
         }
       }
     },
-    "/Aluno/{id}": {
+    "/api/Aluno/{id}": {
       "get": {
         "tags": [
           "Aluno"
@@ -134,7 +134,7 @@
         }
       }
     },
-    "/Aluno/nomes": {
+    "/api/Aluno/nomes/{nome}": {
       "get": {
         "tags": [
           "Aluno"
@@ -144,7 +144,8 @@
         "parameters": [
           {
             "name": "nome",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string"
             }
@@ -157,7 +158,7 @@
         }
       }
     },
-    "/Aluno/disciplinas/{idDisciplina}": {
+    "/api/Aluno/disciplinas/{idDisciplina}": {
       "get": {
         "tags": [
           "Aluno"
@@ -182,7 +183,7 @@
         }
       }
     },
-    "/Curso": {
+    "/api/Curso": {
       "get": {
         "tags": [
           "Curso"
@@ -258,7 +259,7 @@
         }
       }
     },
-    "/Curso/{id}": {
+    "/api/Curso/{id}": {
       "get": {
         "tags": [
           "Curso"
@@ -306,7 +307,7 @@
         }
       }
     },
-    "/Curso/{idCurso}/disciplinas": {
+    "/api/Curso/{idCurso}/disciplinas": {
       "post": {
         "tags": [
           "Curso"
@@ -339,7 +340,7 @@
         }
       }
     },
-    "/Curso/{idCurso}/disciplinas/{idDisciplina}": {
+    "/api/Curso/{idCurso}/disciplinas/{idDisciplina}": {
       "delete": {
         "tags": [
           "Curso"
@@ -373,7 +374,7 @@
         }
       }
     },
-    "/Curso/tipos/{idTipoCurso}": {
+    "/api/Curso/tipos/{idTipoCurso}": {
       "get": {
         "tags": [
           "Curso"
@@ -398,7 +399,7 @@
         }
       }
     },
-    "/Curso/{idCurso}/tipos": {
+    "/api/Curso/{idCurso}/tipos": {
       "get": {
         "tags": [
           "Curso"
@@ -423,7 +424,7 @@
         }
       }
     },
-    "/Curso/search": {
+    "/api/Curso/search": {
       "get": {
         "tags": [
           "Curso"
@@ -446,7 +447,7 @@
         }
       }
     },
-    "/Curso/instituicoes/{idInstituicao}": {
+    "/api/Curso/instituicoes/{idInstituicao}": {
       "get": {
         "tags": [
           "Curso"
@@ -471,7 +472,47 @@
         }
       }
     },
-    "/Disciplina": {
+    "/api/Disciplina/quantidades": {
+      "get": {
+        "tags": [
+          "Disciplina"
+        ],
+        "summary": "Rota para buscar disciplinas e quantidade por curso.",
+        "description": "Retorna todas as disciplinas e sua quantidade no curso",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DisciplinaDataDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DisciplinaDataDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DisciplinaDataDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Disciplina": {
       "get": {
         "tags": [
           "Disciplina"
@@ -547,7 +588,7 @@
         }
       }
     },
-    "/Disciplina/{id}": {
+    "/api/Disciplina/{id}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -595,7 +636,7 @@
         }
       }
     },
-    "/Disciplina/alunos/{idAluno}": {
+    "/api/Disciplina/alunos/{idAluno}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -620,7 +661,7 @@
         }
       }
     },
-    "/Disciplina/tipos/{idTipoDisciplina}": {
+    "/api/Disciplina/tipos/{idTipoDisciplina}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -645,7 +686,7 @@
         }
       }
     },
-    "/Disciplina/{idDisciplina}/tipos": {
+    "/api/Disciplina/{idDisciplina}/tipos": {
       "get": {
         "tags": [
           "Disciplina"
@@ -670,7 +711,7 @@
         }
       }
     },
-    "/Disciplina/periodos/{periodo}": {
+    "/api/Disciplina/periodos/{periodo}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -695,7 +736,7 @@
         }
       }
     },
-    "/Disciplina/cargas-horarias/{cargaHoraria}": {
+    "/api/Disciplina/cargas-horarias/{cargaHoraria}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -720,7 +761,7 @@
         }
       }
     },
-    "/Disciplina/siglas/{sigla}": {
+    "/api/Disciplina/siglas/{sigla}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -744,7 +785,7 @@
         }
       }
     },
-    "/Disciplina/descricoes/{descricao}": {
+    "/api/Disciplina/descricoes/{descricao}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -768,7 +809,7 @@
         }
       }
     },
-    "/Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}": {
+    "/api/Disciplina/alunos/{idDisciplina}/{idAluno}/{periodo}": {
       "post": {
         "tags": [
           "Disciplina"
@@ -852,7 +893,7 @@
         }
       }
     },
-    "/Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}": {
+    "/api/Disciplina/professores/{idDisciplina}/{idProfessor}/{periodo}": {
       "post": {
         "tags": [
           "Disciplina"
@@ -936,7 +977,7 @@
         }
       }
     },
-    "/Disciplina/professores/{idProfessor}": {
+    "/api/Disciplina/professores/{idProfessor}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -961,7 +1002,7 @@
         }
       }
     },
-    "/Disciplina/cursos/{idCurso}": {
+    "/api/Disciplina/cursos/{idCurso}": {
       "get": {
         "tags": [
           "Disciplina"
@@ -986,7 +1027,7 @@
         }
       }
     },
-    "/Instituicao": {
+    "/api/Instituicao": {
       "get": {
         "tags": [
           "Instituicao"
@@ -1062,7 +1103,7 @@
         }
       }
     },
-    "/Instituicao/{id}": {
+    "/api/Instituicao/{id}": {
       "get": {
         "tags": [
           "Instituicao"
@@ -1110,7 +1151,7 @@
         }
       }
     },
-    "/Instituicao/siglas/{sigla}": {
+    "/api/Instituicao/siglas/{sigla}": {
       "get": {
         "tags": [
           "Instituicao"
@@ -1134,7 +1175,7 @@
         }
       }
     },
-    "/Instituicao/descricoes/{descricao}": {
+    "/api/Instituicao/descricoes/{descricao}": {
       "get": {
         "tags": [
           "Instituicao"
@@ -1158,7 +1199,7 @@
         }
       }
     },
-    "/Instituicao/cursos/{idCurso}": {
+    "/api/Instituicao/cursos/{idCurso}": {
       "get": {
         "tags": [
           "Instituicao"
@@ -1183,7 +1224,7 @@
         }
       }
     },
-    "/Professor": {
+    "/api/Professor": {
       "get": {
         "tags": [
           "Professor"
@@ -1281,7 +1322,7 @@
         }
       }
     },
-    "/Professor/{id}": {
+    "/api/Professor/{id}": {
       "get": {
         "tags": [
           "Professor"
@@ -1306,7 +1347,7 @@
         }
       }
     },
-    "/Professor/nomes/{nome}": {
+    "/api/Professor/nomes/{nome}": {
       "get": {
         "tags": [
           "Professor"
@@ -1330,7 +1371,7 @@
         }
       }
     },
-    "/Professor/titulos/{idTitulo}": {
+    "/api/Professor/titulos/{idTitulo}": {
       "get": {
         "tags": [
           "Professor"
@@ -1355,7 +1396,7 @@
         }
       }
     },
-    "/Professor/{idProfessor}/titulos": {
+    "/api/Professor/{idProfessor}/titulos": {
       "get": {
         "tags": [
           "Professor"
@@ -1380,7 +1421,7 @@
         }
       }
     },
-    "/Professor/disciplinas/{idDisciplina}": {
+    "/api/Professor/disciplinas/{idDisciplina}": {
       "get": {
         "tags": [
           "Professor"
@@ -1405,7 +1446,7 @@
         }
       }
     },
-    "/TipoCurso": {
+    "/api/TipoCurso": {
       "get": {
         "tags": [
           "TipoCurso"
@@ -1481,7 +1522,7 @@
         }
       }
     },
-    "/TipoCurso/{id}": {
+    "/api/TipoCurso/{id}": {
       "get": {
         "tags": [
           "TipoCurso"
@@ -1529,7 +1570,7 @@
         }
       }
     },
-    "/TipoCurso/descricoes/{descricao}": {
+    "/api/TipoCurso/descricoes/{descricao}": {
       "get": {
         "tags": [
           "TipoCurso"
@@ -1553,7 +1594,7 @@
         }
       }
     },
-    "/TipoDisciplina": {
+    "/api/TipoDisciplina": {
       "get": {
         "tags": [
           "TipoDisciplina"
@@ -1629,7 +1670,7 @@
         }
       }
     },
-    "/TipoDisciplina/{id}": {
+    "/api/TipoDisciplina/{id}": {
       "get": {
         "tags": [
           "TipoDisciplina"
@@ -1677,7 +1718,7 @@
         }
       }
     },
-    "/TipoDisciplina/descricoes/{descricao}": {
+    "/api/TipoDisciplina/descricoes/{descricao}": {
       "get": {
         "tags": [
           "TipoDisciplina"
@@ -1701,7 +1742,7 @@
         }
       }
     },
-    "/Titulo": {
+    "/api/Titulo": {
       "get": {
         "tags": [
           "Titulo"
@@ -1777,7 +1818,7 @@
         }
       }
     },
-    "/Titulo/{id}": {
+    "/api/Titulo/{id}": {
       "get": {
         "tags": [
           "Titulo"
@@ -1825,7 +1866,7 @@
         }
       }
     },
-    "/Titulo/descricoes/{descricao}": {
+    "/api/Titulo/descricoes/{descricao}": {
       "get": {
         "tags": [
           "Titulo"
@@ -1933,6 +1974,20 @@
             "format": "int32"
           },
           "inPeriodo": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DisciplinaDataDTO": {
+        "type": "object",
+        "properties": {
+          "curso": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantidade_disciplinas": {
             "type": "integer",
             "format": "int32"
           }

@@ -11,9 +11,9 @@ namespace ProjP3.Domain.InterfaceRepositories
     {
         Task<List<Instituicao>> GetInstituicaoBySiglaAsync(string sigla);
         Task<List<Instituicao>> GetInstituicaoByDescricaoAsync(string descricao);
-        Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso);
-        //Task<bool> JaExisteCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso);
-        //Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso);
+        Task<List<Instituicao>> GetInstituicoesByCursoAsync(int idCurso);
+        //Task<bool> JaExisteCursoNaInstituicaoAsync(int idInstituicao, int idCurso);
+        //Task<Curso?> GetCursoNaInstituicaoAsync(int idInstituicao, int idCurso);
         //void RemoverCursoNaInstituicao(Curso curso);
         Task<bool> ExistsByDescricaoAsync(string descricao);
     }

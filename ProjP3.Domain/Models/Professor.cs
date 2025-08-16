@@ -5,9 +5,9 @@ namespace ProjP3.Domain.Models;
 
 public partial class Professor
 {
-    public ulong IdProfessor { get; set; }
+    public int IdProfessor { get; set; }
 
-    public ulong IdTitulo { get; set; }
+    public int IdTitulo { get; set; }
 
     public string TxNome { get; set; } = null!;
 

@@ -19,25 +19,25 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<List<Instituicao>> GetInstituicaoBySiglaAsync(string sigla)
         {
             return await _context.Instituicaos
-                .Where(i => i.TxSigla.Contains(sigla, StringComparison.OrdinalIgnoreCase))
+                .Where(i => i.TxSigla.Contains(sigla.ToLower()))
                 .ToListAsync();
         }
 
         public async Task<List<Instituicao>> GetInstituicaoByDescricaoAsync(string descricao)
         {
             return await _context.Instituicaos
-                .Where(i => i.TxDescricao.Contains(descricao, StringComparison.OrdinalIgnoreCase))
+                .Where(i => i.TxDescricao.Contains(descricao.ToLower()))
                 .ToListAsync();
         }
 
-        //public async Task<bool> JaExisteCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<bool> JaExisteCursoNaInstituicaoAsync(int idInstituicao, int idCurso)
         //{
         //    return await _context.Instituicaos
         //        .Where(i => i.IdInstituicao == idInstituicao)
         //        .AnyAsync(i => i.Cursos.Any(c => c.IdCurso == idCurso));
         //}
 
-        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso)
+        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(int idCurso)
         {
             return await _context.Instituicaos
                 .Where(i => i.Cursos.Any(c => c.IdCurso == idCurso))
@@ -47,10 +47,10 @@ namespace ProjP3.Infra.Data.Repositories
         public async Task<bool> ExistsByDescricaoAsync(string descricao)
         {
             return await _context.Instituicaos
-                .AnyAsync(i => i.TxDescricao.Equals(descricao, StringComparison.OrdinalIgnoreCase));
+                .AnyAsync(i => i.TxDescricao.Equals(descricao.ToLower()));
         }
 
-        //public async Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<Curso?> GetCursoNaInstituicaoAsync(int idInstituicao, int idCurso)
         //{
         //    return await _context.Instituicaos
         //        .Where(i => i.IdInstituicao == idInstituicao)

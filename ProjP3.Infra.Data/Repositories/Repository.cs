@@ -24,7 +24,7 @@ namespace ProjP3.Infra.Data.Repositories
             return entity;
         }
 
-        public async Task<bool> DeleteAsync(ulong id)
+        public async Task<bool> DeleteAsync(int id)
         {
             var entity = await GetByIdAsync(id);
             if (entity == null)
@@ -35,9 +35,9 @@ namespace ProjP3.Infra.Data.Repositories
             return true;
         }
 
-        public async Task<bool> ExistsAsync(ulong id)
+        public async Task<bool> ExistsAsync(int id)
         {
-            return await _context.Set<T>().AnyAsync(e => EF.Property<ulong>(e, "Id") == id);
+            return await _context.Set<T>().AnyAsync(e => EF.Property<int>(e, "Id") == id);
         }
 
         public async Task<List<T>> GetAllAsync()
@@ -45,7 +45,7 @@ namespace ProjP3.Infra.Data.Repositories
             return await _context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetByIdAsync(ulong id)
+        public async Task<T> GetByIdAsync(int id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
