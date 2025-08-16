@@ -3,32 +3,248 @@
   "WorkspaceRootPath": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\titulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\titulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\professorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\professorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\mappings\\modeltodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\mappings\\modeltodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\instituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\instituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\cursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\alunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\titulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\tipodisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\tipodisciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\tipocurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\tipocurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\leciona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\leciona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\instituicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\instituicao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\disciplina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\cursa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\cursa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\iprofessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\iprofessorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\iinstituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\iinstituicaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\idisciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\idisciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\icursorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.domain\\interfacerepositories\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA01EFE4-EBDF-4C5E-9EBB-C27AC64EA5B1}|ProjP3.Domain\\ProjP3.Domain.csproj|solutionrelative:projp3.domain\\interfacerepositories\\ialunorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\tituloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\tituloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\tipodisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\tipodisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\tipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\tipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\professorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\professorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\instituicaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\instituicaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\disciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\disciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\cursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\cursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\services\\alunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\itituloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\itituloservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\itipodisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\itipodisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\itipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\itipocursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\iprofessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\iprofessorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\iinstituicaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\iinstituicaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\idisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\idisciplinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\icursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\icursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\interfaceservices\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\interfaceservices\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\titulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\titulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\tipodisciplinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\tipodisciplinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\tipocursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\tipocursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\professordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\professordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\lecionadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\lecionadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\instituicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\instituicaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\disciplinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\disciplinadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\cursadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\cursadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\response\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\response\\alunodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\request\\professorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\request\\professorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\request\\professorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\request\\professorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\request\\disciplinacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\request\\disciplinacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\dtos\\request\\cursocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\dtos\\request\\cursocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\titulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\titulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\tipodisciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\tipodisciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\tipocursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\tipocursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\professorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\instituicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\instituicaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.application\\mappings\\modeltodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E04E94F-A2AD-4F5D-884E-175AEC8F9F37}|ProjP3.Application\\ProjP3.Application.csproj|solutionrelative:projp3.application\\mappings\\modeltodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,58 +263,708 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TituloController.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TituloController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\TituloController.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TituloController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\TituloController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAgwEEAAAAJAAAAAAAAAA==",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAywBoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:20:46.179Z",
+              "WhenOpened": "2025-08-16T03:43:22.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AlunoController.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\AlunoController.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\AlunoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Title": "ProfessorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\ProfessorRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:20:32.696Z",
+              "WhenOpened": "2025-08-16T03:43:11.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDisciplinaService.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "InstituicaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\InstituicaoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\InstituicaoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\InstituicaoRepository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\InstituicaoRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:12:12.227Z",
+              "WhenOpened": "2025-08-16T03:43:00.016Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\CursoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\CursoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\CursoRepository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\CursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:36.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\AlunoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\AlunoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\AlunoRepository.cs",
+              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\AlunoRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwB8AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:24.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Titulo.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Titulo.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Titulo.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Titulo.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Titulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:20.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TipoDisciplina.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\TipoDisciplina.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\TipoDisciplina.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\TipoDisciplina.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\TipoDisciplina.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:15.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TipoCurso.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\TipoCurso.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\TipoCurso.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\TipoCurso.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\TipoCurso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:10.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Professor.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Professor.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Professor.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Professor.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Professor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:42:04.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Leciona.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Leciona.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Leciona.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Leciona.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Leciona.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:59.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Instituicao.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Instituicao.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Instituicao.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Instituicao.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Instituicao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:54.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Disciplina.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Disciplina.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Disciplina.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Disciplina.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Disciplina.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:45.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Curso.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Curso.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Curso.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Curso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:38.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cursa.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Cursa.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Cursa.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Cursa.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Cursa.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:25.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Aluno.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\Models\\Aluno.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\Models\\Aluno.cs",
+              "RelativeToolTip": "ProjP3.Domain\\Models\\Aluno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:19.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:41:13.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DisciplinaRepository.cs",
               "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
               "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
               "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
               "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwB4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCYAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T03:03:07.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
+              "Title": "IProfessorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IProfessorRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IProfessorRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IProfessorRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IProfessorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:54.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IInstituicaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IInstituicaoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IInstituicaoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IInstituicaoRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IInstituicaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:44.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IDisciplinaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IDisciplinaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:35.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ICursoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\ICursoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\ICursoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\ICursoRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\ICursoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:27.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IAlunoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IAlunoRepository.cs",
+              "RelativeDocumentMoniker": "ProjP3.Domain\\InterfaceRepositories\\IAlunoRepository.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Domain\\InterfaceRepositories\\IAlunoRepository.cs",
+              "RelativeToolTip": "ProjP3.Domain\\InterfaceRepositories\\IAlunoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:22.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TituloService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TituloService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\TituloService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TituloService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\TituloService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:10.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TipoDisciplinaService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TipoDisciplinaService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\TipoDisciplinaService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TipoDisciplinaService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\TipoDisciplinaService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwCAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:40:02.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TipoCursoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TipoCursoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\TipoCursoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\TipoCursoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\TipoCursoService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:39:52.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProfessorService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\ProfessorService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\ProfessorService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\ProfessorService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\ProfessorService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAywCQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:39:42.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InstituicaoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\InstituicaoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\InstituicaoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\InstituicaoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\InstituicaoService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwCIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:39:32.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CursoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\CursoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\CursoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\CursoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\CursoService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAwwJQAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:46.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AlunoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\AlunoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\AlunoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\AlunoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\AlunoService.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswF4AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:35.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ITituloService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITituloService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\ITituloService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITituloService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\ITituloService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:30.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ITipoDisciplinaService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITipoDisciplinaService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\ITipoDisciplinaService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITipoDisciplinaService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\ITipoDisciplinaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:24.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ITipoCursoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\ITipoCursoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:13.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IProfessorService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IProfessorService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:38:02.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IInstituicaoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IInstituicaoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IInstituicaoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IInstituicaoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IInstituicaoService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:37:49.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ICursoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ICursoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\ICursoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\ICursoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\ICursoService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:37:18.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IAlunoService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IAlunoService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IAlunoService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IAlunoService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IAlunoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:37:11.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TituloDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TituloDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\TituloDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TituloDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\TituloDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:37:06.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TipoDisciplinaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TipoDisciplinaDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\TipoDisciplinaDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TipoDisciplinaDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\TipoDisciplinaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:37:02.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DisciplinaService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\DisciplinaService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\DisciplinaService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\DisciplinaService.cs",
+              "RelativeToolTip": "ProjP3.Application\\Services\\DisciplinaService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwC8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T02:57:27.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TipoCursoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TipoCursoDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\TipoCursoDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\TipoCursoDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\TipoCursoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:58.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProfessorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\ProfessorDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\ProfessorDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\ProfessorDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\ProfessorDTO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:52.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "LecionaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\LecionaDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\LecionaDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\LecionaDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\LecionaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:48.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "InstituicaoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\InstituicaoDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\InstituicaoDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\InstituicaoDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\InstituicaoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:43.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DisciplinaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\DisciplinaDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\DisciplinaDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\DisciplinaDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\DisciplinaDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:35.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CursoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\CursoDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\CursoDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\CursoDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\CursoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:30.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CursaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\CursaDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\CursaDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\CursaDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\CursaDTO.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:19.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AlunoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\AlunoDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Response\\AlunoDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Response\\AlunoDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Response\\AlunoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:14.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IDisciplinaService.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
+              "RelativeToolTip": "ProjP3.Application\\InterfaceServices\\IDisciplinaService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAUwB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:12:12.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ProfessorUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\ProfessorUpdateDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Request\\ProfessorUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\ProfessorUpdateDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Request\\ProfessorUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:07.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ProfessorCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\ProfessorCreateDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Request\\ProfessorCreateDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\ProfessorCreateDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Request\\ProfessorCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:36:02.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DisciplinaCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\DisciplinaCreateDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Request\\DisciplinaCreateDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\DisciplinaCreateDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Request\\DisciplinaCreateDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:35:55.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CursoCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\CursoCreateDTO.cs",
+              "RelativeDocumentMoniker": "ProjP3.Application\\DTOs\\Request\\CursoCreateDTO.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\DTOs\\Request\\CursoCreateDTO.cs",
+              "RelativeToolTip": "ProjP3.Application\\DTOs\\Request\\CursoCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:35:42.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CursoController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\CursoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\CursoController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\CursoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\CursoController.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAADwv8UAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:22:25.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "AlunoController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\AlunoController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\AlunoController.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAADwv34AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:20:32.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
               "Title": "ModelToDTO.cs",
               "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Mappings\\ModelToDTO.cs",
               "RelativeDocumentMoniker": "ProjP3.Application\\Mappings\\ModelToDTO.cs",
@@ -106,33 +972,84 @@
               "RelativeToolTip": "ProjP3.Application\\Mappings\\ModelToDTO.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:00:11.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T03:00:11.828Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DisciplinaService.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\DisciplinaService.cs",
-              "RelativeDocumentMoniker": "ProjP3.Application\\Services\\DisciplinaService.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Application\\Services\\DisciplinaService.cs",
-              "RelativeToolTip": "ProjP3.Application\\Services\\DisciplinaService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAjwBEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T02:57:27.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 57,
               "Title": "DisciplinaController.cs",
               "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\DisciplinaController.cs",
               "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\DisciplinaController.cs",
               "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\DisciplinaController.cs",
               "RelativeToolTip": "ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAwwBcAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAEIBAAAAAAAAAADwv1ABAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T02:56:20.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "InstituicaoController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\InstituicaoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\InstituicaoController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\InstituicaoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\InstituicaoController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAADwv5EAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:22:09.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ProfessorController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\ProfessorController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\ProfessorController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\ProfessorController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\ProfessorController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAADwv6IAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:22:02.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "TipoCursoController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\TipoCursoController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv1sAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:21:52.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "TipoDisciplinaController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TipoDisciplinaController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\TipoDisciplinaController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TipoDisciplinaController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\TipoDisciplinaController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv1sAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:21:36.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "TituloController.cs",
+              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TituloController.cs",
+              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\TituloController.cs",
+              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\TituloController.cs",
+              "RelativeToolTip": "ProjP3.API\\Controllers\\TituloController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv1sAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:20:46.179Z",
               "EditorCaption": ""
             }
           ]

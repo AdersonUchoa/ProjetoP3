@@ -49,7 +49,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna uma disciplina específica com base no ID fornecido</remarks>
         /// <returns>Disciplina obtida por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ulong id)
+        public async Task<IActionResult> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -103,7 +103,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de uma disciplina</remarks>
         /// <returns>Confirmação de exclusão</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
             if (!result.IsSuccess)
@@ -120,7 +120,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna as disciplinas de um aluno</remarks>
         /// <returns>Lista de disciplinas de um aluno.</returns>
         [HttpGet("alunos/{idAluno}")]
-        public async Task<IActionResult> GetDisciplinasByAluno(ulong idAluno)
+        public async Task<IActionResult> GetDisciplinasByAluno(int idAluno)
         {
             var result = await _service.GetDisciplinasByAlunoAsync(idAluno);
             if (!result.IsSuccess)
@@ -138,7 +138,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna as disciplinas de um tipo específico</remarks>
         /// <returns>Lista de disciplinas filtradas por tipo.</returns>
         [HttpGet("tipos/{idTipoDisciplina}")]
-        public async Task<IActionResult> GetDisciplinasByTipo(ulong idTipoDisciplina)
+        public async Task<IActionResult> GetDisciplinasByTipo(int idTipoDisciplina)
         {
             var result = await _service.GetDisciplinasByTipoAsync(idTipoDisciplina);
             if (!result.IsSuccess)
@@ -156,7 +156,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna o tipo de uma disciplina específico</remarks>
         /// <returns>Tipo de uma disciplina</returns>
         [HttpGet("{idDisciplina}/tipos")]
-        public async Task<IActionResult> GetTipoByDisciplina(ulong idDisciplina)
+        public async Task<IActionResult> GetTipoByDisciplina(int idDisciplina)
         {
             var result = await _service.GetTipoByDisciplinaAsync(idDisciplina);
             if (!result.IsSuccess)
@@ -246,7 +246,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Associa um aluno a uma disciplina.</remarks>
         /// <returns>Confirmação de associação.</returns>
         [HttpPost("alunos/{idDisciplina}/{idAluno}/{periodo}")]
-        public async Task<IActionResult> AdicionarAlunoADisciplina(ulong idDisciplina, ulong idAluno, int periodo)
+        public async Task<IActionResult> AdicionarAlunoADisciplina(int idDisciplina, int idAluno, int periodo)
         {
             var result = await _service.AdicionarAlunoADisciplinaAsync(idDisciplina, idAluno, periodo);
             if (!result.IsSuccess)
@@ -264,7 +264,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Remove a associação de um aluno a uma disciplina.</remarks>
         /// <returns>Confirmação de remoção.</returns>
         [HttpDelete("alunos/{idDisciplina}/{idAluno}/{periodo}")]
-        public async Task<IActionResult> RemoverAlunoDaDisciplina(ulong idDisciplina, ulong idAluno, int periodo)
+        public async Task<IActionResult> RemoverAlunoDaDisciplina(int idDisciplina, int idAluno, int periodo)
         {
             var result = await _service.RemoverAlunoDaDisciplinaAsync(idDisciplina, idAluno, periodo);
             if (!result.IsSuccess)
@@ -281,7 +281,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Associa um professor a uma disciplina.</remarks>
         /// <returns>Confirmação de associação.</returns>
         [HttpPost("professores/{idDisciplina}/{idProfessor}/{periodo}")]
-        public async Task<IActionResult> AdicionarProfessorADisciplina(ulong idDisciplina, ulong idProfessor, int periodo)
+        public async Task<IActionResult> AdicionarProfessorADisciplina(int idDisciplina, int idProfessor, int periodo)
         {
             var result = await _service.AdicionarProfessorADisciplinaAsync(idDisciplina, idProfessor, periodo);
             if (!result.IsSuccess)
@@ -299,7 +299,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Remove a associação de um professor a uma disciplina.</remarks>
         /// <returns>Confirmação de remoção.</returns>
         [HttpDelete("professores/{idDisciplina}/{idProfessor}/{periodo}")]
-        public async Task<IActionResult> RemoverProfessorDaDisciplina(ulong idDisciplina, ulong idProfessor, int periodo)
+        public async Task<IActionResult> RemoverProfessorDaDisciplina(int idDisciplina, int idProfessor, int periodo)
         {
             var result = await _service.RemoverProfessorDaDisciplinaAsync(idDisciplina, idProfessor, periodo);
             if (!result.IsSuccess)
@@ -316,7 +316,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém as disciplinas que um professor leciona.</remarks>
         /// <returns>Lista de disciplinas por professor.</returns>
         [HttpGet("professores/{idProfessor}")]
-        public async Task<IActionResult> GetDisciplinasByProfessor(ulong idProfessor)
+        public async Task<IActionResult> GetDisciplinasByProfessor(int idProfessor)
         {
             var result = await _service.GetDisciplinasByProfessorAsync(idProfessor);
             if (!result.IsSuccess)
@@ -334,7 +334,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém todas as disciplinas pertencentes a um curso.</remarks>
         /// <returns>Lista de disciplinas por curso.</returns>
         [HttpGet("cursos/{idCurso}")]
-        public async Task<IActionResult> GetDisciplinasByCurso(ulong idCurso)
+        public async Task<IActionResult> GetDisciplinasByCurso(int idCurso)
         {
             var result = await _service.GetDisciplinasByCursoAsync(idCurso);
             if (!result.IsSuccess)

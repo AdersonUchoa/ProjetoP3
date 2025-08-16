@@ -30,14 +30,14 @@ namespace ProjP3.Infra.Data.Repositories
                 .ToListAsync();
         }
 
-        //public async Task<bool> JaExisteCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<bool> JaExisteCursoNaInstituicaoAsync(int idInstituicao, int idCurso)
         //{
         //    return await _context.Instituicaos
         //        .Where(i => i.IdInstituicao == idInstituicao)
         //        .AnyAsync(i => i.Cursos.Any(c => c.IdCurso == idCurso));
         //}
 
-        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(ulong idCurso)
+        public async Task<List<Instituicao>> GetInstituicoesByCursoAsync(int idCurso)
         {
             return await _context.Instituicaos
                 .Where(i => i.Cursos.Any(c => c.IdCurso == idCurso))
@@ -50,7 +50,7 @@ namespace ProjP3.Infra.Data.Repositories
                 .AnyAsync(i => i.TxDescricao.Equals(descricao.ToLower()));
         }
 
-        //public async Task<Curso?> GetCursoNaInstituicaoAsync(ulong idInstituicao, ulong idCurso)
+        //public async Task<Curso?> GetCursoNaInstituicaoAsync(int idInstituicao, int idCurso)
         //{
         //    return await _context.Instituicaos
         //        .Where(i => i.IdInstituicao == idInstituicao)

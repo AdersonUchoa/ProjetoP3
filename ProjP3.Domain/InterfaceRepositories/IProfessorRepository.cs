@@ -10,9 +10,9 @@ namespace ProjP3.Domain.InterfaceRepositories
     public interface IProfessorRepository : IRepository<Professor>
     {
         Task<Professor?> GetProfessoresByNomeAsync(string nome);
-        Task<List<Professor>> GetProfessoresByTituloAsync(ulong idTitulo);
-        Task<Titulo?> GetTituloByProfessorAsync(ulong idProfessor);
-        Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina);
+        Task<List<Professor>> GetProfessoresByTituloAsync(int idTitulo);
+        Task<Titulo?> GetTituloByProfessorAsync(int idProfessor);
+        Task<List<Professor>> GetProfessoresByDisciplinaAsync(int idDisciplina);
         Task<bool> ExistsByNomeAsync(string nome);
     }
 }

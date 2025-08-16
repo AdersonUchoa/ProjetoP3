@@ -12,15 +12,15 @@ namespace ProjP3.Application.InterfaceServices
     public interface ICursoService
     {
         Task<Result<List<CursoDTO>>> GetAllAsync();
-        Task<Result<CursoDTO>> GetByIdAsync(ulong id);
+        Task<Result<CursoDTO>> GetByIdAsync(int id);
         Task<Result<CursoDTO>> AddAsync(CursoCreateDTO cursoDto);
         Task<Result<CursoDTO>> UpdateAsync(CursoUpdateDTO cursoDto);
-        Task<Result<bool>> DeleteAsync(ulong id);
-        Task<Result<CursoDTO>> AdicionarDisciplinaAoCursoAsync(ulong idCurso, ulong idDisciplina);
-        Task<Result<bool>> RemoverDisciplinaDoCursoAsync(ulong idCurso, ulong idDisciplina);
-        Task<Result<List<CursoDTO>>> GetCursosByTipoAsync(ulong idTipoCurso);
-        Task<Result<TipoCursoDTO>> GetTipoByCursoAsync(ulong idCurso);
+        Task<Result<bool>> DeleteAsync(int id);
+        Task<Result<CursoDTO>> AdicionarDisciplinaAoCursoAsync(int idCurso, int idDisciplina);
+        Task<Result<bool>> RemoverDisciplinaDoCursoAsync(int idCurso, int idDisciplina);
+        Task<Result<List<CursoDTO>>> GetCursosByTipoAsync(int idTipoCurso);
+        Task<Result<TipoCursoDTO>> GetTipoByCursoAsync(int idCurso);
         Task<Result<CursoDTO?>> GetCursoByDescricaoAsync(string descricao);
-        Task<Result<List<CursoDTO>>> GetCursosByInstituicaoAsync(ulong idCurso);
+        Task<Result<List<CursoDTO>>> GetCursosByInstituicaoAsync(int idCurso);
     }
 }

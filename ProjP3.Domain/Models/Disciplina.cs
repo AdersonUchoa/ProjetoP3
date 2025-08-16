@@ -5,11 +5,11 @@ namespace ProjP3.Domain.Models;
 
 public partial class Disciplina
 {
-    public ulong IdDisciplina { get; set; }
+    public int IdDisciplina { get; set; }
 
-    public ulong? IdCurso { get; set; }
+    public int? IdCurso { get; set; }
 
-    public ulong IdTipoDisciplina { get; set; }
+    public int IdTipoDisciplina { get; set; }
 
     public string TxSigla { get; set; } = null!;
 

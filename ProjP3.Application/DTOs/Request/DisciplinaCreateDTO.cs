@@ -10,9 +10,9 @@ namespace ProjP3.Application.DTOs.Request
     public class DisciplinaCreateDTO
     {
 
-        public ulong? IdCurso { get; set; }
+        public int? IdCurso { get; set; }
 
-        public ulong IdTipoDisciplina { get; set; }
+        public int IdTipoDisciplina { get; set; }
 
         public string TxSigla { get; set; } = null!;
 

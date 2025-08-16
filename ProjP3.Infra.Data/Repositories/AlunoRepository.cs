@@ -29,7 +29,7 @@ namespace ProjP3.Infra.Data.Repositories
             return aluno;
         }
 
-        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(ulong idDisciplina)
+        public async Task<List<Aluno>> GetAlunosByDisciplinaAsync(int idDisciplina)
         {
             return await _context.Cursas
                 .Where(c => c.IdDisciplina == idDisciplina)

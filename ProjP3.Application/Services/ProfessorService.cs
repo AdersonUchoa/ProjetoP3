@@ -34,7 +34,7 @@ namespace ProjP3.Application.Services
             return Result<List<ProfessorDTO>>.Success(professorDtos);
         }
 
-        public async Task<Result<ProfessorDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<ProfessorDTO>> GetByIdAsync(int id)
         {
             var professor = await _repository.GetByIdAsync(id);
             if (professor == null)
@@ -71,7 +71,7 @@ namespace ProjP3.Application.Services
             return Result<ProfessorDTO>.Success(_mapper.Map<ProfessorDTO>(updatedProfessor));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var professorExiste = await _repository.ExistsAsync(id);
             if (!professorExiste)
@@ -94,7 +94,7 @@ namespace ProjP3.Application.Services
             return Result<ProfessorDTO>.Success(professorDto);
         }
 
-        public async Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(ulong idTitulo)
+        public async Task<Result<List<ProfessorDTO>>> GetProfessoresByTitulo(int idTitulo)
         {
             var tituloExiste = await _tituloRepository.ExistsAsync(idTitulo);
             if (!tituloExiste)
@@ -106,7 +106,7 @@ namespace ProjP3.Application.Services
             return Result<List<ProfessorDTO>>.Success(professorDtos);
         }
 
-        public async Task<Result<TituloDTO>> GetTituloByProfessorAsync(ulong idProfessor)
+        public async Task<Result<TituloDTO>> GetTituloByProfessorAsync(int idProfessor)
         {
             var professorExiste = await _repository.ExistsAsync(idProfessor);
             if (!professorExiste)
@@ -122,7 +122,7 @@ namespace ProjP3.Application.Services
             return Result<TituloDTO>.Success(tituloDto);
         }
 
-        public async Task<Result<List<ProfessorDTO>>> GetProfessoresByDisciplinaAsync(ulong idDisciplina)
+        public async Task<Result<List<ProfessorDTO>>> GetProfessoresByDisciplinaAsync(int idDisciplina)
         {
             var disciplinaExiste = await _disciplinaRepository.ExistsAsync(idDisciplina);
             if (!disciplinaExiste)

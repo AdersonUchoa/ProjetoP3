@@ -9,7 +9,7 @@ namespace ProjP3.Application.DTOs.Request
 {
     public class ProfessorCreateDTO
     {
-        public ulong IdTitulo { get; set; }
+        public int IdTitulo { get; set; }
 
         public string TxNome { get; set; } = null!;
 

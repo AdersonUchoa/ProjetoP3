@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um título específico com base no ID fornecido.</remarks>
         /// <returns>Título obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByIdAsync(ulong id)
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result = await _tituloService.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de um título existente.</remarks>
         /// <returns>Confirmação de exclusão.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _tituloService.DeleteAsync(id);
             if (!result.IsSuccess)

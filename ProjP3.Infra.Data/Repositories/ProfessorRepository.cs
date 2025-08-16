@@ -23,14 +23,14 @@ namespace ProjP3.Infra.Data.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<List<Professor>> GetProfessoresByTituloAsync(ulong idTitulo)
+        public async Task<List<Professor>> GetProfessoresByTituloAsync(int idTitulo)
         {
             return await _context.Professors
                 .Where(p => p.IdTitulo == idTitulo)
                 .ToListAsync();
         }
 
-        public async Task<Titulo?> GetTituloByProfessorAsync(ulong idProfessor)
+        public async Task<Titulo?> GetTituloByProfessorAsync(int idProfessor)
         {
             return await _context.Professors
             .Where(p => p.IdProfessor == idProfessor)
@@ -38,7 +38,7 @@ namespace ProjP3.Infra.Data.Repositories
             .FirstOrDefaultAsync();
         }
 
-        public async Task<List<Professor>> GetProfessoresByDisciplinaAsync(ulong idDisciplina)
+        public async Task<List<Professor>> GetProfessoresByDisciplinaAsync(int idDisciplina)
         {
             return await _context.Lecionas
                 .Where(l => l.IdDisciplina == idDisciplina)

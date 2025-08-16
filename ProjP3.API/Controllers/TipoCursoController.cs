@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um tipo de curso específico com base no ID fornecido.</remarks>
         /// <returns>Tipo de curso obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByIdAsync(ulong id)
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result = await _tipoCursoService.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de um tipo de curso existente.</remarks>
         /// <returns>Confirmação de exclusão.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _tipoCursoService.DeleteAsync(id);
             if (!result.IsSuccess)

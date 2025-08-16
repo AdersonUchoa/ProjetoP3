@@ -5,9 +5,9 @@ namespace ProjP3.Domain.Models;
 
 public partial class Cursa
 {
-    public ulong IdAluno { get; set; }
+    public int IdAluno { get; set; }
 
-    public ulong IdDisciplina { get; set; }
+    public int IdDisciplina { get; set; }
 
     public int InAno { get; set; }
 

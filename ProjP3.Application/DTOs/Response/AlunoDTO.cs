@@ -5,7 +5,7 @@ namespace ProjP3.Application.DTOs.Response;
 
 public class AlunoDTO
 {
-    public ulong IdAluno { get; set; }
+    public int IdAluno { get; set; }
 
     public string TxNome { get; set; } = null!;
 

@@ -30,7 +30,7 @@ namespace ProjP3.Application.Services
             return Result<List<TipoCursoDTO>>.Success(tipoCursoDtos);
         }
 
-        public async Task<Result<TipoCursoDTO>> GetByIdAsync(ulong id)
+        public async Task<Result<TipoCursoDTO>> GetByIdAsync(int id)
         {
             var tipoCurso = await _repository.GetByIdAsync(id);
             if (tipoCurso == null)
@@ -71,7 +71,7 @@ namespace ProjP3.Application.Services
             return Result<TipoCursoDTO>.Success(_mapper.Map<TipoCursoDTO>(updatedTipoCurso));
         }
 
-        public async Task<Result<bool>> DeleteAsync(ulong id)
+        public async Task<Result<bool>> DeleteAsync(int id)
         {
             var tipoCursoExiste = await _repository.ExistsAsync(id);
             if (!tipoCursoExiste)

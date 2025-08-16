@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um curso específico com base no ID fornecido.</remarks>
         /// <returns>Curso obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ulong id)
+        public async Task<IActionResult> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de um curso</remarks>
         /// <returns>Confirmação de exclusão</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
             if (!result.IsSuccess)
@@ -106,7 +106,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Associa uma disciplina a um curso</remarks>
         /// <returns>Confirmação de associação</returns>
         [HttpPost("{idCurso}/disciplinas")]
-        public async Task<IActionResult> AdicionarDisciplinaAoCurso(ulong idCurso, ulong idDisciplina)
+        public async Task<IActionResult> AdicionarDisciplinaAoCurso(int idCurso, int idDisciplina)
         {
             var result = await _service.AdicionarDisciplinaAoCursoAsync(idCurso, idDisciplina);
             if (!result.IsSuccess)
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Desassocia uma disciplina de um curso</remarks>
         /// <returns>Confirmação de remoção</returns>
         [HttpDelete("{idCurso}/disciplinas/{idDisciplina}")]
-        public async Task<IActionResult> RemoverDisciplinaDoCurso(ulong idCurso, ulong idDisciplina)
+        public async Task<IActionResult> RemoverDisciplinaDoCurso(int idCurso, int idDisciplina)
         {
             var result = await _service.RemoverDisciplinaDoCursoAsync(idCurso, idDisciplina);
             if (!result.IsSuccess)
@@ -141,7 +141,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna todos os cursos de um tipo específico.</remarks>
         /// <returns>Lista de cursos de um tipo específico</returns>
         [HttpGet("tipos/{idTipoCurso}")]
-        public async Task<IActionResult> GetCursosByTipo(ulong idTipoCurso)
+        public async Task<IActionResult> GetCursosByTipo(int idTipoCurso)
         {
             var result = await _service.GetCursosByTipoAsync(idTipoCurso);
             if (!result.IsSuccess)
@@ -159,7 +159,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna o tipo de curso de um curso específico</remarks>
         /// <returns>Tipo de curso associado</returns>
         [HttpGet("{idCurso}/tipos")]
-        public async Task<IActionResult> GetTipoByCurso(ulong idCurso)
+        public async Task<IActionResult> GetTipoByCurso(int idCurso)
         {
             var result = await _service.GetTipoByCursoAsync(idCurso);
             if (!result.IsSuccess)
@@ -195,7 +195,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna os cursos de uma instituição</remarks>
         /// <returns>Cursos de uma instituição</returns>
         [HttpGet("instituicoes/{idInstituicao}")]
-        public async Task<IActionResult> GetCursosByInstituicao(ulong idInstituicao)
+        public async Task<IActionResult> GetCursosByInstituicao(int idInstituicao)
         {
             var result = await _service.GetCursosByInstituicaoAsync(idInstituicao);
             if (!result.IsSuccess)

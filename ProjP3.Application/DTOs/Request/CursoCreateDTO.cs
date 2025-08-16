@@ -9,9 +9,9 @@ namespace ProjP3.Application.DTOs.Request
 {
     public class CursoCreateDTO
     {
-        public ulong IdInstituicao { get; set; }
+        public int IdInstituicao { get; set; }
 
-        public ulong IdTipoCurso { get; set; }
+        public int IdTipoCurso { get; set; }
 
         public string TxDescricao { get; set; } = null!;
     }

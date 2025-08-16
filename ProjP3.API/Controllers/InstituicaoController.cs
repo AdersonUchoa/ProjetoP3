@@ -36,7 +36,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém uma instituição específica pelo ID.</remarks>
         /// <returns>Instituição obtida por ID.</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(ulong id)
+        public async Task<IActionResult> GetById(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -90,7 +90,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Remove uma instituição do sistema.</remarks>
         /// <returns>Confirmação de remoção.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
             if (!result.IsSuccess)
@@ -143,7 +143,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Obtém a instituição possuídora de um curso específico</remarks>
         /// <returns>Instituição obtida pelo curso</returns>
         [HttpGet("cursos/{idCurso}")]
-        public async Task<IActionResult> GetInstituicoesByCurso(ulong idCurso)
+        public async Task<IActionResult> GetInstituicoesByCurso(int idCurso)
         {
             var result = await _service.GetInstituicoesByCursoAsync(idCurso);
             if (!result.IsSuccess)

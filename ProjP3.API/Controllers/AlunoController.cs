@@ -35,7 +35,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna um aluno específico com base no ID fornecido.</remarks>
         /// <returns>Aluno obtido por ID</returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByIdAsync(ulong id)
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result = await _service.GetByIdAsync(id);
             if (!result.IsSuccess)
@@ -89,7 +89,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Deleta os dados de um aluno existente.</remarks>
         /// <returns>Confirmação de exclusão.</returns>
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(ulong id)
+        public async Task<IActionResult> Delete(int id)
         {
             var result = await _service.DeleteAsync(id);
             if (!result.IsSuccess)
@@ -124,7 +124,7 @@ namespace ProjP3.API.Controllers
         /// <remarks>Retorna uma lista de alunos que estão matriculados em uma disciplina específica.</remarks>
         /// <returns>Lista de alunos matriculados na disciplina</returns>
         [HttpGet("disciplinas/{idDisciplina}")]
-        public async Task<IActionResult> GetAlunosByDisciplina(ulong idDisciplina)
+        public async Task<IActionResult> GetAlunosByDisciplina(int idDisciplina)
         {
             var result = await _service.GetAlunosByDisciplinaAsync(idDisciplina);
             if (!result.IsSuccess)
