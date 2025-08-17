@@ -19,4 +19,4 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 ENV ASPNETCORE_URLS=http://+:$PORT
-ENTRYPOINT ["dotnet", "Proj3.API.dll"]
+ENTRYPOINT ["dotnet", "ProjP3.API.dll"]
