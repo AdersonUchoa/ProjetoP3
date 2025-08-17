@@ -5,12 +5,14 @@ EXPOSE 8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-COPY Proj3.API/*.csproj ./Proj3.API/
-RUN dotnet restore "./Proj3.API/Proj3.API.csproj"
-
+# Copia tudo
 COPY . .
-WORKDIR "/src/Proj3.API"
-RUN dotnet publish "Proj3.API.csproj" -c Release -o /app/publish
+
+# Encontra e restaura o primeiro .csproj
+RUN dotnet restore $(find . -name "*.csproj" | head -1)
+
+# Encontra e publica o primeiro .csproj  
+RUN dotnet publish $(find . -name "*.csproj" | head -1) -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
