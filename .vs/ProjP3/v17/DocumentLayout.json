@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\disciplinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C30CB6F-1174-4D1C-B889-09BA7470CDAF}|ProjP3.Infra.Data\\ProjP3.Infra.Data.csproj|solutionrelative:projp3.infra.data\\repositories\\disciplinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|c:\\users\\iamuc\\onedrive\\\u00E1rea de trabalho\\faculdade\\2025.1\\programa\u00E7\u00E3o iii\\prova-segunda-unidade\\backend\\projp3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC888DE6-16AA-4438-BA95-10A46C83C2A0}|ProjP3.API\\ProjP3.API.csproj|solutionrelative:projp3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,53 +26,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Program.cs",
               "RelativeDocumentMoniker": "ProjP3.API\\Program.cs",
               "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Program.cs",
               "RelativeToolTip": "ProjP3.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T21:53:54.204Z",
+              "WhenOpened": "2025-08-17T04:57:22.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DisciplinaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "RelativeDocumentMoniker": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "RelativeToolTip": "ProjP3.Infra.Data\\Repositories\\DisciplinaRepository.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T21:20:25.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DisciplinaController.cs",
               "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\DisciplinaController.cs",
               "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\DisciplinaController.cs",
               "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\DisciplinaController.cs",
               "RelativeToolTip": "ProjP3.API\\Controllers\\DisciplinaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T21:19:53.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlunoController.cs",
-              "DocumentMoniker": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
-              "RelativeDocumentMoniker": "ProjP3.API\\Controllers\\AlunoController.cs",
-              "ToolTip": "C:\\Users\\iamuc\\OneDrive\\\u00C1rea de Trabalho\\Faculdade\\2025.1\\Programa\u00E7\u00E3o III\\prova-segunda-unidade\\backend\\ProjP3.API\\Controllers\\AlunoController.cs",
-              "RelativeToolTip": "ProjP3.API\\Controllers\\AlunoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T21:19:49.941Z"
+              "WhenOpened": "2025-08-17T02:10:23.148Z",
+              "EditorCaption": ""
             }
           ]
         }
