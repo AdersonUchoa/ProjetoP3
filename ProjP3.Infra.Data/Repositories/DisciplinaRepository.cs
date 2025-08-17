@@ -24,16 +24,18 @@ namespace ProjP3.Infra.Data.Repositories
 
         public async Task<List<DisciplinaQuantidadePorCurso>> GetQuantidadeDisciplinasPorCursoAsync()
         {
-            return await _context.Disciplinas
-                .AsNoTracking()
+            var resultado = await _context.Disciplinas
+                .Include(d => d.IdCursoNavigation)
                 .GroupBy(d => d.IdCursoNavigation.TxDescricao)
                 .Select(g => new DisciplinaQuantidadePorCurso
                 {
                     Curso = g.Key,
                     QuantidadeDisciplinas = g.Count()
                 })
-                .OrderBy(x => x.Curso)
+                .OrderByDescending(x => x.QuantidadeDisciplinas)
                 .ToListAsync();
+
+            return resultado;
         }
 
         public async Task<List<Disciplina>> GetDisciplinasByAlunoAsync(int idAluno)

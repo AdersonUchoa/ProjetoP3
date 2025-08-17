@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -67,7 +67,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -83,7 +83,7 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -157,7 +157,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -173,7 +173,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -189,12 +189,12 @@
     "Parameters": [
       {
         "Name": "idCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -210,12 +210,12 @@
     "Parameters": [
       {
         "Name": "idCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -231,7 +231,7 @@
     "Parameters": [
       {
         "Name": "idCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -247,7 +247,7 @@
     "Parameters": [
       {
         "Name": "idInstituicao",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -279,7 +279,7 @@
     "Parameters": [
       {
         "Name": "idTipoCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -337,7 +337,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -353,7 +353,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -369,7 +369,7 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -385,7 +385,7 @@
     "Parameters": [
       {
         "Name": "idAluno",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -401,12 +401,12 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idAluno",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -427,12 +427,12 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idAluno",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -469,7 +469,7 @@
     "Parameters": [
       {
         "Name": "idCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -517,12 +517,12 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idProfessor",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -543,12 +543,12 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idProfessor",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
@@ -569,7 +569,7 @@
     "Parameters": [
       {
         "Name": "idProfessor",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -621,7 +621,7 @@
     "Parameters": [
       {
         "Name": "idTipoDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -679,7 +679,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -695,7 +695,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -711,7 +711,7 @@
     "Parameters": [
       {
         "Name": "idCurso",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -801,7 +801,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -817,7 +817,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -833,7 +833,7 @@
     "Parameters": [
       {
         "Name": "idProfessor",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -849,7 +849,7 @@
     "Parameters": [
       {
         "Name": "idDisciplina",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -881,7 +881,7 @@
     "Parameters": [
       {
         "Name": "idTitulo",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -939,7 +939,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -955,7 +955,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1029,7 +1029,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1045,7 +1045,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1119,7 +1119,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1135,7 +1135,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.UInt64",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ProjP3.Application.DTOs.Request;
 using ProjP3.Application.DTOs.Response;
 using ProjP3.Application.InterfaceServices;
+using ProjP3.Application.Services;
 using System.Net;
 
 namespace ProjP3.API.Controllers
@@ -26,8 +27,21 @@ namespace ProjP3.API.Controllers
         [HttpGet("quantidades")]
         public async Task<ActionResult<IEnumerable<DisciplinaDataDTO>>> GetQuantidades()
         {
-            var data = await _service.GetQuantidadeDisciplinasPorCursoAsync();
-            return Ok(data);
+            try
+            {
+                var dados = await _service.GetQuantidadeDisciplinasPorCursoAsync();
+                var resultado = dados.Select(d => new
+                {
+                    curso = d.Curso,
+                    quantidade_disciplinas = d.QuantidadeDisciplinas
+                });
+
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Erro interno do servidor", error = ex.Message });
+            }
         }
 
         /// <summary>
